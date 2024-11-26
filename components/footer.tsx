@@ -1,10 +1,20 @@
-
 import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="mt-5 pt-4 pb-2 bg-[rgb(34,139,34)]">
-      <div className="container mx-auto text-white text-center">
+    <footer className="relative pt-8 pb-2 bg-[rgb(34,139,34)]">
+      {/* Wave Background */}
+      <div className="absolute top-0 w-full overflow-hidden leading-none">
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="block w-full h-[50px] fill-[rgb(100,200,100)]"
+        >
+          <path d="M0,12 C300,30 600,30 1200,120 L1200, 0 L0,0 Z"></path>
+        </svg>
+      </div>
+
+      <div className="container mx-auto text-white text-center mt-[50px]">
         {/* Nama dan Slogan */}
         <div className="text-xl font-bold mb-3">PT Nature's Exquisite Nusantara</div>
         <p className="text-sm italic mb-4">"Where Nature Whispers Flavor"</p>

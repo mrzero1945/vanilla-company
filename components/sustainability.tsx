@@ -5,74 +5,74 @@ const Sustainability = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-white text-gray-800 pt-16">
+      <section className="bg-gradient-to-r from-green-700 via-green-800 to-green-900 text-white pt-16 pb-12">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-6 text-[rgb(34,139,34)]">Our Commitment to Sustainability</h1>
-          <p className="text-lg mb-8 mx-4">
-            At PT Nature’s Exquisite Nusantara, sustainability is at the heart of our business. We strive to preserve the environment while supporting local communities and ensuring premium quality products.
+          <h1 className="text-5xl font-bold mb-6">Our Commitment to Sustainability</h1>
+          <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            At PT Nature’s Exquisite Nusantara, sustainability is at the heart of our business. 
+            We strive to preserve the environment while supporting local communities and ensuring premium quality products.
           </p>
         </div>
       </section>
 
       {/* Sustainability Section */}
-<section className="py-16">
-  <div className="container mx-auto text-center">
-    <h2 className="text-3xl font-bold text-[rgb(34,139,34)] mb-8">Our Commitment to Sustainability</h2>
-    <div className="flex flex-col md:flex-row md:items-center md:justify-center md:space-x-20">
-      {/* Image */}
-      <div className="flex justify-center mb-6 md:mb-0">
-        <Image
-          src={VanilaImg}
-          alt="Vanilla Farm"
-          width={200}
-          height={200}
-          className="rounded-lg shadow-lg w-100 md:w-[200px]"
-        />
-      </div>
-      {/* Text */}
-      <div className="md:w-1/3 mx-4">
-        <p className="text-lg text-center">
-          We implement eco-friendly farming practices and work directly with local farmers to promote sustainable agricultural techniques. Our goal is to reduce environmental impact, minimize water usage, and enhance soil health, ensuring the sustainability of our crops for generations to come.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Sustainable Practices</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+            {/* Image */}
+            <div className="flex justify-center">
+              <Image
+                src={VanilaImg}
+                alt="Vanilla Farm"
+                width={300}
+                height={300}
+                className="rounded-lg shadow-md"
+              />
+            </div>
+            {/* Text */}
+            <div>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                We implement eco-friendly farming practices and collaborate directly with local farmers to promote sustainable agricultural techniques. 
+                Our focus is on reducing environmental impact, optimizing water usage, and enhancing soil health to ensure the sustainability of our crops for future generations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* Support for Local Communities */}
+      {/* Supporting Local Communities */}
       <section className="bg-white py-16">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[rgb(34,139,34)] mb-8">
-            Supporting Local Communities
-          </h2>
-          <p className="text-lg mb-6 mx-4">
-            We believe in empowering local farmers by providing them with resources, education, and fair trade opportunities. Together, we build stronger communities and create lasting partnerships.
+          <h2 className="text-4xl font-bold text-green-800 mb-8">Empowering Local Communities</h2>
+          <p className="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
+            We believe in empowering local farmers by providing resources, education, and fair trade opportunities. 
+            Together, we create stronger communities, support livelihoods, and build lasting partnerships that benefit everyone.
           </p>
         </div>
       </section>
 
-      {/* Carbon Footprint Reduction Section */}
-      <section className="bg-white text-gray-800 py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[rgb(34,139,34)] mb-8">
-            Reducing Our Carbon Footprint
-          </h2>
-          <p className="text-lg mb-6 mx-4">
-            Through continuous innovation and process optimization, we actively reduce emissions in our production and distribution systems. From using renewable energy sources to optimizing transportation routes, we are committed to lowering our environmental impact.
+      {/* Carbon Footprint Reduction */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-green-800 text-center mb-8">Reducing Our Carbon Footprint</h2>
+          <p className="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto text-center">
+            Through continuous innovation and process optimization, we actively reduce emissions in our production and distribution systems. 
+            From using renewable energy sources to streamlining transportation routes, we are dedicated to minimizing our environmental impact.
           </p>
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section className="bg-white text-gray-700 py-16">
+      {/* Call to Action */}
+      <section className="bg-gradient-to-r from-green-800 via-green-700 to-green-600 text-white py-16">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-[rgb(34,139,34)] ">Join Our Journey to Sustainability</h2>
-          <p className="text-lg mb-8 mx-4">
+          <h2 className="text-4xl font-bold mb-6">Join Our Journey to Sustainability</h2>
+          <p className="text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
             Partner with PT Nature’s Exquisite Nusantara to make a difference. Together, we can build a sustainable future for our planet and communities.
           </p>
           <a
             href="/contact"
-            className="bg-[rgb(34,139,34)]  text-white px-6 py-3 rounded-md hover:bg-opacity-90 transition"
+            className="bg-white text-green-800 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200 transition"
           >
             Contact Us
           </a>
@@ -82,4 +82,4 @@ const Sustainability = () => {
   );
 };
 
-export {Sustainability};
+export { Sustainability };

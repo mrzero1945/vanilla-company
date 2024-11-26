@@ -9,81 +9,106 @@ class AboutUs extends Component {
     return (
       <div>
         {/* Hero Section */}
-        <section className="bg-white text-gray-800 pt-16 ">
+        <section className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 text-white pt-16 pb-16">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl font-bold mb-6 text-[rgb(34,139,34)] ">About us</h1>
-            <p className="text-lg mb-8">
-              We are committed to bringing the best of Indonesian agricultural heritage to the world. From premium vanilla beans to high-quality coffee and cocoa, our products are a reflection of our dedication to sustainability and quality.
+            <h1 className="text-5xl font-extrabold mb-6">About Us</h1>
+            <p className="text-xl max-w-3xl mx-auto leading-relaxed">
+              At PT Nature's Exquisite Nusantara, we are dedicated to delivering the finest Indonesian vanilla products to B2B clients worldwide. Combining tradition with innovation, our commitment to sustainability, trust, and quality sets us apart.
             </p>
           </div>
         </section>
 
         {/* Vision and Mission Section */}
-        <section className="bg-white text-gray-800 pb-16">
+        <section className="bg-white text-gray-800 py-16">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold text-[rgb(34,139,34)] mb-8">Our Vision & Mission</h2>
+            <h2 className="text-4xl font-bold text-green-800 mb-12">
+              Our Vision & Mission
+            </h2>
             <div className="md:flex md:justify-center md:space-x-20">
               {/* Vision */}
-              <div className="md:w-1/3 bg-[rgb(245,245,220)] p-6 rounded-lg shadow-lg mx-4 md:mx-0 mb-5 ">
-                <h3 className="text-2xl font-semibold text-[rgb(139,69,19)] mb-4">Our Vision</h3>
-                <p className="text-lg mb-6">
-                  To be the world’s leading provider of premium, sustainably sourced vanilla, known for our innovation, commitment to quality, and ethical business practices.
+              <div className="md:w-1/3 bg-gray-100 p-8 rounded-lg shadow-xl mx-4 mb-8 md:mb-0">
+                <h3 className="text-2xl font-semibold text-green-700 mb-6">
+                  Our Vision
+                </h3>
+                <p className="text-lg leading-relaxed">
+                  To be the world’s leading provider of premium, sustainably sourced vanilla, renowned for our innovation, dedication to quality, and ethical practices.
                 </p>
               </div>
 
               {/* Mission */}
-              <div className="md:w-1/3 bg-[rgb(245,245,220)] p-6 rounded-lg shadow-lg mx-4 md:mx-0 mb-5">
-                <h3 className="text-2xl font-semibold text-[rgb(139,69,19)] mb-4">Our Mission</h3>
-                <p className="text-lg mb-6">
-                  To deliver the finest quality vanilla beans and derivatives to markets worldwide, while championing sustainable agriculture, supporting fair trade, and creating long-lasting partnerships with our clients.
+              <div className="md:w-1/3 bg-gray-100 p-8 rounded-lg shadow-xl mx-4">
+                <h3 className="text-2xl font-semibold text-green-700 mb-6">
+                  Our Mission
+                </h3>
+                <p className="text-lg leading-relaxed">
+                  To provide the highest-quality vanilla products to businesses worldwide while championing sustainable farming practices, fair trade, and transparency.
                 </p>
               </div>
             </div>
           </div>
         </section>
-{/* Sustainability Section */}
-<section className="py-16">
-  <div className="container mx-auto text-center">
-    <h2 className="text-3xl font-bold text-[rgb(34,139,34)] mb-8">Our Commitment to Sustainability</h2>
-    <div className="flex flex-col md:flex-row md:items-center md:justify-center md:space-x-20">
-      {/* Image */}
-      <div className="flex justify-center mb-6 md:mb-0">
-        <Image
-          src={VanilaImg}
-          alt="Vanilla Farm"
-          width={200}
-          height={200}
-          className="rounded-lg shadow-lg w-100 md:w-[200px]"
-        />
-      </div>
-      {/* Text */}
-      <div className="md:w-1/3 mx-4">
-        <p className="text-lg text-center">
-          We implement eco-friendly farming practices and work directly with local farmers to promote sustainable agricultural techniques. Our goal is to reduce environmental impact, minimize water usage, and enhance soil health, ensuring the sustainability of our crops for generations to come.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
+        {/* Sustainability Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto text-center">
+            <h2 className="text-4xl font-bold text-green-800 mb-12">
+              Our Commitment to Sustainability
+            </h2>
+            <div className="flex flex-col md:flex-row md:items-center md:justify-center md:space-x-16">
+              {/* Image */}
+              <div className="flex justify-center mb-8 md:mb-0">
+                <Image
+                  src={VanilaImg}
+                  alt="Vanilla Farm"
+                  width={250}
+                  height={250}
+                  className="rounded-lg shadow-lg"
+                />
+              </div>
+              {/* Text */}
+              <div className="md:w-2/5 text-left">
+                <p className="text-lg leading-relaxed">
+                  We implement eco-friendly farming practices and work directly
+                  with local farmers to promote sustainable agricultural
+                  techniques. By minimizing environmental impact, enhancing soil
+                  health, and ensuring long-term sustainability, we uphold our
+                  commitment to protecting the planet and supporting our farming
+                  communities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Team Section */}
         <section className="bg-white text-gray-800 py-16">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-bold text-[rgb(34,139,34)] mb-8">Meet Our Team</h2>
-            <div className="md:flex md:justify-center md:space-x-20">
+            <h2 className="text-4xl font-bold text-green-800 mb-12">
+              Meet Our Team
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {/* Leadership Team */}
-              <div className="md:w-1/3 bg-[rgb(245,245,220)] p-6 rounded-lg shadow-lg mx-4 md:mx-0 mb-5 md:mb-0">
-                <h3 className="text-2xl font-semibold text-[rgb(139,69,19)] mb-4">Leadership</h3>
-                <p className="text-lg mb-6">
-                  Our CEO & Founder, Fortuna, leads with passion, focusing on quality, integrity, and innovation in every aspect of the business. Together with the leadership team, we strive to make a positive impact on the agricultural industry.
+              <div className="bg-gray-100 p-8 rounded-lg shadow-xl">
+                <h3 className="text-2xl font-semibold text-green-700 mb-6">
+                  Leadership
+                </h3>
+                <p className="text-lg leading-relaxed">
+                  Fortuna, our visionary CEO & Founder, leads with passion and
+                  dedication to quality, innovation, and sustainable practices.
+                  Under her leadership, we’ve established a reputation for
+                  trust and excellence.
                 </p>
               </div>
               {/* Field Team */}
-              <div className="md:w-1/3 bg-[rgb(245,245,220)] p-6 rounded-lg shadow-lg mx-4">
-                <h3 className="text-2xl font-semibold text-[rgb(139,69,19)] mb-4">Field Team</h3>
-                <p className="text-lg mb-6">
-                  Our dedicated field team works closely with local farmers, providing expert guidance on best practices for vanilla cultivation and ensuring the highest standards for product quality.
+              <div className="bg-gray-100 p-8 rounded-lg shadow-xl">
+                <h3 className="text-2xl font-semibold text-green-700 mb-6">
+                  Field Team
+                </h3>
+                <p className="text-lg leading-relaxed">
+                  Our field team works hand-in-hand with local farmers to
+                  implement best practices in vanilla cultivation. They ensure
+                  that our products meet the highest standards while fostering
+                  fair trade and long-term partnerships.
                 </p>
               </div>
             </div>

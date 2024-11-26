@@ -4,53 +4,56 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className=" py-5">
-      <div className="container mx-auto text-center px-4">
-        <h1 className="text-4xl font-bold mb-6 text-[rgb(34,139,34)] ">Contact Us</h1>
-        <p className="text-lg mb-8">
-          We’d love to hear from you! Reach out for more information, sample
-          requests, bulk orders, or to learn about our sustainable practices.
+    <section className="bg-gray-50 py-16">
+      <div className="container mx-auto px-6 lg:px-12 text-center">
+        {/* Title Section */}
+        <h1 className="text-5xl font-bold mb-6 text-green-800">Contact Us</h1>
+        <p className="text-lg mb-12 text-gray-700 leading-relaxed">
+          We’d love to hear from you! Reach out for more information, sample requests, bulk orders, or to learn about our sustainable practices.
         </p>
 
         {/* Contact Information */}
-        <div className=" text-gray-800 rounded-lg shadow-lg p-8 md:w-2/3 mx-auto bg-[rgb(245,245,220)]">
-          <h2 className="text-2xl font-bold mb-4 text-[rgb(34,139,34)]">
-            Get in Touch
-          </h2>
-          <p className="text-lg mb-6">
-            Contact us through any of the methods below, and our team will
-            respond promptly.
+        <div className="bg-beige text-gray-800 rounded-lg shadow-xl p-8 lg:p-12 md:w-2/3 mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-green-800">Get in Touch</h2>
+          <p className="text-lg mb-8">
+            Contact us through any of the methods below, and our team will respond promptly.
           </p>
 
-          <ul className="text-left space-y-4">
+          <ul className="text-left space-y-6 text-lg">
             <li>
-              <strong>Email:</strong> info@natureexquisite.com
+              <strong>Email:</strong> 
+              <a href="mailto:info@natureexquisite.com" className="text-green-800 hover:underline ml-2">
+                info@natureexquisite.com
+              </a>
             </li>
             <li>
-              <strong>Phone:</strong> +62 812 3456 7890
+              <strong>Phone:</strong> 
+              <a href="tel:+6281234567890" className="text-green-800 hover:underline ml-2">
+                +62 812 3456 7890
+              </a>
             </li>
             <li>
               <strong>Address:</strong> Jakarta, Indonesia
             </li>
             <li>
-              <strong>Social Media:</strong>{" "}
+              <strong>Social Media:</strong> 
               <a
                 href="https://instagram.com/nature_exquisite"
-                className="text-[rgb(34,139,34)] font-semibold hover:underline"
+                className="text-green-800 font-semibold hover:underline ml-2"
               >
                 Instagram
               </a>{" "}
               |{" "}
               <a
                 href="https://facebook.com/natureexquisite"
-                className="text-[rgb(34,139,34)] font-semibold hover:underline"
+                className="text-green-800 font-semibold hover:underline"
               >
                 Facebook
               </a>{" "}
               |{" "}
               <a
                 href="https://linkedin.com/company/natureexquisite"
-                className="text-[rgb(34,139,34)] font-semibold hover:underline"
+                className="text-green-800 font-semibold hover:underline"
               >
                 LinkedIn
               </a>
@@ -59,10 +62,10 @@ const Contact = () => {
         </div>
 
         {/* Call-to-Action */}
-        <div className="mt-10">
+        <div className="mt-12">
           <a
             href="/contact-form"
-            className="bg-[rgb(34,139,34)] text-white px-6 py-3 rounded-md font-semibold hover:bg-opacity-90 transition"
+            className="inline-block bg-green-800 text-white text-lg px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-green-700 hover:shadow-xl transition"
           >
             Request a Free Sample
           </a>
@@ -72,4 +75,4 @@ const Contact = () => {
   );
 };
 
-export {Contact};
+export { Contact };

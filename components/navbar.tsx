@@ -109,6 +109,17 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      
+      {/* Wave */}
+      <div className="absolute bottom-0 w-full overflow-hidden leading-none">
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="block w-full h-[50px] fill-[rgb(100,200,100)]"
+        >
+          <path d="M0,120 C300,60 600,180 1200,60 L1200,120 L0,120 Z"></path>
+        </svg>
+      </div>
     </nav>
   );
 };
