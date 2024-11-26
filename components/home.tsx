@@ -54,7 +54,7 @@ const Home = () => {
 
       {/* About Section */}
 <section className="bg-gray-50 text-gray-800 py-20">
-  <div className="container justify-center mx-auto px-4 flex flex-col md:flex-row items-center">
+  <div className="container justify-center text-center mx-auto px-4 flex flex-col md:flex-row items-center">
     {/* Image */}
     <div className="flex-shrink-0 w-full md:w-1/2">
       <Image
