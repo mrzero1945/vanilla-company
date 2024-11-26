@@ -66,7 +66,7 @@ const Home = () => {
       />
     </div>
     {/* Text */}
-    <div className="md:w-1/2 md:pl-10 mt-10 md:mt-0 text-center md:text-center">
+    <div className="md:w-1/2 md:pl-10 mt-10 md:mt-0 text-center justify-center md:text-center">
       <div className="flex items-center mb-6">
         {/* About Icon */}
         <Image
