@@ -103,7 +103,7 @@ class AboutUs extends Component {
                 />
               </div>
               {/* Text */}
-              <div className="md:w-2/5 text-left">
+              <div className="md:w-2/5 text-left mx-4">
                 <p className="text-lg leading-relaxed">
                   We implement eco-friendly farming practices and work directly
                   with local farmers to promote sustainable agricultural
@@ -132,7 +132,7 @@ class AboutUs extends Component {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {/* Leadership Team */}
-              <div className="bg-gray-100 p-8 rounded-lg shadow-xl">
+              <div className="bg-gray-100 p-8 rounded-lg shadow-xl mx-4">
                 <Image 
                 src={LeadershipIcon.src}
                 alt="leadership"
@@ -151,7 +151,7 @@ class AboutUs extends Component {
                 </p>
               </div>
               {/* Field Team */}
-              <div className="bg-gray-100 p-8 rounded-lg shadow-xl">
+              <div className="bg-gray-100 p-8 rounded-lg shadow-xl mx-4">
                 <Image
                 src={FieldTeamIcon.src}
                 alt="Field Team"
