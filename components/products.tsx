@@ -3,6 +3,8 @@ import Image from "next/image";
 import VanillaPods from "../resources/vanilla-icon.png";
 import VanillaExtract from "../resources/vanilla-extract.png";
 import PremiumIcon from "../resources/premium-icon.png";
+import VanillaIcon from "../resources/vanilla-icon.png"
+import { EmailSubcribe } from "./subscribe-email";
 const Products = () => {
   return (
     <div>
@@ -28,6 +30,13 @@ const Products = () => {
       {/* Vanilla Beans Section */}
       <section className="bg-gray-50 text-gray-800 py-16">
         <div className="container mx-auto">
+          <Image
+          src={VanillaIcon.src}
+          alt="vanilla"
+          width={60}
+          height={60}
+          className="mx-auto"
+          />
           <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Vanilla Beans</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vanilla Planifolia */}
@@ -127,6 +136,7 @@ const Products = () => {
           </a>
         </div>
       </section>
+      <EmailSubcribe/>
     </div>
   );
 };

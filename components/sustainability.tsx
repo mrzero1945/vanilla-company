@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import VanilaImg from '../resources/vanila.jpg';
+import { EmailSubcribe } from './subscribe-email';
 
 const Sustainability = () => {
   return (
@@ -18,7 +19,7 @@ const Sustainability = () => {
       {/* Sustainability Section */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Sustainable Practices</h2>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
             {/* Image */}
             <div className="flex justify-center">
@@ -32,6 +33,7 @@ const Sustainability = () => {
             </div>
             {/* Text */}
             <div>
+              <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Sustainable Practices</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 We implement eco-friendly farming practices and collaborate directly with local farmers to promote sustainable agricultural techniques. 
                 Our focus is on reducing environmental impact, optimizing water usage, and enhancing soil health to ensure the sustainability of our crops for future generations.
@@ -78,6 +80,7 @@ const Sustainability = () => {
           </a>
         </div>
       </section>
+      <EmailSubcribe/>
     </div>
   );
 };

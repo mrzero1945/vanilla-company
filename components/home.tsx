@@ -7,6 +7,7 @@ import ParnershipIcon from '../resources/partnership-icon.png';
 import VanillaIcon from '../resources/vanilla-icon.png';
 import CoffeBeanIcon from '../resources/coffe-beans-icon.png';
 import CocoaBeanIcon from '../resources/cocoa-bean-icon.png';
+import { EmailSubcribe } from './subscribe-email';
 
 
 const Home = () => {
@@ -186,6 +187,7 @@ const Home = () => {
           </a>
         </div>
       </section>
+      <EmailSubcribe/>
     </div>
   );
 };
