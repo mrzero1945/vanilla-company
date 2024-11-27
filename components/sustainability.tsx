@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import VanilaImg from '../resources/vanila.jpg';
 import { EmailSubcribe } from './subscribe-email';
+import SustainabilityIcon from "../resources/sustainability-icon.png";
+import SusPracIcon from "../resources/sus-prac.png";
+import LocalComIcon from "../resources/local-com-icon.png";
+import RecycleIcon from "../resources/recycle-icon.png";
+import RecycleJourney from "../resources/recycle-journey.png";
+
 
 const Sustainability = () => {
   return (
@@ -8,6 +14,13 @@ const Sustainability = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-700 via-green-800 to-green-900 text-white pt-16 pb-12">
         <div className="container mx-auto text-center">
+          <Image
+          src={SustainabilityIcon.src}
+          alt='s'
+          width={60}
+          height={60}
+          className='mx-auto'
+          />
           <h1 className="text-5xl font-bold mb-6">Our Commitment to Sustainability</h1>
           <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
             At PT Nature’s Exquisite Nusantara, sustainability is at the heart of our business. 
@@ -33,6 +46,13 @@ const Sustainability = () => {
             </div>
             {/* Text */}
             <div>
+              <Image
+              src={SusPracIcon.src}
+              alt='s'
+              width={60}
+              height={60}
+              className='mx-auto'
+              />
               <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Sustainable Practices</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 We implement eco-friendly farming practices and collaborate directly with local farmers to promote sustainable agricultural techniques. 
@@ -46,6 +66,13 @@ const Sustainability = () => {
       {/* Supporting Local Communities */}
       <section className="bg-white py-16">
         <div className="container mx-auto text-center">
+          <Image
+          src={LocalComIcon.src}
+          alt='localcom'
+          width={60}
+          height={60}
+          className='mx-auto'
+          />
           <h2 className="text-4xl font-bold text-green-800 mb-8">Empowering Local Communities</h2>
           <p className="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
             We believe in empowering local farmers by providing resources, education, and fair trade opportunities. 
@@ -57,6 +84,13 @@ const Sustainability = () => {
       {/* Carbon Footprint Reduction */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto">
+          <Image
+          src={RecycleIcon.src}
+          alt='recycle'
+          width={60}
+          height={60}
+          className='mx-auto'
+          />
           <h2 className="text-4xl font-bold text-green-800 text-center mb-8">Reducing Our Carbon Footprint</h2>
           <p className="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto text-center">
             Through continuous innovation and process optimization, we actively reduce emissions in our production and distribution systems. 
@@ -68,6 +102,13 @@ const Sustainability = () => {
       {/* Call to Action */}
       <section className="bg-gradient-to-r from-green-800 via-green-700 to-green-600 text-white py-16">
         <div className="container mx-auto text-center">
+          <Image 
+          src={RecycleJourney.src}
+          alt='j'
+          width={60}
+          height={60}
+          className='mx-auto'
+          />
           <h2 className="text-4xl font-bold mb-6">Join Our Journey to Sustainability</h2>
           <p className="text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
             Partner with PT Nature’s Exquisite Nusantara to make a difference. Together, we can build a sustainable future for our planet and communities.
