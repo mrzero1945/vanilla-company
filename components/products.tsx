@@ -21,7 +21,7 @@ const Products = () => {
           <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Vanilla Beans</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vanilla Planifolia */}
-            <div className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-2xl transition">
+            <div className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-2xl transition mx-4">
               <h3 className="text-2xl font-semibold text-green-800 mb-4">Vanilla Planifolia (Grade A)</h3>
               <p className="text-lg text-gray-700 mb-4">
                 Renowned for its rich, creamy flavor and high vanillin content. Ideal for baking, ice cream, and beverages.
@@ -34,7 +34,7 @@ const Products = () => {
             </div>
 
             {/* Vanilla Tahitensis */}
-            <div className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-2xl transition">
+            <div className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-2xl transition mx-4">
               <h3 className="text-2xl font-semibold text-green-800 mb-4">Vanilla Tahitensis (Grade A)</h3>
               <p className="text-lg text-gray-700 mb-4">
                 Known for its floral, fruity aroma. Ideal for fine desserts, premium extracts, and perfumes.
