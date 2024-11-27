@@ -103,10 +103,10 @@ const Products = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-green-700 via-green-800 to-green-900 text-white py-16 mx-4">
+      <section className="bg-gradient-to-r from-green-700 via-green-800 to-green-900 text-white py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6">Order Now</h2>
-          <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-4">
             Ready to experience the finest Indonesian vanilla? Contact us to place your order or request a quote.
           </p>
           <a
