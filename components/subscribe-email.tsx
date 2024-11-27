@@ -19,7 +19,7 @@ const EmailSubcribe = () => {
           />
           <button
             type="submit"
-            className="bg-yellow-500 px-4 py-2 rounded-r-md font-semibold"
+            className="bg-[rgb(97,199,99)] px-4 py-2 rounded-r-md font-semibold"
           >
             Subscribe
           </button>
