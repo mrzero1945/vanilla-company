@@ -2,12 +2,20 @@ import VanillaPasteIcon from "../resources/vanilla-paste-icon.png";
 import Image from "next/image";
 import VanillaPods from "../resources/vanilla-icon.png";
 import VanillaExtract from "../resources/vanilla-extract.png";
+import PremiumIcon from "../resources/premium-icon.png";
 const Products = () => {
   return (
     <div>
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 text-white pt-16 pb-12">
         <div className="container mx-auto text-center">
+          <Image
+          src={PremiumIcon}
+          alt="premiun"
+          width={60}
+          height={60}
+          className="mx-auto"
+          />
           <h1 className="text-5xl font-bold mb-6">Our Premium Vanilla Products</h1>
           <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
             Discover the finest Indonesian vanilla beans, extracts, pastes, and more. Perfect for gourmet culinary creations and premium applications.
