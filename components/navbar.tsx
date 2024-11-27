@@ -62,7 +62,7 @@ const Navbar = () => {
             isMenuOpen ? "block" : "hidden"
           } md:block`}
         >
-          <li className="text-center md:text-left">
+          <li className="text-center md:text-left mt-5 md:mt-0">
             <Link
              href="/"
              className="block py-2 px-6 md:p-0 hover:text-[rgb(139, 69, 19)] transition-colors"
