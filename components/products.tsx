@@ -1,3 +1,7 @@
+import VanillaPasteIcon from "../resources/vanilla-paste-icon.png";
+import Image from "next/image";
+import VanillaPods from "../resources/vanilla-icon.png";
+import VanillaExtract from "../resources/vanilla-extract.png";
 const Products = () => {
   return (
     <div>
@@ -51,7 +55,14 @@ const Products = () => {
           <h2 className="text-4xl font-bold text-green-800 mb-12">Vanilla Derivatives</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Vanilla Pods */}
-            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition">
+            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
+            <Image
+              src={VanillaPods.src}
+              alt="vanilla paste"
+              width={120}
+              height={120}
+              className="mx-auto"
+              />
               <h3 className="text-2xl font-semibold text-green-800 mb-4">Vanilla Pods</h3>
               <p className="text-sm text-gray-600 mb-4">
                 Premium vanilla pods with rich aroma and sweet flavor. Available in sizes 15cm - 20cm.
@@ -59,7 +70,14 @@ const Products = () => {
             </div>
 
             {/* Vanilla Paste */}
-            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition">
+            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
+              <Image
+              src={VanillaPasteIcon.src}
+              alt="vanilla paste"
+              width={60}
+              height={60}
+              className="mx-auto"
+              />
               <h3 className="text-2xl font-semibold text-green-800 mb-4">Vanilla Paste</h3>
               <p className="text-sm text-gray-600 mb-4">
                 Concentrated vanilla paste mixed with seeds, available in varying intensities. Ideal for high-end desserts.
@@ -67,7 +85,14 @@ const Products = () => {
             </div>
 
             {/* Vanilla Extract */}
-            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition">
+            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
+              <Image
+              src={VanillaExtract.src}
+              alt="vanilla extract"
+              width={40}
+              height={40}
+              className="mx-auto"
+              />
               <h3 className="text-2xl font-semibold text-green-800 mb-4">Vanilla Extract</h3>
               <p className="text-sm text-gray-600 mb-4">
                 Pure, concentrated vanilla extract for everyday to gourmet applications. Available in Classic, Premium, and Ultra-Premium grades.
