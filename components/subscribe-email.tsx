@@ -24,7 +24,7 @@ const EmailSubcribe = () => {
             Subscribe
           </button>
         </form>
-        <div className="flex justify-center gap-10 md:text-xl text-md">
+        <div className="flex justify-center gap-10 mx-4 md:text-xl text-md">
           <div>
             <p className="font-bold text-3xl">100%</p>
             <p>Pure Quality</p>
