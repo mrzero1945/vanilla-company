@@ -4,14 +4,15 @@ const EmailSubcribe = () => {
     return (
       <div className="bg-[rgb(84,150,136)] text-[rgb(244,234,197)] py-10 text-center">
         <h2 className="text-2xl font-bold mb-4">Join the Vanilla Revolution Today!</h2>
-        <Image
+    
+        <form className="flex justify-center items-center mb-8">
+              <Image
         src={EmailIcon.src}
         alt="email"
         width={60}
         height={60}
-        className="mx-auto mb-5"
+        className="me-5"
         />
-        <form className="flex justify-center items-center mb-8">
           <input
             type="email"
             placeholder="Email"

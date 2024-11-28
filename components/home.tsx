@@ -53,48 +53,51 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
-<section className="bg-gray-50 text-gray-800 py-20">
-  <div className="container justify-center text-center mx-auto px-4 flex flex-col md:flex-row items-center">
-    {/* Image */}
-    <div className="flex-shrink-0 w-full md:w-1/2">
-      <Image
-        src={VanilaImg.src}
-        alt="Premium Vanilla"
-        width={500}
-        height={500}
-        className="rounded-lg shadow-lg mx-auto"
-      />
-    </div>
-    {/* Text */}
-    <div className="md:w-1/2 md:pl-10 mt-10 md:mt-0 text-center justify-center md:text-center">
-      <div className="flex items-center mb-6">
-        {/* About Icon */}
-        <Image
+   {/* About Section */}
+<section
+  className="relative bg-gray-50 text-gray-800 py-20"
+  style={{
+    backgroundImage: `url(${VanilaImg.src})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Background Overlay */}
+  <div className="absolute inset-0 bg-gray-900 bg-opacity-50 backdrop-blur-sm"></div>
+
+  {/* Content */}
+  <div className="relative container mx-auto px-4 flex flex-col items-center text-center z-10 text-white">
+    {/* Title Section */}
+    <div className="mb-8">
+    <Image
           src={AboutIcon.src}
           alt="About Icon"
           width={40}
           height={40}
-          className="mr-4"
+          className="mx-auto"
         />
-        <h2 className="text-4xl font-bold text-[rgb(84,150,136)]">
-          About Us
-        </h2>
+      <div className="flex justify-center items-center">
+      
+        <h2 className="text-4xl font-bold text-[rgb(84,150,136)]">About Us</h2>
       </div>
-      <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-        PT Nature’s Exquisite Nusantara is a premium exporter of 
-        Indonesian vanilla, supporting sustainable practices and empowering local farmers.
-        With a commitment to quality and traceability, we deliver authentic agricultural excellence to global businesses.
+    </div>
+
+    {/* Text Content */}
+    <div className="max-w-2xl">
+      <p className="text-lg mb-6 leading-relaxed">
+        PT Nature’s Exquisite Nusantara is a premium exporter of Indonesian vanilla, supporting sustainable practices and empowering local farmers. With a commitment to quality and traceability, we deliver authentic agricultural excellence to global businesses.
       </p>
       <a
         href="/about"
-        className="text-[rgb(84,150,136)] font-semibold text-lg hover:underline"
+        className="text-[rgb(244,234,197)] font-semibold text-lg hover:underline"
       >
         Learn More
       </a>
     </div>
   </div>
 </section>
+
+
 
 
       {/* Products Section */}
@@ -145,12 +148,12 @@ const Home = () => {
               </p>
             </div>
             <div className="p-6 rounded-lg shadow-lg bg-gray-50 hover:shadow-2xl transition">
-              <h3 className="text-2xl font-bold mb-4 text-[rgb(84,150,136)]">Cocoa Beans</h3>
+              <h3 className="text-2xl font-bold mb-3 text-[rgb(84,150,136)]">Cocoa Beans</h3>
               <Image
               src={CocoaBeanIcon.src}
               alt='cocoa'
-              width={60}
-              height={60}
+              width={50}
+              height={50}
               className='mx-auto'
               />
               <p className="text-gray-700">
