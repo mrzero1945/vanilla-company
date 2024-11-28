@@ -385,21 +385,22 @@ const Products = () => {
     <h2 className="text-4xl font-bold mb-6 text-green-800 text-center">
       Bulk Orders & Customization
     </h2>
-    <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto mx-4">
+    <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto text-center mx-4">
       We offer flexible bulk ordering options for manufacturers, wholesalers, and private label clients. Whether you need large quantities of vanilla pods, vanilla extract, or customized packaging, we are happy to accommodate your business needs.
     </p>
 
-    <div className="space-y-6">
-      <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
-        <strong>MOQ (Minimum Order Quantity):</strong> 10kg for bulk orders
-      </p>
-      <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
-        <strong>Lead Time:</strong> 7-14 business days (depending on order size)
-      </p>
-      <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
-        <strong>Custom Packaging:</strong> Available for private labeling
-      </p>
-    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <p className="text-lg sm:text-xl mb-4 max-w-2xl mx-auto text-center">
+    <strong>MOQ (Minimum Order Quantity):</strong> 10kg for bulk orders
+  </p>
+  <p className="text-lg sm:text-xl mb-4 max-w-2xl mx-auto text-center">
+    <strong>Lead Time:</strong> 7-14 business days (depending on order size)
+  </p>
+  <p className="text-lg sm:text-xl mb-4 max-w-2xl mx-auto text-center">
+    <strong>Custom Packaging:</strong> Available for private labeling
+  </p>
+</div>
+
   </div>
 </section>
 
