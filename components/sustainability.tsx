@@ -21,8 +21,8 @@ const Sustainability = () => {
           height={60}
           className='mx-auto'
           />
-          <h1 className="text-5xl font-bold mb-6">Our Commitment to Sustainability</h1>
-          <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+          <h1 className="text-5xl font-bold mb-6 mx-5">Our Commitment to Sustainability</h1>
+          <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed mx-5">
             At PT Nature’s Exquisite Nusantara, sustainability is at the heart of our business. 
             We strive to preserve the environment while supporting local communities and ensuring premium quality products.
           </p>

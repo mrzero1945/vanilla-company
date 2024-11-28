@@ -21,7 +21,7 @@ const Products = () => {
           />
           </div>
           <h1 className="text-5xl font-bold mb-6">Our Premium Vanilla Products</h1>
-          <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed mx-5">
             Discover the finest Indonesian vanilla beans, extracts, pastes, and more. Perfect for gourmet culinary creations and premium applications.
           </p>
         </div>
@@ -313,7 +313,7 @@ const Products = () => {
     Extracted directly from our finest vanilla pods, our premium vanilla seeds provide an intense, aromatic flavor that enhances the quality of gourmet products. These tiny black specks are packed with rich vanilla essence, making them perfect for adding both flavor and visual appeal to your culinary creations. The seeds' delicate yet potent flavor works beautifully in everything from high-end desserts and pastries to premium beverages, infusions, and gourmet chocolate. Vanilla seeds are the ideal choice for chefs looking to elevate their dishes with an authentic, high-quality vanilla flavor. Perfect for those seeking both flavor and aesthetic appeal, they add a luxurious touch to any recipe.
   </p>
   <h4 className="mt-5">Specifications:</h4>
-  <ul className="text-sm list-inside text-gray-600 my-4">
+  <ul className="text-sm  text-gray-600 my-4">
     <li>
       Product Type: Vanilla Seeds
     </li>
@@ -383,26 +383,54 @@ const Products = () => {
 <section className="bg-white text-gray-800 py-16">
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
-      Bulk Orders & Customization
+      Customizable Bulk Orders for Your Business Needs
     </h2>
     <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto text-center mx-4">
-      We offer flexible bulk ordering options for manufacturers, wholesalers, and private label clients. Whether you need large quantities of vanilla pods, vanilla extract, or customized packaging, we are happy to accommodate your business needs.
+      At PT. Nature’s Exquisite Nusantara, we specialize in providing flexible bulk ordering solutions for manufacturers, wholesalers, and private label clients. Whether you require large quantities of premium vanilla products or custom packaging tailored to your brand, we’re here to meet your needs.
     </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-  <p className="text-lg sm:text-xl mb-4 max-w-2xl mx-auto text-center">
-    <strong>MOQ (Minimum Order Quantity):</strong> 10kg for bulk orders
-  </p>
-  <p className="text-lg sm:text-xl mb-4 max-w-2xl mx-auto text-center">
-    <strong>Lead Time:</strong> 7-14 business days (depending on order size)
-  </p>
-  <p className="text-lg sm:text-xl mb-4 max-w-2xl mx-auto text-center">
-    <strong>Custom Packaging:</strong> Available for private labeling
-  </p>
-</div>
+    <h3 className="text-2xl font-semibold mb-4 text-center">Our Products</h3>
+    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl mx-auto">
+      <li>Premium Vanilla Pods: Gourmet-grade and extract-grade options.</li>
+      <li>Vanilla Extract & Powder: Versatile for various applications.</li>
+      <li>Custom Packaging: Personalized labels and designs to reflect your brand identity.</li>
+    </ul>
 
+    <h3 className="text-2xl font-semibold mb-4 text-center">Flexible Ordering Options</h3>
+    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl mx-auto">
+      <li>
+        <strong>Minimum Order Quantity (MOQ):</strong> Starting at just 10kg, making it accessible for small and large-scale buyers alike.
+      </li>
+      <li>
+        <strong>Fast Lead Time:</strong> Orders are processed within 7–14 business days, depending on size and customization.
+      </li>
+      <li>
+        <strong>Private Labeling:</strong> Elevate your brand with tailored packaging and labeling solutions.
+      </li>
+    </ul>
+
+    <h3 className="text-2xl font-semibold mb-4 text-center">Why Choose Us?</h3>
+    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl mx-auto">
+      <li>Exceptional quality sourced directly from Indonesia.</li>
+      <li>Reliable and timely order fulfillment.</li>
+      <li>Comprehensive customization to suit your business goals.</li>
+    </ul>
+
+    <div className="text-center">
+      <p className="text-lg sm:text-xl mb-4">Ready to take the next step?</p>
+      <a
+        href="#contact"
+        className="inline-block px-8 py-3 bg-[rgb(84,150,136)] text-white rounded-lg text-lg font-medium"
+      >
+        👉 Contact Us Today
+      </a>
+      <p className="text-sm mt-2 text-gray-600">
+        Request a personalized quote or a free sample to experience our premium quality!
+      </p>
+    </div>
   </div>
 </section>
+
 
 
       {/* Call to Action */}

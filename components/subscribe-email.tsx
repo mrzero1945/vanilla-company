@@ -11,7 +11,7 @@ const EmailSubcribe = () => {
         alt="email"
         width={60}
         height={60}
-        className="me-5"
+        className="mx-5"
         />
           <input
             type="email"
