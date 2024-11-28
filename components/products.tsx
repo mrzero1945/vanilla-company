@@ -40,108 +40,119 @@ const Products = () => {
           <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Vanilla Beans</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vanilla Planifolia */}
-            <div className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-2xl transition mx-4">
-              <h3 className="text-2xl font-semibold text-green-800 mb-4">Vanilla Planifolia (Grade A)</h3>
-              <p className="text-lg text-gray-700 mb-4">
-                Renowned for most well-known variety of vanilla, prized for it's rich, creamy flavor and high vanillin content. Our Grade A vanilla beans are harvested at peak ripeness and undergo a careful curing process to enhance their aromatic qualities.
-              </p>
-              <ul  className="text-sm list-disc list-inside text-gray-600 mb-4">
-                <li>
-                  Uses: Perfect for use in gourmet culinary applications, including baking, ice cream making, and flavoring beverages. It is also widely used in the fragrance and cosmetic industries due to it's deep, warm aroma.
-                </li>
-                <li>
-                  Packaging: Available in various quantities, from small batches to bulk shipments, ensuring flexibility for bussinesses of all sizes.
-                </li>
-              </ul>
-              <div className="overflow-x-auto">
-                <table className="min-w-full border-collapse border border-gray-300 bg-white">
-                  <thead>
-                    <tr>
-                      <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Product Code</th>
-                      <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Length</th>
-                      <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Moisture Content</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">VPL-20+</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">20cm+</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">25-30%</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">VPL-19</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">19cm</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">25-30%</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">VPL-18</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">18cm</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">25-30%</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">VPL-17</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">17cm</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">25-30%</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">VPL-16</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">16cm</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">25-30%</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Vanilla Tahitensis */}
-            <div className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-2xl transition mx-4">
-              <h3 className="text-2xl font-semibold text-green-800 mb-4">Vanilla Tahitensis (Grade A)</h3>
-              <p className="text-lg text-gray-700 mb-4">
-                Renowned for most unique flavor profile, known for it's floral, fruity notes and lighter, more aromatic essence. This variety is considered one of the most fragrant types of vanilla, making it ideal for fine culinary and parfumery uses.
-                <ul className="text-sm list-disc list-inside text-gray-600 mb-4">
-                  <li>
-                    Uses: Often used in high-end desserts, parfumes, and personal care products like lotions and creams. It's also favored for creating premium vanilla extracts and pastes.
-                  </li>
-                  <li>
-                    Packaging: Offered in small to large quantities, perfect for upscale restaurants, artisan confectioners, and fragrance manufacturers.
-                  </li>
-                </ul>
-                <div className="overflow-x-auto">
-                  <table className="min-w-full border-collapse border border-gray-300 border-white">
-                    <thead>
-                      <tr>
-                        <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Product Code</th>
-                        <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Length</th>
-                        <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Moisture Content</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">VTH-17</td>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">17cm</td>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">25-35%</td>
-                      </tr>
-                      <tr>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">VTH-16</td>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">16cm</td>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">25-30%</td>
-                      </tr>
-                      <tr>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">VTH-15</td>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">15cm</td>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">25-30%</td>
-                      </tr>
-                      <tr>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">VTH-14</td>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">14cm</td>
-                        <td className="border border-gray-300 px-4 py-2 text-sm">25-30%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </p>
+<div className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-2xl transition mx-4 flex flex-col">
+  {/* Judul */}
+  <h3 className="text-2xl font-semibold text-green-800 mb-4">
+    Vanilla Planifolia (Grade A)
+  </h3>
   
-            </div>
+  {/* Deskripsi */}
+  <p className="text-lg text-gray-700 mb-4">
+    Renowned as the most well-known variety of vanilla, prized for its rich, creamy flavor and high vanillin content. Our Grade A vanilla beans are harvested at peak ripeness and undergo a careful curing process to enhance their aromatic qualities.
+  </p>
+  
+  {/* Daftar Kegunaan dan Kemasan */}
+  <ul className="text-sm text-center text-gray-600 mb-4 flex flex-col items-center space-y-2">
+    <li className="text-left">
+      <strong>Uses:</strong> Perfect for use in gourmet culinary applications, including baking, ice cream making, and flavoring beverages. It is also widely used in the fragrance and cosmetic industries due to its deep, warm aroma.
+    </li>
+    <li className="text-left">
+      <strong>Packaging:</strong> Available in various quantities, from small batches to bulk shipments, ensuring flexibility for businesses of all sizes.
+    </li>
+  </ul>
+  
+  {/* Tabel Spesifikasi */}
+  <div className="overflow-x-auto">
+    <table className="min-w-full border-collapse border border-gray-300 bg-white">
+      <thead>
+        <tr>
+          <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
+            Grade
+          </th>
+          <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
+            Size
+          </th>
+          <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
+            KA
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {[
+          { code: "A", length: "16cm", moisture: "25-30%" },
+          { code: "A", length: "17cm", moisture: "25-30%" },
+          { code: "A", length: "18cm", moisture: "25-30%" },
+          { code: "A", length: "19cm", moisture: "25-30%" },
+          { code: "A", length: "20cm", moisture: "25-30%" },
+        ].map((row, index) => (
+          <tr key={index}>
+            <td className="border border-gray-300 px-4 py-2 text-sm">{row.code}</td>
+            <td className="border border-gray-300 px-4 py-2 text-sm">{row.length}</td>
+            <td className="border border-gray-300 px-4 py-2 text-sm">{row.moisture}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+{/* Vanilla Tahitensis */}
+<div className="border rounded-lg shadow-lg p-8 bg-white hover:shadow-2xl transition mx-4 flex flex-col">
+  {/* Judul */}
+  <h3 className="text-2xl font-semibold text-green-800 mb-4">
+    Vanilla Tahitensis (Grade A)
+  </h3>
+
+  {/* Deskripsi */}
+  <p className="text-lg text-gray-700 mb-4">
+    Renowned for its unique flavor profile, known for its floral, fruity notes and lighter, more aromatic essence. This variety is considered one of the most fragrant types of vanilla, making it ideal for fine culinary and perfumery uses.
+  </p>
+
+  {/* Daftar Kegunaan dan Kemasan */}
+  <ul className="text-sm  text-center text-gray-600 mb-4 flex flex-col items-center space-y-2">
+    <li className="text-left">
+      <strong>Uses:</strong> Often used in high-end desserts, perfumes, and personal care products like lotions and creams. It's also favored for creating premium vanilla extracts and pastes.
+    </li>
+    <li className="text-left">
+      <strong>Packaging:</strong> Offered in small to large quantities, perfect for upscale restaurants, artisan confectioners, and fragrance manufacturers.
+    </li>
+  </ul>
+
+  {/* Tabel Spesifikasi */}
+  <div className="overflow-x-auto">
+    <table className="min-w-full border-collapse border border-gray-300 bg-white mt-12">
+      <thead>
+        <tr>
+          <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
+            Product Code
+          </th>
+          <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
+            Length
+          </th>
+          <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
+            Moisture Content
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {[
+          { code: "VTH-17", length: "17cm", moisture: "25-35%" },
+          { code: "VTH-16", length: "16cm", moisture: "25-30%" },
+          { code: "VTH-15", length: "15cm", moisture: "25-30%" },
+          { code: "VTH-14", length: "14cm", moisture: "25-30%" },
+        ].map((row, index) => (
+          <tr key={index}>
+            <td className="border border-gray-300 px-4 py-2 text-sm">{row.code}</td>
+            <td className="border border-gray-300 px-4 py-2 text-sm">{row.length}</td>
+            <td className="border border-gray-300 px-4 py-2 text-sm">{row.moisture}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
           </div>
         </div>
       </section>

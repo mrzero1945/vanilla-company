@@ -2,13 +2,14 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="relative pt-8 pb-2 bg-[rgb(34,139,34)]">
+    <footer className="relative pt-8 pb-2 bg-[rgb(34,139,34)]" role="contentinfo" aria-label="Footer">
       {/* Wave Background */}
       <div className="absolute top-0 w-full overflow-hidden leading-none">
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
           className="block w-full h-[50px] fill-[rgb(100,200,100)]"
+          aria-hidden="true"
         >
           <path d="M0,12 C300,30 600,30 1200,120 L1200, 0 L0,0 Z"></path>
         </svg>
@@ -20,40 +21,42 @@ const Footer = () => {
         <p className="text-sm italic mb-4">"Where Nature Whispers Flavor"</p>
 
         {/* Navigasi */}
-        <ul className="flex justify-center space-x-6 text-sm mb-4">
-          <li>
-            <a
-              href="/about"
-              className="hover:text-gray-400 transition-colors"
-            >
-              About Us
-            </a>
-          </li>
-          <li>
-            <a
-              href="/products"
-              className="hover:text-gray-400 transition-colors"
-            >
-              Products
-            </a>
-          </li>
-          <li>
-            <a
-              href="/sustainability"
-              className="hover:text-gray-400 transition-colors"
-            >
-              Sustainability
-            </a>
-          </li>
-          <li>
-            <a
-              href="/contact"
-              className="hover:text-gray-400 transition-colors"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+        <nav aria-label="Footer navigation">
+          <ul className="flex justify-center space-x-6 text-sm mb-4">
+            <li>
+              <a
+                href="/about"
+                className="hover:text-gray-400 transition-colors"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="/products"
+                className="hover:text-gray-400 transition-colors"
+              >
+                Products
+              </a>
+            </li>
+            <li>
+              <a
+                href="/sustainability"
+                className="hover:text-gray-400 transition-colors"
+              >
+                Sustainability
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact"
+                className="hover:text-gray-400 transition-colors"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
 
         {/* Hak Cipta */}
         <p className="text-sm mb-4">
@@ -62,7 +65,12 @@ const Footer = () => {
 
         {/* Ikon Media Sosial */}
         <div className="flex justify-center space-x-4">
-          <a href="https://t.me/Gregory2005_n">
+          <a
+            href="https://t.me/Gregory2005_n"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Telegram"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -77,7 +85,12 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="https://github.com/mrzero1945">
+          <a
+            href="https://github.com/mrzero1945"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
