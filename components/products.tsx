@@ -163,82 +163,6 @@ const Products = () => {
           <h2 className="text-4xl font-bold text-green-800 mb-12 text-center">Vanilla Derivatives</h2>
           <p className="mb-5">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Vanilla Pods */}
-            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
-            <Image
-              src={VanillaPods.src}
-              alt="vanilla paste"
-              width={120}
-              height={120}
-              className="mx-auto"
-              />
-              <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Pods</h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Our premium vanilla pods are sourced from the pristine plantations of Bali and Papua. Known for their rich aroma and deep, sweet flavor, our vanilla pods are perfect for infusions, extracts, and culinary creations.
-              </p>
-              <ul className="text-sm   text-gray-600 mb-4">
-                <li>
-                  Flavor Profile: Intense, sweet, with subtle floral notes.
-                </li>
-                <li>
-                  Use: Ideal for baking, making vanilla extract, or adding a natual vanilla flavor to beverages and desserts.
-                </li>
-                <li>
-                  Packaging Options: Individual packs, bulk orders (1kg, 5kg, 10kg), or custom packaging for private labeling.
-                </li>
-                <li>
-                  Moisture Content: 25% - 30%
-                </li>
-                <li>
-                  Size: 15cm to 20cm
-                </li>
-              </ul>
-              <div className="overflow-x-auto">
-                <table className="min-w-full border-collapse border border-gray-300 bg-white">
-                  <thead>
-                    <tr>
-                      <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Intensity Level</th>
-                      <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">Single Pod</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">Subtle flavor</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">Double Pod</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">Robust flavor</td>
-                    </tr>
-                    <tr>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">Triple Pod</td>
-                      <td className="border border-gray-300 px-4 py-2 text-sm">Intense flavor</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <h4 className="mt-5">Specifications:</h4>
-              <ul className="text-sm   text-gray-600 my-4">
-                <li>
-                  Product Type: Vanilla Pods
-                </li>
-                <li>
-                  Grade: Premium Grade A
-                </li>
-                <li>
-                  Color: Dark brown with visible oil droplets
-                </li>
-                <li>
-                  Origin: Bali, Papua, Indonesia
-                </li>
-                <li>
-                  Weight per Pod: 3-5 grams
-                </li>
-                <li>
-                  Storage: Keep in a cool, dry place for optimal freshness.
-                </li>
-              </ul>
-            </div>
 
             
 
@@ -339,6 +263,28 @@ const Products = () => {
                   Triple Pod Intensity: For an intense vanilla flavor
                 </li>
               </ul>
+              <table className="min-w-full border-collapse border border-gray-300 bg-white">
+                  <thead>
+                    <tr>
+                      <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Intensity Level</th>
+                      <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 text-sm">Single Pod</td>
+                      <td className="border border-gray-300 px-4 py-2 text-sm">Subtle flavor</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 text-sm">Double Pod</td>
+                      <td className="border border-gray-300 px-4 py-2 text-sm">Robust flavor</td>
+                    </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2 text-sm">Triple Pod</td>
+                      <td className="border border-gray-300 px-4 py-2 text-sm">Intense flavor</td>
+                    </tr>
+                  </tbody>
+                </table>
               <h4 className="mt-5">
                 Specifications:
               </h4>
@@ -359,31 +305,32 @@ const Products = () => {
               </ul>
             </div>
 
+{/* Vanilla Seed */}
 
-            {/*Vanilla Seed*/}
-            
-            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition-mx-4">
-            <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Seed</h3>
-            <p className="text-sm text-gray-600 mb-4">Extracted directly from our premium vanilla pods, our vanilla seeds offer a rich, intense flavor that is perfect for high-end gourmet products. These seeds add both flavor and visual appeal to your creations.</p>
-            <h4 className="mt-5">Specifications:</h4>
-            <ul className="text-sm  list inside text-gray-600 my-4">
-              <li>
-                Product Type: Vanilla Seeds
-              </li>
-              <li>
-                Origin: Bali, Papua, Indonesia
-              </li>
-              <li>
-                Packaging: Glass jars(10g, 50g, 100g, bulk available)
-              </li>
-              <li>
-                Shelf Life: 2 years
-              </li>
-              <li>
-                Storage: Store in a cool, dry place.
-              </li>
-            </ul>
-            </div>
+<div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
+  <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Seeds</h3>
+  <p className="text-sm text-gray-600 mb-4">
+    Extracted directly from our finest vanilla pods, our premium vanilla seeds provide an intense, aromatic flavor that enhances the quality of gourmet products. These tiny black specks are packed with rich vanilla essence, making them perfect for adding both flavor and visual appeal to your culinary creations. The seeds' delicate yet potent flavor works beautifully in everything from high-end desserts and pastries to premium beverages, infusions, and gourmet chocolate. Vanilla seeds are the ideal choice for chefs looking to elevate their dishes with an authentic, high-quality vanilla flavor. Perfect for those seeking both flavor and aesthetic appeal, they add a luxurious touch to any recipe.
+  </p>
+  <h4 className="mt-5">Specifications:</h4>
+  <ul className="text-sm list-inside text-gray-600 my-4">
+    <li>
+      Product Type: Vanilla Seeds
+    </li>
+    <li>
+      Origin: Bali, Papua, Indonesia
+    </li>
+    <li>
+      Packaging: Glass jars (10g, 50g, 100g, bulk available)
+    </li>
+    <li>
+      Shelf Life: 2 years
+    </li>
+    <li>
+      Storage: Store in a cool, dry place to maintain optimal freshness and flavor.
+    </li>
+  </ul>
+</div>
 
             {/* Vanilla Powder */}
 <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
