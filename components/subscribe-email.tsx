@@ -2,7 +2,7 @@ import Image from "next/image";
 import EmailIcon from "../resources/email-icon.png"
 const EmailSubcribe = () => {
     return (
-      <div className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 text-white py-10 text-center">
+      <div className="bg-[rgb(84,150,136)] text-[rgb(244,234,197)] py-10 text-center">
         <h2 className="text-2xl font-bold mb-4">Join the Vanilla Revolution Today!</h2>
         <Image
         src={EmailIcon.src}
@@ -19,7 +19,7 @@ const EmailSubcribe = () => {
           />
           <button
             type="submit"
-            className="bg-[rgb(97,199,99)] px-4 py-2 rounded-r-md font-semibold"
+            className="bg-[rgb(244,234,197)] text-[rgb(84,150,136)] px-4 py-2 rounded-r-md font-semibold"
           >
             Subscribe
           </button>

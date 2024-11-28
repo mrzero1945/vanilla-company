@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[rgb(34,139,34)] text-[rgb(245,245,220)] relative z-10">
+    <nav className="bg-[rgb(84,150,136)] text-[rgb(245,245,220)] relative z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <div className="text-2xl font-bold">
@@ -58,7 +58,7 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul
-          className={`flex-col md:flex md:flex-row md:space-x-6 text-lg absolute md:static bg-[rgb(34,139,34)] w-full left-0 top-[4.5rem] md:justify-end transform transition-transform duration-300 ${
+          className={`flex-col md:flex md:flex-row md:space-x-6 text-lg absolute md:static bg-[rgb(84,150,136)] w-full left-0 top-[4.5rem] md:justify-end transform transition-transform duration-300 ${
             isMenuOpen ? "block" : "hidden"
           } md:block`}
         >
@@ -115,7 +115,7 @@ const Navbar = () => {
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="block w-full h-[50px] fill-[rgb(100,200,100)]"
+          className="block w-full h-[50px] fill-[rgb(244,234,197)]"
         >
           <path d="M0,120 C300,60 600,180 1200,60 L1200,120 L0,120 Z"></path>
         </svg>

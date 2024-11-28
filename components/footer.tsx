@@ -2,13 +2,13 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="relative pt-8 pb-2 bg-[rgb(34,139,34)]" role="contentinfo" aria-label="Footer">
+    <footer className="relative pt-8 pb-2 bg-[rgb(84,150,136)]" role="contentinfo" aria-label="Footer">
       {/* Wave Background */}
       <div className="absolute top-0 w-full overflow-hidden leading-none">
         <svg
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="block w-full h-[50px] fill-[rgb(100,200,100)]"
+          className="block w-full h-[50px] fill-[rgb(244,234,197)]"
           aria-hidden="true"
         >
           <path d="M0,12 C300,30 600,30 1200,120 L1200, 0 L0,0 Z"></path>

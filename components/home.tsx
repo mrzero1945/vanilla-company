@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 text-white py-20">
+      <section className="bg-[rgb(84,150,136)] text-white py-20">
         <div className="container mx-auto px-4 text-center">
           {/* Premium Icon */}
           <div className="mb-2">
@@ -46,7 +46,7 @@ const Home = () => {
           </div>
           <a
             href="/products"
-            className="bg-white text-green-800 px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
+            className="bg-white text-[rgb(84,150,136)] px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
           >
             Discover Our Products
           </a>
@@ -77,7 +77,7 @@ const Home = () => {
           height={40}
           className="mr-4"
         />
-        <h2 className="text-4xl font-bold text-green-800">
+        <h2 className="text-4xl font-bold text-[rgb(84,150,136)]">
           About Us
         </h2>
       </div>
@@ -88,7 +88,7 @@ const Home = () => {
       </p>
       <a
         href="/about"
-        className="text-green-800 font-semibold text-lg hover:underline"
+        className="text-[rgb(84,150,136)] font-semibold text-lg hover:underline"
       >
         Learn More
       </a>
@@ -109,7 +109,7 @@ const Home = () => {
             />
       
           
-          <h2 className="text-4xl font-bold mb-8 text-green-800">
+          <h2 className="text-4xl font-bold mb-8 text-[rgb(84,150,136)]">
             Our Premium Products
           </h2>
           
@@ -119,7 +119,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Product Cards */}
             <div className="p-6 rounded-lg shadow-lg bg-gray-50 hover:shadow-2xl transition">
-              <h3 className="text-2xl font-bold mb-4 text-green-800">Vanilla Beans</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[rgb(84,150,136)]">Vanilla Beans</h3>
               <Image
               src={VanillaIcon.src}
               alt='vanilla'
@@ -132,7 +132,7 @@ const Home = () => {
               </p>
             </div>
             <div className="p-6 rounded-lg shadow-lg bg-gray-50 hover:shadow-2xl transition">
-              <h3 className="text-2xl font-bold mb-4 text-green-800">Coffee Beans</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[rgb(84,150,136)]">Coffee Beans</h3>
               <Image 
               src={CoffeBeanIcon.src}
               alt='cofee'
@@ -145,7 +145,7 @@ const Home = () => {
               </p>
             </div>
             <div className="p-6 rounded-lg shadow-lg bg-gray-50 hover:shadow-2xl transition">
-              <h3 className="text-2xl font-bold mb-4 text-green-800">Cocoa Beans</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[rgb(84,150,136)]">Cocoa Beans</h3>
               <Image
               src={CocoaBeanIcon.src}
               alt='cocoa'
@@ -172,7 +172,7 @@ const Home = () => {
               className='mx-auto'
             />
       
-          <h2 className="text-4xl font-bold mb-8 text-green-800">
+          <h2 className="text-4xl font-bold mb-8 text-[rgb(84,150,136)]">
             Partner with Us
           </h2>
           <p className="text-lg sm:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
@@ -181,7 +181,7 @@ const Home = () => {
           </p>
           <a
             href="/contact"
-            className="bg-green-800 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-green-700 transition"
+            className="bg-[rgb(84,150,136)] text-[rgb(244,234,197)] px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-green-700 transition"
           >
             Contact Us Today
           </a>
