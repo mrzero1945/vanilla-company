@@ -125,22 +125,22 @@ const Products = () => {
       <thead>
         <tr>
           <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
-            Product Code
+            Grade
           </th>
           <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
-            Length
+            Size
           </th>
           <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
-            Moisture Content
+            KA
           </th>
         </tr>
       </thead>
       <tbody>
         {[
-          { code: "VTH-17", length: "17cm", moisture: "25-35%" },
-          { code: "VTH-16", length: "16cm", moisture: "25-30%" },
-          { code: "VTH-15", length: "15cm", moisture: "25-30%" },
-          { code: "VTH-14", length: "14cm", moisture: "25-30%" },
+          { code: "A", length: "14cm", moisture: "25-30%" },
+          { code: "A", length: "15cm", moisture: "25-30%" },
+          { code: "A", length: "16cm", moisture: "25-30%" },
+          { code: "A", length: "17cm", moisture: "25-35%" },
         ].map((row, index) => (
           <tr key={index}>
             <td className="border border-gray-300 px-4 py-2 text-sm">{row.code}</td>
@@ -162,7 +162,7 @@ const Products = () => {
         <div className="container mx-auto text-left">
           <h2 className="text-4xl font-bold text-green-800 mb-12 text-center">Vanilla Derivatives</h2>
           <p className="mb-5">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vanilla Pods */}
             <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
             <Image
@@ -240,49 +240,7 @@ const Products = () => {
               </ul>
             </div>
 
-            {/* Vanilla Paste */}
-            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
-              <Image
-              src={VanillaPasteIcon.src}
-              alt="vanilla paste"
-              width={60}
-              height={60}
-              className="mx-auto"
-              />
-              <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Paste</h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Vanilla paste is a concentrated form of vanilla extract mixed with vanilla seeds. This product adds both flavor and visual appeal, perfect for high-end desserts and beverages. Available in varying intensities to suit different needs.
-              </p>
-              <ul className="text-sm list-disc list-inside text-gray-600 my-4">
-                <li>
-                  Single Pod Intensity: For subtle vanilla flavor 
-                </li>
-                <li>
-                  Double Pod Intensity: For a more robust flavor
-                </li>
-                <li>
-                  Triple Pod Intensity: For an intense vanilla flavor
-                </li>
-              </ul>
-              <h4 className="mt-5">
-                Specifications:
-              </h4>
-              <ul className="text-sm list-disc list-inside text-gray-600 my-4">
-                <li>
-                  Product Type: Vanilla Paste
-                </li>
-                <li>
-                  Ingredients: Pure vanilla extract, vanilla seeds
-                </li>
-                <li>
-                  Origin: Bali, Papua, Indonesia
-                </li>
-                <li>
-                  Packaging: Glass jar(50g, 100g, or custom packaging)
-                </li>
-                <li>Shelf Life: 1-2 years</li>
-              </ul>
-            </div>
+            
 
             {/* Vanilla Extract */}
             <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
@@ -356,7 +314,54 @@ const Products = () => {
                   </li>
                 </ul>
             </div>
+
+            {/* Vanilla Paste */}
+            <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
+              <Image
+              src={VanillaPasteIcon.src}
+              alt="vanilla paste"
+              width={60}
+              height={60}
+              className="mx-auto"
+              />
+              <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Paste</h3>
+              <p className="text-sm text-gray-600 mb-4">
+                Vanilla paste is a concentrated form of vanilla extract mixed with vanilla seeds. This product adds both flavor and visual appeal, perfect for high-end desserts and beverages. Available in varying intensities to suit different needs.
+              </p>
+              <ul className="text-sm list-disc list-inside text-gray-600 my-4">
+                <li>
+                  Single Pod Intensity: For subtle vanilla flavor 
+                </li>
+                <li>
+                  Double Pod Intensity: For a more robust flavor
+                </li>
+                <li>
+                  Triple Pod Intensity: For an intense vanilla flavor
+                </li>
+              </ul>
+              <h4 className="mt-5">
+                Specifications:
+              </h4>
+              <ul className="text-sm list-disc list-inside text-gray-600 my-4">
+                <li>
+                  Product Type: Vanilla Paste
+                </li>
+                <li>
+                  Ingredients: Pure vanilla extract, vanilla seeds
+                </li>
+                <li>
+                  Origin: Bali, Papua, Indonesia
+                </li>
+                <li>
+                  Packaging: Glass jar(50g, 100g, or custom packaging)
+                </li>
+                <li>Shelf Life: 1-2 years</li>
+              </ul>
+            </div>
+
+
             {/*Vanilla Seeds*/}
+            
             <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition-mx-4">
             <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Seeds</h3>
             <p className="text-sm text-gray-600 mb-4">Extracted directly from our premium vanilla pods, our vanilla seeds offer a rich, intense flavor that is perfect for high-end gourmet products. These seeds add both flavor and visual appeal to your creations.</p>
@@ -383,27 +388,30 @@ const Products = () => {
 
         </div>
       </section>
+{/* Bulk Orders & Customization */}
+<section className="bg-white text-gray-800 py-16">
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold mb-6 text-green-800 text-center">
+      Bulk Orders & Customization
+    </h2>
+    <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto mx-4">
+      We offer flexible bulk ordering options for manufacturers, wholesalers, and private label clients. Whether you need large quantities of vanilla pods, vanilla extract, or customized packaging, we are happy to accommodate your business needs.
+    </p>
 
-      {/*Bulk Orders & Customization */}
-      <section className="bg-white text-gray-800 py-16">
-        <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-6 text-green-800 text-center">Bulk Orders & Customization</h2>
-          <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto mx-4">
-            We offer flexible bulk ordering options for manufacturers, wholesalers, and private label clients. Whether you need large quantities of vanilla pods, vanilla extract, or customized packaging, we are happy to accommodate your business needs.
-          </p>
-          <ul className="text-sm list-disc list-inside text-gray-600 my-4">
-            <li className="flex justify-center">
-              MOQ (Minimum Order Quantity): 10kg for bulk orders
-            </li>
-            <li className="flex justify-center">
-              Lead Time: 7-14 business days (depending on order size)
-            </li>
-            <li className="flex justify-center">
-              Custom Packaging: Available for private labeling
-            </li>
-          </ul>
-        </div>
-      </section>
+    <div className="space-y-6">
+      <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
+        <strong>MOQ (Minimum Order Quantity):</strong> 10kg for bulk orders
+      </p>
+      <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
+        <strong>Lead Time:</strong> 7-14 business days (depending on order size)
+      </p>
+      <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
+        <strong>Custom Packaging:</strong> Available for private labeling
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Call to Action */}
       <section className="bg-white py-16">
