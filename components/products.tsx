@@ -176,7 +176,7 @@ const Products = () => {
               <p className="text-sm text-gray-600 mb-4">
                 Our premium vanilla pods are sourced from the pristine plantations of Bali and Papua. Known for their rich aroma and deep, sweet flavor, our vanilla pods are perfect for infusions, extracts, and culinary creations.
               </p>
-              <ul className="text-sm list-disc list-inside text-gray-600 mb-4">
+              <ul className="text-sm   text-gray-600 mb-4">
                 <li>
                   Flavor Profile: Intense, sweet, with subtle floral notes.
                 </li>
@@ -218,7 +218,7 @@ const Products = () => {
                 </table>
               </div>
               <h4 className="mt-5">Specifications:</h4>
-              <ul className="text-sm list-disc list-inside text-gray-600 my-4">
+              <ul className="text-sm   text-gray-600 my-4">
                 <li>
                   Product Type: Vanilla Pods
                 </li>
@@ -255,7 +255,7 @@ const Products = () => {
               <p className="text-sm text-gray-600 mb-4">
                 Our vanilla extract is a pure and concentrated form of vanilla, ideal for enhancing the flavor of your favorite baked goods, beverages, and gourmet dishes. Available in different grades to match the needs of professionals.
               </p>
-              <ul className="text-sm list-disc list-inside text-gray-600 my-4">
+              <ul className="text-sm   text-gray-600 my-4">
                 <li>
                   Classic (1 pod): A basic vanilla extract for everyday use.
                 </li>
@@ -293,7 +293,7 @@ const Products = () => {
               <h4 className="mt-5">
                 Specifications:
               </h4>
-                <ul className="text-sm list-disc list-inside text-gray-600 my-4">
+                <ul className="text-sm   text-gray-600 my-4">
                   <li>
                     Product Type: Vanilla Extract
                   </li>
@@ -328,7 +328,7 @@ const Products = () => {
               <p className="text-sm text-gray-600 mb-4">
                 Vanilla paste is a concentrated form of vanilla extract mixed with vanilla seeds. This product adds both flavor and visual appeal, perfect for high-end desserts and beverages. Available in varying intensities to suit different needs.
               </p>
-              <ul className="text-sm list-disc list-inside text-gray-600 my-4">
+              <ul className="text-sm   text-gray-600 my-4">
                 <li>
                   Single Pod Intensity: For subtle vanilla flavor 
                 </li>
@@ -342,7 +342,7 @@ const Products = () => {
               <h4 className="mt-5">
                 Specifications:
               </h4>
-              <ul className="text-sm list-disc list-inside text-gray-600 my-4">
+              <ul className="text-sm   text-gray-600 my-4">
                 <li>
                   Product Type: Vanilla Paste
                 </li>
@@ -360,13 +360,13 @@ const Products = () => {
             </div>
 
 
-            {/*Vanilla Seeds*/}
+            {/*Vanilla Seed*/}
             
             <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition-mx-4">
-            <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Seeds</h3>
+            <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Seed</h3>
             <p className="text-sm text-gray-600 mb-4">Extracted directly from our premium vanilla pods, our vanilla seeds offer a rich, intense flavor that is perfect for high-end gourmet products. These seeds add both flavor and visual appeal to your creations.</p>
             <h4 className="mt-5">Specifications:</h4>
-            <ul className="text-sm list-disc list inside text-gray-600 my-4">
+            <ul className="text-sm  list inside text-gray-600 my-4">
               <li>
                 Product Type: Vanilla Seeds
               </li>
@@ -384,9 +384,53 @@ const Products = () => {
               </li>
             </ul>
             </div>
+
+            {/* Vanilla Powder */}
+<div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
+  <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Powder</h3>
+  <p className="text-sm text-gray-600 mb-4">
+    Our premium vanilla powder is made from ground, dried vanilla beans. It provides the purest vanilla flavor with a fine texture, ideal for adding a touch of elegance to a variety of desserts, beverages, and gourmet dishes.
+  </p>
+  <ul className="text-sm text-gray-600 my-4">
+    <li>
+      Flavor Profile: Smooth, sweet, with subtle floral notes.
+    </li>
+    <li>
+      Use: Perfect for baking, adding to smoothies, or enhancing the flavor of hot beverages like coffee and lattes.
+    </li>
+    <li>
+      Packaging Options: Available in jars (50g, 100g, or custom packaging for private labeling).
+    </li>
+    <li>
+      Shelf Life: 1-2 years.
+    </li>
+  </ul>
+  <h4 className="mt-5">Specifications:</h4>
+  <ul className="text-sm text-gray-600 my-4">
+    <li>
+      Product Type: Vanilla Powder
+    </li>
+    <li>
+      Ingredients: Ground vanilla beans.
+    </li>
+    <li>
+      Origin: Bali, Papua, Indonesia.
+    </li>
+    <li>
+      Packaging: Glass jar (50g, 100g, custom sizes available).
+    </li>
+    <li>
+      Storage: Keep in a cool, dry place for optimal freshness.
+    </li>
+  </ul>
+</div>
+
           </div>
 
+          
+
         </div>
+
       </section>
 {/* Bulk Orders & Customization */}
 <section className="bg-white text-gray-800 py-16">
