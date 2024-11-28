@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import Image from "next/image";
 import VanilaImg from "../resources/vanila.jpg"; // Gantilah dengan path gambar Anda
-import AboutIcon from "../resources/about-icon.png";
+import AboutIcon from "../resources/about-icon2.png";
 import VisionIcon from "../resources/vision-icon.png";
 import MissionIcon from "../resources/mission-icon.png";
 import SustainabilityIcon from "../resources/sustainability-icon.png";
@@ -16,7 +16,7 @@ class AboutUs extends Component {
     return (
       <div>
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 text-white pt-16 pb-16">
+        <section className="bg-[rgb(84,150,136)] text-white pt-16 pb-16">
           <div className="container mx-auto text-center">
             <div className="mb-2">
               <Image
@@ -37,7 +37,7 @@ class AboutUs extends Component {
         {/* Vision and Mission Section */}
         <section className="bg-white text-gray-800 py-16">
           <div className="container mx-auto text-center">
-            <h2 className="text-4xl font-bold text-green-800 mb-12">
+            <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12">
               Our Vision & Mission
             </h2>
             <div className="md:flex md:justify-center md:space-x-20">
@@ -50,7 +50,7 @@ class AboutUs extends Component {
                 height={60}
                 className="mx-auto"
                 />
-                <h3 className="text-2xl font-semibold text-green-700 mb-6">
+                <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-6">
                   Our Vision
                 </h3>
                 <p className="text-lg leading-relaxed">
@@ -67,7 +67,7 @@ class AboutUs extends Component {
                 height={60}
                 className="mx-auto"
                 />
-                <h3 className="text-2xl font-semibold text-green-700 mb-6">
+                <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-6">
                   Our Mission
                 </h3>
                 <p className="text-lg leading-relaxed">
@@ -88,7 +88,7 @@ class AboutUs extends Component {
             height={60}
             className="mx-auto"
             />
-            <h2 className="text-4xl font-bold text-green-800 mb-12">
+            <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12">
               Our Commitment to Sustainability
             </h2>
             <div className="flex flex-col md:flex-row md:items-center md:justify-center md:space-x-16">
@@ -127,7 +127,7 @@ class AboutUs extends Component {
             height={60}
             className="mx-auto"
             />
-            <h2 className="text-4xl font-bold text-green-800 mb-12">
+            <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12">
               Meet Our Team
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -140,7 +140,7 @@ class AboutUs extends Component {
                 height={60}
                 className="mx-auto"
                 />
-                <h3 className="text-2xl font-semibold text-green-700 mb-6">
+                <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-6">
                   Leadership
                 </h3>
                 <p className="text-lg leading-relaxed">
@@ -159,7 +159,7 @@ class AboutUs extends Component {
                 height={60}
                 className="mx-auto"
                 />
-                <h3 className="text-2xl font-semibold text-green-700 mb-6">
+                <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-6">
                   Field Team
                 </h3>
                 <p className="text-lg leading-relaxed">

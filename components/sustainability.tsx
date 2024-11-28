@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import VanilaImg from '../resources/vanila.jpg';
 import { EmailSubcribe } from './subscribe-email';
-import SustainabilityIcon from "../resources/sustainability-icon.png";
+import SustainabilityIcon from "../resources/sustainability-icon2.png";
 import SusPracIcon from "../resources/sus-prac.png";
 import LocalComIcon from "../resources/local-com-icon.png";
 import RecycleIcon from "../resources/recycle-icon.png";
@@ -12,7 +12,7 @@ const Sustainability = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-700 via-green-800 to-green-900 text-white pt-16 pb-12">
+      <section className="bg-[rgb(84,150,136)] text-white pt-16 pb-12">
         <div className="container mx-auto text-center">
           <Image
           src={SustainabilityIcon.src}
@@ -100,7 +100,7 @@ const Sustainability = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-r from-green-800 via-green-700 to-green-600 text-white py-16">
+      <section className="bg-white py-16">
         <div className="container mx-auto text-center">
           <Image 
           src={RecycleJourney.src}
@@ -109,13 +109,13 @@ const Sustainability = () => {
           height={60}
           className='mx-auto'
           />
-          <h2 className="text-4xl font-bold mb-6">Join Our Journey to Sustainability</h2>
+          <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)]">Join Our Journey to Sustainability</h2>
           <p className="text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            Partner with PT Nature’s Exquisite Nusantara to make a difference. Together, we can build a sustainable future for our planet and communities.
+            Partner with PT Nature Exquisite Nusantara to make a difference. Together, we can build a sustainable future for our planet and communities.
           </p>
           <a
             href="/contact"
-            className="bg-white text-green-800 px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200 transition"
+            className="bg-[rgb(84,150,136)] text-[rgb(244,234,197)] px-8 py-3 rounded-full font-semibold shadow-md hover:bg-gray-200 transition"
           >
             Contact Us
           </a>

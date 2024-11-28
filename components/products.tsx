@@ -9,7 +9,7 @@ const Products = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 via-green-700 to-green-800 text-white pt-16 pb-12">
+      <section className="bg-[rgb(84,150,136)] text-white pt-16 pb-12">
         <div className="container mx-auto text-center">
           <div className="mb-2">
           <Image
@@ -37,12 +37,12 @@ const Products = () => {
           height={60}
           className="mx-auto"
           />
-          <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Vanilla Beans</h2>
+          <h2 className="text-4xl font-bold text-[rgb(84,150,136)] text-center mb-12">Vanilla Beans</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Vanilla Planifolia */}
 <div className="border rounded-lg shadow-lg p-6 bg-white hover:shadow-2xl transition mx-4 flex flex-col">
   {/* Judul */}
-  <h3 className="text-2xl font-semibold text-green-800 mb-4">
+  <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4">
     Vanilla Planifolia (Grade A)
   </h3>
   
@@ -100,7 +100,7 @@ const Products = () => {
 {/* Vanilla Tahitensis */}
 <div className="border rounded-lg shadow-lg p-8 bg-white hover:shadow-2xl transition mx-4 flex flex-col">
   {/* Judul */}
-  <h3 className="text-2xl font-semibold text-green-800 mb-4">
+  <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4">
     Vanilla Tahitensis (Grade A)
   </h3>
 
@@ -160,7 +160,7 @@ const Products = () => {
       {/* Vanilla Derivatives Section */}
       <section className="bg-white text-gray-800 py-16">
         <div className="container mx-auto text-left">
-          <h2 className="text-4xl font-bold text-green-800 mb-12 text-center">Vanilla Derivatives</h2>
+          <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12 text-center">Vanilla Derivatives</h2>
           <p className="mb-5 text-center">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
@@ -175,7 +175,7 @@ const Products = () => {
               height={40}
               className="mx-auto"
               />
-              <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Extract</h3>
+              <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Extract</h3>
               <p className="text-sm text-gray-600 mb-4">
                 Our vanilla extract is a pure and concentrated form of vanilla, ideal for enhancing the flavor of your favorite baked goods, beverages, and gourmet dishes. Available in different grades to match the needs of professionals.
               </p>
@@ -248,7 +248,7 @@ const Products = () => {
               height={60}
               className="mx-auto"
               />
-              <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Paste</h3>
+              <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Paste</h3>
               <p className="text-sm text-gray-600 mb-4">
                 Vanilla paste is a concentrated form of vanilla extract mixed with vanilla seeds. This product adds both flavor and visual appeal, perfect for high-end desserts and beverages. Available in varying intensities to suit different needs.
               </p>
@@ -308,7 +308,7 @@ const Products = () => {
 {/* Vanilla Seed */}
 
 <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
-  <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Seeds</h3>
+  <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Seeds</h3>
   <p className="text-sm text-gray-600 mb-4">
     Extracted directly from our finest vanilla pods, our premium vanilla seeds provide an intense, aromatic flavor that enhances the quality of gourmet products. These tiny black specks are packed with rich vanilla essence, making them perfect for adding both flavor and visual appeal to your culinary creations. The seeds' delicate yet potent flavor works beautifully in everything from high-end desserts and pastries to premium beverages, infusions, and gourmet chocolate. Vanilla seeds are the ideal choice for chefs looking to elevate their dishes with an authentic, high-quality vanilla flavor. Perfect for those seeking both flavor and aesthetic appeal, they add a luxurious touch to any recipe.
   </p>
@@ -334,7 +334,7 @@ const Products = () => {
 
             {/* Vanilla Powder */}
 <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
-  <h3 className="text-2xl font-semibold text-green-800 mb-4 text-center">Vanilla Powder</h3>
+  <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Powder</h3>
   <p className="text-sm text-gray-600 mb-4">
     Our premium vanilla powder is made from ground, dried vanilla beans. It provides the purest vanilla flavor with a fine texture, ideal for adding a touch of elegance to a variety of desserts, beverages, and gourmet dishes.
   </p>
@@ -382,7 +382,7 @@ const Products = () => {
 {/* Bulk Orders & Customization */}
 <section className="bg-white text-gray-800 py-16">
   <div className="container mx-auto px-4">
-    <h2 className="text-4xl font-bold mb-6 text-green-800 text-center">
+    <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
       Bulk Orders & Customization
     </h2>
     <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto text-center mx-4">
@@ -408,13 +408,13 @@ const Products = () => {
       {/* Call to Action */}
       <section className="bg-white py-16">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6 text-green-800">Order Now</h2>
+          <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)]">Order Now</h2>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto mx-4">
             Ready to experience the finest Indonesian vanilla? Contact us to place your order or request a quote.
           </p>
           <a
             href="/contact"
-            className="text-white bg-green-800 px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
+            className="text-[rgb(244,234,197)] bg-[rgb(84,150,136)] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
           >
             Contact Us
           </a>
