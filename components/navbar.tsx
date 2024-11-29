@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="text-2xl font-bold">
           <Link href="/">
             <span className="hover:text-[rgb(139,69,19)] transition-colors">
-              PT Nature's Exquisite Nusantara
+              PT Nature Exquisite Nusantara
             </span>
           </Link>
         </div>
