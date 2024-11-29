@@ -28,7 +28,7 @@ class AboutUs extends Component {
               />
             </div>
             <h1 className="text-5xl font-extrabold mb-6">About Us</h1>
-            <p className="text-xl max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl max-w-3xl mx-5 md:mx-auto leading-relaxed">
               At PT Nature's Exquisite Nusantara, we are dedicated to delivering the finest Indonesian vanilla products to B2B clients worldwide. Combining tradition with innovation, our commitment to sustainability, trust, and quality sets us apart.
             </p>
           </div>

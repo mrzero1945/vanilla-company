@@ -21,8 +21,8 @@ const Sustainability = () => {
           height={60}
           className='mx-auto'
           />
-          <h1 className="text-5xl font-bold mb-6 mx-5">Our Commitment to Sustainability</h1>
-          <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed mx-5">
+          <h1 className="text-5xl font-bold mb-6 ">Our Commitment to Sustainability</h1>
+          <p className="text-lg sm:text-xl mb-8 max-w-3xl md:mx-auto leading-relaxed mx-5">
             At PT Nature’s Exquisite Nusantara, sustainability is at the heart of our business. 
             We strive to preserve the environment while supporting local communities and ensuring premium quality products.
           </p>
@@ -51,10 +51,10 @@ const Sustainability = () => {
               alt='s'
               width={60}
               height={60}
-              className='mx-auto'
+              className='mx-auto w-20'
               />
-              <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Sustainable Practices</h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <h2 className="text-4xl font-bold text-green-800 text-center mb-8">Sustainable Practices</h2>
+              <p className="text-lg text-gray-700 leading-relaxed mx-5 text-center">
                 We implement eco-friendly farming practices and collaborate directly with local farmers to promote sustainable agricultural techniques. 
                 Our focus is on reducing environmental impact, optimizing water usage, and enhancing soil health to ensure the sustainability of our crops for future generations.
               </p>
@@ -92,7 +92,7 @@ const Sustainability = () => {
           className='mx-auto'
           />
           <h2 className="text-4xl font-bold text-green-800 text-center mb-8">Reducing Our Carbon Footprint</h2>
-          <p className="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto text-center">
+          <p className="text-lg leading-relaxed text-gray-700 max-w-3xl md:mx-auto mx-5 text-center">
             Through continuous innovation and process optimization, we actively reduce emissions in our production and distribution systems. 
             From using renewable energy sources to streamlining transportation routes, we are dedicated to minimizing our environmental impact.
           </p>

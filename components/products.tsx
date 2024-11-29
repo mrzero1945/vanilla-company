@@ -21,7 +21,7 @@ const Products = () => {
           />
           </div>
           <h1 className="text-5xl font-bold mb-6">Our Premium Vanilla Products</h1>
-          <p className="text-lg sm:text-xl mb-8 max-w-3xl mx-auto leading-relaxed mx-5">
+          <p className="text-lg sm:text-xl mb-8 max-w-3xl md:mx-auto leading-relaxed mx-5">
             Discover the finest Indonesian vanilla beans, extracts, pastes, and more. Perfect for gourmet culinary creations and premium applications.
           </p>
         </div>
@@ -161,7 +161,7 @@ const Products = () => {
       <section className="bg-white text-gray-800 py-16">
         <div className="container mx-auto text-left">
           <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12 text-center">Vanilla Derivatives</h2>
-          <p className="mb-5 text-center">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
+          <p className="mb-5 text-left mx-5">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             
@@ -390,14 +390,14 @@ const Products = () => {
     </p>
 
     <h3 className="text-2xl font-semibold mb-4 text-center">Our Products</h3>
-    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl mx-auto">
+    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
       <li>Premium Vanilla Pods: Gourmet-grade and extract-grade options.</li>
       <li>Vanilla Extract & Powder: Versatile for various applications.</li>
       <li>Custom Packaging: Personalized labels and designs to reflect your brand identity.</li>
     </ul>
 
     <h3 className="text-2xl font-semibold mb-4 text-center">Flexible Ordering Options</h3>
-    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl mx-auto">
+    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
       <li>
         <strong>Minimum Order Quantity (MOQ):</strong> Starting at just 10kg, making it accessible for small and large-scale buyers alike.
       </li>
@@ -410,7 +410,7 @@ const Products = () => {
     </ul>
 
     <h3 className="text-2xl font-semibold mb-4 text-center">Why Choose Us?</h3>
-    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl mx-auto">
+    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
       <li>Exceptional quality sourced directly from Indonesia.</li>
       <li>Reliable and timely order fulfillment.</li>
       <li>Comprehensive customization to suit your business goals.</li>

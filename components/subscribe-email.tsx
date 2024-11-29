@@ -11,16 +11,16 @@ const EmailSubcribe = () => {
         alt="email"
         width={60}
         height={60}
-        className="mx-5"
+        className="w-12 h-10 mx-2"
         />
           <input
             type="email"
             placeholder="Email"
-            className="p-2 rounded-l-md outline-none text-gray-700"
+            className="p-2 rounded-l-md outline-none text-gray-700 w-40"
           />
           <button
             type="submit"
-            className="bg-[rgb(244,234,197)] text-[rgb(84,150,136)] px-4 py-2 rounded-r-md font-semibold"
+            className="bg-[rgb(244,234,197)] text-[rgb(84,150,136)] px-4 py-2 rounded-r-md font-semibold "
           >
             Subscribe
           </button>
