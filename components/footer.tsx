@@ -17,7 +17,7 @@ const Footer = () => {
 
       <div className="container mx-auto text-white text-center mt-[50px]">
         {/* Nama dan Slogan */}
-        <div className="text-xl font-bold mb-3">PT Nature's Exquisite Nusantara</div>
+        <div className="text-xl font-bold mb-3">PT Nature Exquisite Nusantara</div>
         <p className="text-sm italic mb-4">"Where Nature Whispers Flavor"</p>
 
         {/* Navigasi */}
@@ -60,7 +60,7 @@ const Footer = () => {
 
         {/* Hak Cipta */}
         <p className="text-sm mb-4">
-          © {new Date().getFullYear()} PT Nature's Exquisite Nusantara. All rights reserved.
+          © {new Date().getFullYear()} PT Nature Exquisite Nusantara. All rights reserved.
         </p>
 
         {/* Ikon Media Sosial */}
