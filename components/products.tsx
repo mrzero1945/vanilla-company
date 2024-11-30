@@ -433,21 +433,6 @@ const Products = () => {
 
 
 
-      {/* Call to Action */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)]">Order Now</h2>
-          <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto mx-4">
-            Ready to experience the finest Indonesian vanilla? Contact us to place your order or request a quote.
-          </p>
-          <a
-            href="/contact"
-            className="text-[rgb(244,234,197)] bg-[rgb(84,150,136)] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
-          >
-            Contact Us
-          </a>
-        </div>
-      </section>
       <EmailSubcribe/>
     </div>
   );
