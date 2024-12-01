@@ -2,7 +2,7 @@ import Image from 'next/image';
 import VanilaImg from '../resources/vanila.jpg';
 import TrustedIcon from '../resources/trusted-icon.png';
 import PremiumIcon from '../resources/premium-icon.png';
-import AboutIcon from '../resources/about-icon.png';
+import AboutIcon from '../resources/about-icon2.png';
 import ParnershipIcon from '../resources/partnership-icon.png';
 import VanillaIcon from '../resources/vanilla-icon.png';
 import CoffeBeanIcon from '../resources/coffe-beans-icon.png';
@@ -78,7 +78,7 @@ const Home = () => {
         />
       <div className="flex justify-center items-center">
       
-        <h2 className="text-4xl font-bold text-[rgb(84,150,136)]">About Us</h2>
+        <h2 className="text-4xl font-bold text-[rgb(rgb(244,234,197))]">About Us</h2>
       </div>
     </div>
 

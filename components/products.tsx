@@ -1,11 +1,51 @@
+"use client"
 import VanillaPasteIcon from "../resources/vanilla-paste-icon.png";
 import Image from "next/image";
-import VanillaPods from "../resources/vanilla-icon.png";
 import VanillaExtract from "../resources/vanilla-extract.png";
 import PremiumIcon from "../resources/premium-icon.png";
 import VanillaIcon from "../resources/vanilla-icon.png"
 import { EmailSubcribe } from "./subscribe-email";
+import {useLayoutEffect, useRef } from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+// init ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
+
 const Products = () => {
+  // animasi ref el
+  const containerRef = useRef<HTMLDivElement>(null);
+  
+  useLayoutEffect(() => {
+
+    if (!containerRef.current) return;
+
+    const elements = containerRef.current.children;
+
+    gsap.fromTo(
+      elements,
+      { opacity: 0, y: 50 }, // Nilai awal
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: containerRef.current, // Elemen yang dipantau
+          start: "top 80%", // Animasi dimulai ketika elemen berada di 80% viewport bawah
+          end: "bottom 20%", // Selesai animasi saat elemen keluar viewport
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    // Cleanup untuk mencegah konflik
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
+
   return (
     <div>
       {/* Hero Section */}
@@ -380,7 +420,7 @@ const Products = () => {
 
       </section>
 {/* Bulk Orders & Customization */}
-<section className="bg-white text-gray-800 py-16">
+<section className="bg-white text-gray-800 md:py-5">
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
       Customizable Bulk Orders for Your Business Needs
@@ -418,24 +458,46 @@ const Products = () => {
 
     <div className="text-center">
       <p className="text-lg sm:text-xl mb-4">Ready to take the next step?</p>
-      <a
-        href="#contact"
-        className="inline-block px-8 py-3 bg-[rgb(84,150,136)] text-white rounded-lg text-lg font-medium"
-      >
-        👉 Contact Us Today
-      </a>
-      <p className="text-sm mt-2 text-gray-600">
+      <div className="container mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)]">Order Now</h2>
+          <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
+            Ready to experience the finest Indonesian vanilla? Contact us to place your order or request a quote.
+          </p>
+          <a
+            href="/contact"
+            className="text-[rgb(244,234,197)] bg-[rgb(84,150,136)] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
+          >
+            Contact Us
+          </a>
+        </div>
+    
+      <p className="text-sm md:mt-5 my-3 text-gray-600">
         Request a personalized quote or a free sample to experience our premium quality!
       </p>
+      <div ref={containerRef}  suppressHydrationWarning={true} className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md">
+      <div>
+        <p className="font-bold text-3xl">100%</p>
+        <p>Pure Quality</p>
+      </div>
+      <div>
+        <p className="font-bold text-3xl">50+</p>
+        <p>Global Partners</p>
+      </div>
+      <div>
+        <p className="font-bold text-3xl">10,000+</p>
+        <p>Happy Customers</p>
+      </div>
+    </div>
     </div>
   </div>
 </section>
 
 
 
+      {/* Call to Action */}
       <EmailSubcribe/>
     </div>
   );
 };
 
-export { Products };
+export default Products ;
