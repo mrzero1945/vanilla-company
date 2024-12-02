@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="relative py-2 bg-[rgb(84,150,136)]" role="contentinfo" aria-label="Footer">
+    <footer className="relative pt-1 pb-4 bg-[rgb(84,150,136)]" role="contentinfo" aria-label="Footer">
       {/* Wave Background */}
       <div className="absolute top-0 w-full overflow-hidden leading-none">
         <svg
@@ -17,16 +17,11 @@ const Footer = () => {
 
       <div className="container mx-auto text-white text-center mt-[50px]">
         {/* Nama dan Slogan */}
-        <div className="text-xl font-bold mb-3 ">PT Nature Exquisite Nusantara</div>
+        
         <p className="text-sm italic mb-4">"Where Nature Whispers Flavor"</p>
 
-        {/* Hak Cipta */}
-        <p className="text-sm mb-4">
-          © {new Date().getFullYear()} PT Nature Exquisite Nusantara. All rights reserved.
-        </p>
-
         {/* Ikon Media Sosial */}
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-4 mb-4">
           {/* Instagram */}
           <a
             href="https://www.instagram.com"
@@ -141,6 +136,14 @@ const Footer = () => {
             </svg>
           </a>
         </div>
+         
+        <div className="grid grid-cols-3 gap-4 flex items-center">
+        <p className="text-xl font-bold  ">PT Nature Exquisite Nusantara</p>
+   {/* Hak Cipta */}
+   <p className="text-md">
+          © {new Date().getFullYear()} PT Nature Exquisite Nusantara. All rights reserved.
+        </p>
+</div>
       </div>
     </footer>
   );

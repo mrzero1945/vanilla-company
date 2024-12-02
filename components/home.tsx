@@ -184,7 +184,7 @@ const Home = () => {
           </p>
           <a
             href="/contact"
-            className="bg-[rgb(84,150,136)] text-[rgb(244,234,197)] px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-green-700 transition"
+            className="bg-[rgb(84,150,136)] text-[rgb(255,255,255)] px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-green-700 transition"
           >
             Contact Us Today
           </a>

@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "PT Nature's Exquisite Nusantara",
+  title: "PT Nature Exquisite Nusantara",
   description: "Developed by MrZero",
 };
 

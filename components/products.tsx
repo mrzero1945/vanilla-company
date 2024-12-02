@@ -429,27 +429,27 @@ const Products = () => {
       At PT. Nature’s Exquisite Nusantara, we specialize in providing flexible bulk ordering solutions for manufacturers, wholesalers, and private label clients. Whether you require large quantities of premium vanilla products or custom packaging tailored to your brand, we’re here to meet your needs.
     </p>
 
-    <h3 className="text-2xl font-semibold mb-4 text-center">Our Products</h3>
+    <h3 className="text-2xl font-semibold mb-4 text-[rgb(84,150,136)] text-center">Our Products</h3>
     <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
-      <li>Premium Vanilla Pods: Gourmet-grade and extract-grade options.</li>
-      <li>Vanilla Extract & Powder: Versatile for various applications.</li>
-      <li>Custom Packaging: Personalized labels and designs to reflect your brand identity.</li>
+      <li><strong className="text-[rgb(84,150,136)]" >Premium Vanilla Pods:</strong> Gourmet-grade and extract-grade options.</li>
+      <li><strong className="text-[rgb(84,150,136)]">Vanilla Extract & Powder:</strong> Versatile for various applications.</li>
+      <li><strong className="text-[rgb(84,150,136)]">Custom Packaging:</strong> Personalized labels and designs to reflect your brand identity.</li>
     </ul>
 
-    <h3 className="text-2xl font-semibold mb-4 text-center">Flexible Ordering Options</h3>
+    <h3 className="text-2xl font-semibold mb-4 text-center text-[rgb(84,150,136)]">Flexible Ordering Options</h3>
     <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
       <li>
-        <strong>Minimum Order Quantity (MOQ):</strong> Starting at just 10kg, making it accessible for small and large-scale buyers alike.
+        <strong className="text-[rgb(84,150,136)]">Minimum Order Quantity (MOQ):</strong> Starting at just 10kg, making it accessible for small and large-scale buyers alike.
       </li>
       <li>
-        <strong>Fast Lead Time:</strong> Orders are processed within 7–14 business days, depending on size and customization.
+        <strong className="text-[rgb(84,150,136)]">Fast Lead Time:</strong> Orders are processed within 7–14 business days, depending on size and customization.
       </li>
       <li>
-        <strong>Private Labeling:</strong> Elevate your brand with tailored packaging and labeling solutions.
+        <strong className="text-[rgb(84,150,136)]">Private Labeling:</strong> Elevate your brand with tailored packaging and labeling solutions.
       </li>
     </ul>
 
-    <h3 className="text-2xl font-semibold mb-4 text-center">Why Choose Us?</h3>
+    <h3 className="text-2xl font-semibold mb-4 text-[rgb(84,150,136)] text-center">Why Choose Us?</h3>
     <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
       <li>Exceptional quality sourced directly from Indonesia.</li>
       <li>Reliable and timely order fulfillment.</li>
@@ -457,7 +457,7 @@ const Products = () => {
     </ul>
 
     <div className="text-center">
-      <p className="text-lg sm:text-xl mb-4">Ready to take the next step?</p>
+      <p className="text-lg sm:text-xl mb-4 text-[rgb(84,150,136)]">Ready to take the next step?</p>
       <div className="container mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)]">Order Now</h2>
           <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
@@ -465,7 +465,7 @@ const Products = () => {
           </p>
           <a
             href="/contact"
-            className="text-[rgb(244,234,197)] bg-[rgb(84,150,136)] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
+            className="text-[rgb(255,255,255)] bg-[rgb(84,150,136)] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
           >
             Contact Us
           </a>
@@ -474,7 +474,7 @@ const Products = () => {
       <p className="text-sm md:mt-5 my-3 text-gray-600">
         Request a personalized quote or a free sample to experience our premium quality!
       </p>
-      <div ref={containerRef}  suppressHydrationWarning={true} className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md">
+      <div ref={containerRef}  suppressHydrationWarning={true} className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md text-[rgb(84,150,136)]">
       <div>
         <p className="font-bold text-3xl">100%</p>
         <p>Pure Quality</p>
