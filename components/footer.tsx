@@ -137,14 +137,12 @@ const Footer = () => {
           </a>
         </div>
          
-        <div className="grid grid-cols-3 gap-4 flex items-center">
-        <p className="text-xl font-bold  ">PT Nature Exquisite Nusantara</p>
+
    {/* Hak Cipta */}
    <p className="text-md">
           © {new Date().getFullYear()} PT Nature Exquisite Nusantara. All rights reserved.
         </p>
 </div>
-      </div>
     </footer>
   );
 };
