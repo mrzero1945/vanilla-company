@@ -5,43 +5,21 @@ import VanillaExtract from "../resources/vanilla-extract.png";
 import PremiumIcon from "../resources/premium-icon.png";
 import VanillaIcon from "../resources/vanilla-icon.png"
 import { EmailSubcribe } from "./subscribe-email";
-import {useLayoutEffect, useRef } from 'react';
-import gsap from 'gsap';
-import ScrollTrigger from 'gsap/ScrollTrigger';
+import {useLayoutEffect} from 'react';
+import { initScrollTrigger, clearScrollTriggers } from "../header/scroll-anim";
 
-// init ScrollTrigger
-gsap.registerPlugin(ScrollTrigger);
+
 
 const Products = () => {
   // animasi ref el
-  const containerRef = useRef<HTMLDivElement>(null);
   
   useLayoutEffect(() => {
 
-    if (!containerRef.current) return;
-
-    const elements = containerRef.current.children;
-
-    gsap.fromTo(
-      elements,
-      { opacity: 0, y: 50 }, // Nilai awal
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: containerRef.current, // Elemen yang dipantau
-          start: "top 80%", // Animasi dimulai ketika elemen berada di 80% viewport bawah
-          end: "bottom 20%", // Selesai animasi saat elemen keluar viewport
-          toggleActions: "play none none none",
-        },
-      }
-    );
+    initScrollTrigger();
 
     // Cleanup untuk mencegah konflik
     return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      clearScrollTriggers()
     };
   }, []);
 
@@ -49,7 +27,7 @@ const Products = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-[rgb(84,150,136)] text-white pt-16 pb-12">
+      <section className="bg-[rgb(84,150,136)] text-white pt-16 pb-12 scroll-row">
         <div className="container mx-auto text-center">
           <div className="mb-2">
           <Image
@@ -68,7 +46,7 @@ const Products = () => {
       </section>
 
       {/* Vanilla Beans Section */}
-      <section className="bg-gray-50 text-gray-800 py-16">
+      <section className="bg-gray-50 text-gray-800 py-16 scroll-row">
         <div className="container mx-auto">
           <Image
           src={VanillaIcon.src}
@@ -198,7 +176,7 @@ const Products = () => {
       </section>
 
       {/* Vanilla Derivatives Section */}
-      <section className="bg-white text-gray-800 py-16">
+      <section className="bg-white text-gray-800 py-16 scroll-row">
         <div className="container mx-auto text-left">
           <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12 text-center">Vanilla Derivatives</h2>
           <p className="mb-5 text-left mx-5">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
@@ -420,7 +398,7 @@ const Products = () => {
 
       </section>
 {/* Bulk Orders & Customization */}
-<section className="bg-white text-gray-800 md:py-5">
+<section className="bg-white text-gray-800 md:py-5 scroll-row">
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
       Customizable Bulk Orders for Your Business Needs
@@ -474,7 +452,7 @@ const Products = () => {
       <p className="text-sm md:mt-5 my-3 text-gray-600">
         Request a personalized quote or a free sample to experience our premium quality!
       </p>
-      <div ref={containerRef}  suppressHydrationWarning={true} className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md text-[rgb(84,150,136)]">
+      <div className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md text-[rgb(84,150,136)] scroll-row" suppressHydrationWarning={true}>
       <div>
         <p className="font-bold text-3xl">100%</p>
         <p>Pure Quality</p>

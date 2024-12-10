@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image';
 import VanilaImg from '../resources/vanila.jpg';
 import TrustedIcon from '../resources/trusted-icon.png';
@@ -12,17 +13,26 @@ import VanillaExtractImage from '../resources/vanilla-extract.svg';
 import VanillaPasteImage from '../resources/vanilla-paste.svg';
 import VanillaSeedsImage from '../resources/vanilla-seeds.svg';
 import VanillaPowder from '../resources/vanilla-powder.svg'
+import { initScrollTrigger, clearScrollTriggers } from '../header/scroll-anim';
 import { EmailSubcribe } from './subscribe-email';
+import { useLayoutEffect } from 'react';
 
 
 
 
 const Home = () => {
 
+  useLayoutEffect(() =>{
+    initScrollTrigger();
+    return()=>{
+      clearScrollTriggers();
+    };
+  }, []);
+
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-[rgb(84,150,136)] text-white py-20">
+      <section className="bg-[rgb(84,150,136)] text-white py-10 scroll-row">
         <div className="container mx-auto px-4 text-center">
           {/* Premium Icon */}
           <div className="mb-2">
@@ -63,7 +73,7 @@ const Home = () => {
 
    {/* About Section */}
 <section
-  className="relative bg-gray-50 text-gray-800 py-20"
+  className="relative bg-gray-50 text-gray-800 py-10 scroll-row"
   style={{
     backgroundImage: `url(${VanilaImg.src})`,
     backgroundSize: "cover",
@@ -109,7 +119,7 @@ const Home = () => {
 
 
       {/* Products Section */}
-      <section className="bg-white py-10">
+      <section className="bg-white py-10 scroll-row">
         <div className="container mx-auto px-4 text-center">
           <Image
               src={PremiumIcon.src}
@@ -172,7 +182,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-white py-10">
+      <section className="bg-white py-10 ">
   <div className="container mx-auto px-4 text-center">
     <Image
       src={EliteIcon.src}
@@ -274,7 +284,7 @@ const Home = () => {
 
 
       {/* Contact Section */}
-      <section className="bg-gray-50 text-gray-800 py-10">
+      <section className="bg-gray-50 text-gray-800 py-10 scroll-row">
         <div className="container mx-auto px-4 text-center">
         <Image
               src={ParnershipIcon.src}
@@ -304,4 +314,4 @@ const Home = () => {
   );
 };
 
-export { Home };
+export default Home;
