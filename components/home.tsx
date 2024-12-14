@@ -184,7 +184,7 @@ const Home = () => {
 
  
 
-    <section className='bg-gray-50 text-gray-800 py-10 scroll-row'>
+    <section className='bg-gray-50 text-gray-800 py-10  scroll-row'>
       <div className='container mx-auto px-4 text-center'>
       
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
@@ -192,7 +192,7 @@ const Home = () => {
             <Image
             src={SampleProduct.src}
             alt=''
-            className='object-cover md:w-full md:h-3/4 w-80 h-full mx-auto'
+            className='object-cover md:w-full md:h-80 w-80 h-full mx-auto'
             width={1000}
             height={1000}
             />
@@ -201,7 +201,7 @@ const Home = () => {
             <Image
             src={SamplePowder.src}
             alt=''
-            className='object-cover md:w-full md:h-3/4 w-80 h-full mx-auto'
+            className='object-cover md:w-full md:h-80 w-80 h-full mx-auto'
             width={1000}
             height={1000}
             />
@@ -210,7 +210,7 @@ const Home = () => {
             <Image
             src={SampleBeans.src}
             alt=''
-            className='object-cover md:w-full md:h-3/4 w-80 h-full mx-auto'
+            className='object-cover md:w-full md:h-80 w-80 h-full mx-auto'
             width={1000}
             height={1000}
             />
@@ -219,7 +219,7 @@ const Home = () => {
             <Image
             src={RawBeans.src}
             alt=''
-            className='object-cover md:w-full md:h-3/4 w-80 h-full mx-auto'
+            className='object-cover md:w-full md:h-80 w-80 h-full mx-auto'
             width={1000}
             height={1000}
           />
@@ -251,7 +251,7 @@ const Home = () => {
           </p>
           <a
             href="/contact"
-            className="bg-[rgb(84,150,136)] text-[rgb(255,255,255)] px-8 py-4 rounded-full text-lg font-semibold shadow-md hover:bg-green-700 transition"
+            className="text-[rgb(255,255,255)] bg-[rgb(84,150,136)] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
           >
             Contact Us Today
           </a>

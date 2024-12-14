@@ -4,6 +4,12 @@ import Image from "next/image";
 import VanillaExtract from "../resources/vanilla-extract.png";
 import PremiumIcon from "../resources/premium-icon.png";
 import VanillaIcon from "../resources/vanilla-icon.png"
+import RawVanilla from "../resources/raw-beans.jpg";
+import VanillaBeans from "../resources/vanilla-beans.jpg";
+import VanillaSeeds from "../resources/vanilla-seeds.jpg";
+import VanillaPowder from "../resources/vanilla-powder.jpg";
+import PremiumProduct from "../resources/premium-product.jpg";
+import CatalogIcon from "../resources/catalog-icon.png"
 import { EmailSubcribe } from "./subscribe-email";
 import {useLayoutEffect} from 'react';
 import { initScrollTrigger, clearScrollTriggers } from "../header/scroll-anim";
@@ -63,6 +69,13 @@ const Products = () => {
   <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4">
     Vanilla Planifolia (Grade A)
   </h3>
+  <Image 
+  src={RawVanilla.src}
+  alt=""
+  width={1000}
+  height={1000}
+  className="mx-auto h-60 w-full"
+  />
   
   {/* Deskripsi */}
   <p className="text-lg text-gray-700 mb-4">
@@ -121,7 +134,13 @@ const Products = () => {
   <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4">
     Vanilla Tahitensis (Grade A)
   </h3>
-
+  <Image 
+  src={VanillaBeans.src}
+  alt=""
+  width={1000}
+  height={1000}
+  className="mx-auto h-60 w-full"
+  />
   {/* Deskripsi */}
   <p className="text-lg text-gray-700 mb-4">
     Renowned for its unique flavor profile, known for its floral, fruity notes and lighter, more aromatic essence. This variety is considered one of the most fragrant types of vanilla, making it ideal for fine culinary and perfumery uses.
@@ -173,6 +192,7 @@ const Products = () => {
 
           </div>
         </div>
+        
       </section>
 
       {/* Vanilla Derivatives Section */}
@@ -327,6 +347,13 @@ const Products = () => {
 
 <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
   <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Seeds</h3>
+  <Image 
+  src={VanillaSeeds.src}
+  width={1000}
+  height={1000}
+  alt=""
+  className="w-full h-80 mx-auto"
+  />
   <p className="text-sm text-gray-600 mb-4">
     Extracted directly from our finest vanilla pods, our premium vanilla seeds provide an intense, aromatic flavor that enhances the quality of gourmet products. These tiny black specks are packed with rich vanilla essence, making them perfect for adding both flavor and visual appeal to your culinary creations. The seeds' delicate yet potent flavor works beautifully in everything from high-end desserts and pastries to premium beverages, infusions, and gourmet chocolate. Vanilla seeds are the ideal choice for chefs looking to elevate their dishes with an authentic, high-quality vanilla flavor. Perfect for those seeking both flavor and aesthetic appeal, they add a luxurious touch to any recipe.
   </p>
@@ -353,6 +380,13 @@ const Products = () => {
             {/* Vanilla Powder */}
 <div className="border rounded-lg shadow-lg p-6 bg-gray-50 hover:shadow-2xl transition mx-4">
   <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Powder</h3>
+  <Image
+  src={VanillaPowder.src}
+  alt=""
+  width={1000}
+  height={1000}
+  className="w-full h-80 mx-auto"
+  />
   <p className="text-sm text-gray-600 mb-4">
     Our premium vanilla powder is made from ground, dried vanilla beans. It provides the purest vanilla flavor with a fine texture, ideal for adding a touch of elegance to a variety of desserts, beverages, and gourmet dishes.
   </p>
@@ -395,10 +429,26 @@ const Products = () => {
           
 
         </div>
+        <div className="flex justify-center mt-20">
+  <a
+    href="/contact"
+    className="flex items-center text-[rgb(255,255,255)] bg-[rgb(84,150,136)] text-center px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
+  >
+    {/* Gambar Icon */}
+    <img
+      src={CatalogIcon.src} /* Ganti dengan path ikon Anda */
+      alt="Icon"
+      className="w-6 h-6 mr-2" /* Sesuaikan ukuran ikon */
+    />
+    Download Catalog
+  </a>
+</div>
+
+
 
       </section>
-{/* Bulk Orders & Customization */}
-<section className="bg-white text-gray-800 md:py-5 scroll-row">
+
+      <section className="bg-white text-gray-800 md:py-5 scroll-row">
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
       Customizable Bulk Orders for Your Business Needs
@@ -407,17 +457,27 @@ const Products = () => {
       At PT. Nature’s Exquisite Nusantara, we specialize in providing flexible bulk ordering solutions for manufacturers, wholesalers, and private label clients. Whether you require large quantities of premium vanilla products or custom packaging tailored to your brand, we’re here to meet your needs.
     </p>
 
+    {/* Bulk Orders & Customization - Tambahkan gambar ilustrasi atau foto produk */}
+    <Image 
+    src={PremiumProduct.src}
+    alt=""
+    width={1000}
+    height={1000}
+    className="mx-auto w-1/2 h-80"
+    />
+
     <h3 className="text-2xl font-semibold mb-4 text-[rgb(84,150,136)] text-center">Our Products</h3>
-    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
-      <li><strong className="text-[rgb(84,150,136)]" >Premium Vanilla Pods:</strong> Gourmet-grade and extract-grade options.</li>
+    <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
+      <li><strong className="text-[rgb(84,150,136)]">Premium Vanilla Pods:</strong> Gourmet-grade and extract-grade options.</li>
       <li><strong className="text-[rgb(84,150,136)]">Vanilla Extract & Powder:</strong> Versatile for various applications.</li>
       <li><strong className="text-[rgb(84,150,136)]">Custom Packaging:</strong> Personalized labels and designs to reflect your brand identity.</li>
     </ul>
 
+    {/* Tambahkan gambar fleksibilitas pesanan di sini */}
     <h3 className="text-2xl font-semibold mb-4 text-center text-[rgb(84,150,136)]">Flexible Ordering Options</h3>
-    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
+    <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
       <li>
-        <strong className="text-[rgb(84,150,136)]">Minimum Order Quantity (MOQ):</strong> Starting at just 10kg, making it accessible for small and large-scale buyers alike.
+        <strong className="text-[rgb(84,150,136)]">Minimum Order Quantity (MOQ):</strong> Starting at just 25kg, making it accessible for small and large-scale buyers alike.
       </li>
       <li>
         <strong className="text-[rgb(84,150,136)]">Fast Lead Time:</strong> Orders are processed within 7–14 business days, depending on size and customization.
@@ -427,8 +487,9 @@ const Products = () => {
       </li>
     </ul>
 
+    {/* Tambahkan gambar testimonial atau alasan memilih layanan */}
     <h3 className="text-2xl font-semibold mb-4 text-[rgb(84,150,136)] text-center">Why Choose Us?</h3>
-    <ul className="list-disc  mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
+    <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
       <li>Exceptional quality sourced directly from Indonesia.</li>
       <li>Reliable and timely order fulfillment.</li>
       <li>Comprehensive customization to suit your business goals.</li>
@@ -437,38 +498,41 @@ const Products = () => {
     <div className="text-center">
       <p className="text-lg sm:text-xl mb-4 text-[rgb(84,150,136)]">Ready to take the next step?</p>
       <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)]">Order Now</h2>
-          <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
-            Ready to experience the finest Indonesian vanilla? Contact us to place your order or request a quote.
-          </p>
-          <a
-            href="/contact"
-            className="text-[rgb(255,255,255)] bg-[rgb(84,150,136)] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
-          >
-            Contact Us
-          </a>
-        </div>
-    
+        <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)]">Order Now</h2>
+        <p className="text-lg sm:text-xl mb-4 max-w-2xl md:mx-auto mx-4">
+          Ready to experience the finest Indonesian vanilla? Contact us to place your order or request a quote.
+        </p>
+        <a
+          href="/contact"
+          className="text-[rgb(255,255,255)] bg-[rgb(84,150,136)] px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
+        >
+          Contact Us
+        </a>
+      </div>
+
       <p className="text-sm md:mt-5 my-3 text-gray-600">
         Request a personalized quote or a free sample to experience our premium quality!
       </p>
+      
+      {/* Tambahkan gambar statistik bisnis */}
       <div className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md text-[rgb(84,150,136)] scroll-row" suppressHydrationWarning={true}>
-      <div>
-        <p className="font-bold text-3xl">100%</p>
-        <p>Pure Quality</p>
+        <div>
+          <p className="font-bold text-3xl">100%</p>
+          <p>Pure Quality</p>
+        </div>
+        <div>
+          <p className="font-bold text-3xl">50+</p>
+          <p>Global Partners</p>
+        </div>
+        <div>
+          <p className="font-bold text-3xl">10,000+</p>
+          <p>Happy Customers</p>
+        </div>
       </div>
-      <div>
-        <p className="font-bold text-3xl">50+</p>
-        <p>Global Partners</p>
-      </div>
-      <div>
-        <p className="font-bold text-3xl">10,000+</p>
-        <p>Happy Customers</p>
-      </div>
-    </div>
     </div>
   </div>
 </section>
+
 
 
 
