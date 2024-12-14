@@ -8,11 +8,10 @@ import ParnershipIcon from '../resources/partnership-icon.png';
 import VanillaIcon from '../resources/vanilla-icon.png';
 import CoffeBeanIcon from '../resources/coffe-beans-icon.png';
 import CocoaBeanIcon from '../resources/cocoa-bean-icon.png';
-import EliteIcon from '../resources/elite-icon.png';
-import VanillaExtractImage from '../resources/vanilla-extract.svg';
-import VanillaPasteImage from '../resources/vanilla-paste.svg';
-import VanillaSeedsImage from '../resources/vanilla-seeds.svg';
-import VanillaPowder from '../resources/vanilla-powder.svg'
+import SampleProduct from '../resources/product-sample.jpg';
+import SampleBeans from '../resources/vanilla-beans.jpg';
+import SamplePowder from '../resources/vanilla-powder.jpg';
+import RawBeans from '../resources/raw-beans.jpg'
 import { initScrollTrigger, clearScrollTriggers } from '../header/scroll-anim';
 import { EmailSubcribe } from './subscribe-email';
 import { useLayoutEffect } from 'react';
@@ -120,7 +119,8 @@ const Home = () => {
 
       {/* Products Section */}
       <section className="bg-white py-10 scroll-row">
-        <div className="container mx-auto px-4 text-center">
+  
+        <div className="container mx-auto px-4 text-center">  
           <Image
               src={PremiumIcon.src}
               alt="Premium Icon"
@@ -182,103 +182,51 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-white py-10 ">
-  <div className="container mx-auto px-4 text-center">
-    <Image
-      src={EliteIcon.src}
-      alt="Elite Icon"
-      width={60}
-      height={60}
-      className="mx-auto"
-    />
-    <h2 className="text-4xl font-bold mb-8 text-[rgb(84,150,136)]">
-      Our Elite Products
-    </h2>
-    <p className="text-lg sm:text-xl text-gray-700 mb-12 max-w-2xl mx-auto">
-      Variety of Indonesian spices
-    </p>
+ 
 
-    {/* Grid Produk */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      <div className="group relative w-full h-60 rounded-lg overflow-hidden shadow-lg bg-gray-50 cursor-pointer">
-        {/* Gambar Produk (Default) */}
-        <div
-          className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0"
-        >
-          <Image
-            src={VanillaExtractImage.src}
-            alt="Vanilla Extract"
-            className="object-cover w-full h-full"
-            width={200}
-            height={150}
+    <section className='bg-gray-50 text-gray-800 py-10 scroll-row'>
+      <div className='container mx-auto px-4 text-center'>
+      
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
+          <div>
+            <Image
+            src={SampleProduct.src}
+            alt=''
+            className='object-cover md:w-full md:h-3/4 w-80 h-full mx-auto'
+            width={1000}
+            height={1000}
+            />
+          </div>
+          <div>
+            <Image
+            src={SamplePowder.src}
+            alt=''
+            className='object-cover md:w-full md:h-3/4 w-80 h-full mx-auto'
+            width={1000}
+            height={1000}
+            />
+          </div>
+          <div>
+            <Image
+            src={SampleBeans.src}
+            alt=''
+            className='object-cover md:w-full md:h-3/4 w-80 h-full mx-auto'
+            width={1000}
+            height={1000}
+            />
+          </div>
+          <div>
+            <Image
+            src={RawBeans.src}
+            alt=''
+            className='object-cover md:w-full md:h-3/4 w-80 h-full mx-auto'
+            width={1000}
+            height={1000}
           />
-        </div>
-
-        {/* Detail Produk (Hover) */}
-        <div
-          className="absolute inset-0 flex flex-col items-center justify-center bg-gray-100 text-center p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
-        >
-          <h3 className="text-xl font-bold text-[rgb(84,150,136)] mb-2">
-            Vanilla Extract
-          </h3>
-          <p className="text-sm text-gray-700">
-          Vanilla Extract is a liquid made by soaking vanilla beans in alcohol and water to extract their rich flavor. 
-          </p>
+          </div>
         </div>
       </div>
-      <div className='group relative w-full h-60 rounded-lg overflow-hidden shadow-lg bg-gray-50 cursor-pointer'>
-        <div className='absolute inset-0 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0'>
-          <Image 
-          src={VanillaPasteImage.src}
-          alt=''
-          className='object-cover w-full h-full'
-          width={200}
-          height={150}
-          />
-        </div>
-        {/* detail */}
-        <div className='absolute inset-0 flex flex-col items-center justify-center bg-gray-100 text-center p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
-          <h3 className='text-xl font-bold text-[rgb(84,150,136)] mb-2'>Vanilla Paste</h3>
-          <p className='text-sm text-gray-700'>
-          Vanilla Paste is a concentrated vanilla product made from real vanilla beans, blended into a thick and syrupy consistency.
-          </p>
-        </div>
-      </div>
-      <div className='group relative w-full h-60 rounded-lg overflow-hidden shadow-lg bg-gray-50 cursor-pointer'>
-      <div className='absolute inset-0 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0'>
-        <Image
-        src={VanillaSeedsImage.src}
-        alt=''
-        className='object-cover w-full h-full'
-        width={200}
-        height={150}
-        />
-      </div>
-      {/*Detail*/}
-      <div className='absolute inset-0 flex flex-col items-center justify-center bg-gray-100 text-center p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
-        <h3 className='text-xl font-bold text-[rgb(84,150,136)] mb-2'>Vanilla Seeds</h3>
-        <p className='text-sm text-gray-700'>Vanilla Seeds are the tiny black seeds found inside the vanilla bean pod, prized for their rich flavor and elegant appearance.</p>
-      </div>
-      </div>
-      <div className='group relative w-full h-60 rounded-lg overflow-hidden shadow-lg bg-gray-50 cursor-pointer'>
-      <div className='absolute inset-0 flex items-center justify-center transition-opacity duration-300 group-hover:opacity-0'>
-        <Image
-        src={VanillaPowder.src}
-        alt=''
-        className='object-cover w-full h-full'
-        width={200}
-        height={150}
-        />
-      </div>
-      {/*Detail*/}
-      <div className='absolute inset-0 flex flex-col items-center justify-center bg-gray-100 text-center p-4 transition-opacity duration-300 opacity-0 group-hover:opacity-100'>
-      <h3 className='text-xl font-bold text-[rgb(84,150,136)] mb-2'>Vanilla Powder</h3>
-      <p className='text-sm text-gray-700'>Vanilla Powder is a fine, dry powder made from ground vanilla beans or dehydrated vanilla extract.</p>
-      </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
