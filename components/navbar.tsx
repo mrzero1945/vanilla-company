@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import LogoWhite from "../resources/logo-white.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,17 +12,18 @@ const Navbar = () => {
     <nav className="bg-[rgb(84,150,136)] text-[rgb(245,245,220)] relative z-10">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
-        <div className="text-2xl font-bold">
-          <Link href="/">
-            <span className="hover:text-[rgb(139,69,19)] transition-colors">
-              PT Nature Exquisite Nusantara
-            </span>
-          </Link>
-        </div>
+        <Image
+        src={LogoWhite.src}
+        alt=""
+        width={1000}
+        height={1000}
+        className="md:w-96 md:h-20 w-60 mx-auto"
+        />
+     
 
         {/* Hamburger Button */}
         <button
-          className="md:hidden text-[rgb(245,245,220)] focus:outline-none"
+          className="md:hidden text-[rgb(245,245,220)] flex-none  focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (

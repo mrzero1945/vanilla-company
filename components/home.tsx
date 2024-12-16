@@ -38,9 +38,9 @@ const Home = () => {
             <Image
               src={PremiumIcon.src}
               alt="Premium Icon"
-              width={60}
-              height={60}
-              className="mx-auto"
+              width={1000}
+              height={1000}
+              className="mx-auto w-20"
             />
           </div>
           <h1 className="text-5xl sm:text-6xl font-extrabold mb-6 leading-tight">
