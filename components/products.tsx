@@ -481,7 +481,7 @@ const Products = () => {
     alt=""
     width={1000}
     height={1000}
-    className="mx-auto w-1/2 h-80"
+    className="mx-auto w-full md:w-1/2 h-80"
     />
     <h3 className="text-2xl font-semibold mb-4 text-center text-[rgb(84,150,136)]">Flexible Ordering Options</h3>
     <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
