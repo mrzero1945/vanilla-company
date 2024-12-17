@@ -242,8 +242,8 @@ const Contact = () => {
              </div>
           </a>
             </div>
-            <div>
-              <h2 className="text-4xl mt-10 mx-auto">Customer Service</h2>
+            <div className="mx-auto">
+              <h2 className="text-4xl mt-10">Customer Service</h2>
               <Image
               src={CusService.src}
               alt=""
