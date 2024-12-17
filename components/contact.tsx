@@ -242,15 +242,15 @@ const Contact = () => {
              </div>
           </a>
             </div>
-            <div className="mx-auto">
-              <h2 className="text-4xl mt-10">Customer Service</h2>
+            <div>
+              <h2 className="text-4xl mt-10 text-center">Customer Service</h2>
               <Image
               src={CusService.src}
               alt=""
               width={1000}
               height={1000}
-              className="w-80 h-auto"/>
-              <p className="text-gray-700">At Vanilla Export Company, we prioritize your satisfaction by providing exceptional customer service tailored to your needs.</p>
+              className="w-80 h-auto mx-auto"/>
+              <p className="text-gray-700 text-center md:text-left mx-5">At Vanilla Export Company, we prioritize your satisfaction by providing exceptional customer service tailored to your needs.</p>
             </div>
             
           </div>
