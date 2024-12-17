@@ -8,7 +8,7 @@ import RawVanilla from "../resources/raw-beans.jpg";
 import VanillaBeans from "../resources/vanilla-beans.jpg";
 import VanillaSeeds from "../resources/vanilla-seeds.jpg";
 import VanillaPowder from "../resources/vanilla-powder.jpg";
-import PremiumProduct from "../resources/premium-product.jpg";
+import PremiumProduct from "../resources/product-sample.jpg";
 import CatalogIcon from "../resources/catalog-icon.png";
 import FlexibleBanner from "../resources/flexible.png";
 import { EmailSubcribe } from "./subscribe-email";
