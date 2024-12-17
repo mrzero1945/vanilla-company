@@ -39,9 +39,9 @@ const Contact = () => {
         </div>
         </div>
         </section>
-        <section className="bg-gray-50 md:container  px-20 py-16 text-left">
+        <section className="bg-gray-50 container  md:px-20 py-16 text-left">
           <div className="grid grid-cols-1  md:grid-cols-2 text-[rgb(84,150,136)] ">
-            <div>
+            <div className="mx-auto">
               
               <h2 className="text-4xl text-[rgb(84,150,136)]">Contact Information</h2>
                
@@ -80,7 +80,7 @@ const Contact = () => {
                       </div>
                   </a>
             </div>
-            <div>
+            <div className="mx-auto">
               <h2 className="text-4xl text-[rgb(84,150,136)] mt-10">Product Origin</h2>
             
               <Image 
@@ -89,11 +89,11 @@ const Contact = () => {
               width={1000}
               height={1000}
               className="md:w-80 w-80 h-80"/>
-                <p className="mt-5 text-gray-700">
+                <p className="mt-5  text-gray-700">
               Bali, Papua, Indonesia
               </p>
             </div>
-            <div>
+            <div className="mx-auto">
           
 
              
@@ -243,7 +243,7 @@ const Contact = () => {
           </a>
             </div>
             <div>
-              <h2 className="text-4xl mt-10">Customer Service</h2>
+              <h2 className="text-4xl mt-10 mx-auto">Customer Service</h2>
               <Image
               src={CusService.src}
               alt=""
