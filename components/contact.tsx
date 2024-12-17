@@ -53,7 +53,7 @@ const Contact = () => {
                     alt=""
                     className="w-8"
                     /> 
-                    <span className="hidden">NatureExquisiteNusantara@gmail.com</span>
+                    <span className="hidden md:block">NatureExquisiteNusantara@gmail.com</span>
                     <span className="md:hidden">Email</span>
                 </div>
                 <div className="flex gap-2 mt-5">
