@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[rgb(84,150,136)] text-[rgb(245,245,220)] relative z-10">
+    <nav className="bg-[rgb(84,150,136)] text-[rgb(245,245,220)] relative z-50">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <Image
@@ -61,7 +61,7 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul
-          className={`flex-col md:flex md:flex-row md:space-x-6 text-lg absolute md:static bg-[rgb(84,150,136)] w-full left-0 top-[4.5rem] md:justify-end transform transition-transform duration-300 ${
+          className={`flex-col md:flex md:flex-row md:space-x-6 text-lg absolute md:static bg-[rgb(84,150,136)] w-full left-0 top-[4.5rem] md:justify-end transform transition-transform duration-300 z-50 ${
             isMenuOpen ? "block" : "hidden"
           } md:block`}
         >
