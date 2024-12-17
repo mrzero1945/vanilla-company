@@ -39,13 +39,13 @@ const Contact = () => {
         </div>
         </div>
         </section>
-        <section className="bg-gray-50 container mx-auto px-20 py-16 text-left">
+        <section className="bg-gray-50 md:container  px-20 py-16 text-left">
           <div className="grid grid-cols-1  md:grid-cols-2 text-[rgb(84,150,136)] ">
             <div>
               
               <h2 className="text-4xl text-[rgb(84,150,136)]">Contact Information</h2>
                
-                <div className="flex gap-2 mt-5 justify-center md:justify-normal">
+                <div className="flex gap-2 mt-5 ">
                     <Image
                     src={EmailIcon.src}
                     width={1000}
@@ -53,9 +53,10 @@ const Contact = () => {
                     alt=""
                     className="w-8"
                     /> 
-                    <span>NatureExquisiteNusantara@gmail.com</span>
+                    <span className="hidden">NatureExquisiteNusantara@gmail.com</span>
+                    <span className="md:hidden">Email</span>
                 </div>
-                <div className="flex gap-2 mt-5 justify-center md:justify-normal">
+                <div className="flex gap-2 mt-5">
                   <Image
                   src={PhoneIcon.src}
                   width={1000}
@@ -66,7 +67,7 @@ const Contact = () => {
                   <span>08116668220</span>
                 </div>
                 <a href="https://wa.me/+628116668220">
-                    <div className="flex gap-2 mt-5 justify-center md:justify-normal">
+                    <div className="flex gap-2 mt-5">
                       
                       <Image
                       src={WaIcon.src}
@@ -87,7 +88,7 @@ const Contact = () => {
               alt=""
               width={1000}
               height={1000}
-              className="md:w-80 w-full h-auto"/>
+              className="md:w-80 w-80 h-80"/>
                 <p className="mt-5 text-gray-700">
               Bali, Papua, Indonesia
               </p>
