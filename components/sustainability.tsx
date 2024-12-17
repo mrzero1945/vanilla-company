@@ -1,3 +1,16 @@
+// 20/100 || 40/100 
+// x = 100/100
+// a = 60/100
+// b = 60/100 || 0/100
+// probabilitas
+// y = x - a + b 
+// y = 100/100 - 60/100 + 60/100 = 100/100 = 1
+// a = sigma(x) - sigma(xy) + n
+// b = sigma(x^2) . sigma(x)^2 - a
+// planck const = 1 x 10^-13
+// enigma machine the reich
+// ^p >= ^m
+// particle have a wave function
 import Image from 'next/image';
 import VanilaImg from '../resources/vanila.jpg';
 import { EmailSubcribe } from './subscribe-email';

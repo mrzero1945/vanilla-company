@@ -1,77 +1,62 @@
 "use client";
 
 import React from "react";
+import { initCircleAnimation } from "../header/circle-anim"; 
+import { useEffect } from 'react';
+import VanillaPwder from "../resources/vanilla-powder.jpg";
+import EmailIcon from "../resources/email-icon.png";
+import Image from "next/image";
 
 const Contact = () => {
+  useEffect(() => {
+    initCircleAnimation(); // Panggil fungsi animasi setelah komponen dimuat
+  }, []);
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="container mx-auto px-6 lg:px-12 text-center">
+    <div>
+    <section className="bg-gray-50 py-16" style={{
+      backgroundImage: `url(${VanillaPwder.src})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
+ 
+      <div className=" lg:px-12 text-center">
         {/* Title Section */}
-        <h1 className="text-5xl font-bold mb-6 text-[rgb(84,150,136)]">Contact Us</h1>
-        <p className="text-lg mb-12 text-gray-700 leading-relaxed">
-          We’d love to hear from you! Reach out for more information, sample requests, bulk orders, or to learn about our sustainable practices.
-        </p>
-
-        {/* Contact Information */}
-        <div className="bg-beige text-gray-800 rounded-lg shadow-xl p-8 lg:p-12 md:w-2/3 mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-[rgb(84,150,136)]">Get in Touch</h2>
-          <p className="text-lg mb-8">
-            Contact us through any of the methods below, and our team will respond promptly.
-          </p>
-
-          <ul className="text-left space-y-6 text-lg">
-            <li>
-              <strong>Email:</strong> 
-              <a href="mailto:info@natureexquisite.com" className="text-[rgb(84,150,136)] hover:underline ml-2">
-                info@natureexquisite.com
-              </a>
-            </li>
-            <li>
-              <strong>Phone:</strong> 
-              <a href="tel:+6281234567890" className="text-[rgb(84,150,136)] hover:underline ml-2">
-                +62 812 3456 7890
-              </a>
-            </li>
-            <li>
-              <strong>Address:</strong> Jakarta, Indonesia
-            </li>
-            <li>
-              <strong>Social Media:</strong> 
-              <a
-                href="https://instagram.com/nature_exquisite"
-                className="text-[rgb(84,150,136)] font-semibold hover:underline ml-2"
-              >
-                Instagram
-              </a>{" "}
-              |{" "}
-              <a
-                href="https://facebook.com/natureexquisite"
-                className="text-[rgb(84,150,136)] font-semibold hover:underline"
-              >
-                Facebook
-              </a>{" "}
-              |{" "}
-              <a
-                href="https://linkedin.com/company/natureexquisite"
-                className="text-[rgb(84,150,136)] font-semibold hover:underline"
-              >
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Call-to-Action */}
-        <div className="mt-12">
-          <a
-            href="/contact-form"
-            className="inline-block bg-[rgb(84,150,136)] text-[rgb(244,234,197)] text-lg px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-green-700 hover:shadow-xl transition"
-          >
-            Request a Free Sample
-          </a>
-        </div>
+        <div className="" >
+           <h1 className="text-5xl font-bold mb-6">
+      <span className="text-[rgb(84,150,136)]">Contact</span>{" "}
+      <div className="relative inline-block professionals-text">
+        <span className="text-[rgb(244,234,197)] ">Professionals</span>
       </div>
-    </section>
+    </h1>
+
+        <p className="text-lg mb-12 leading-relaxed text-[rgb(244,234,197)]">
+          We’d love to hear from you! Reach out for more information, sample requests,<br/> bulk orders, or to learn about our sustainable practices.
+        </p>
+        </div>
+        </div>
+        </section>
+        <section className="bg-gray-50 container mx-auto px-20 py-16 text-left">
+          <div className="grid grid-cols-1  md:grid-cols-2">
+            <div>
+              
+              <h2 className="text-4xl text-[rgb(84,150,136)]">Contact Information</h2>
+               
+                <div className="flex gap-2">
+                 <Image
+                src={EmailIcon.src}
+                width={1000}
+                height={1000}
+                alt=""
+                className="w-8"
+                /> <span>info@natureexquisite.com</span>
+              </div>
+              <div>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        </div>
   );
 };
 

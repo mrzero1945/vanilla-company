@@ -9,7 +9,8 @@ import VanillaBeans from "../resources/vanilla-beans.jpg";
 import VanillaSeeds from "../resources/vanilla-seeds.jpg";
 import VanillaPowder from "../resources/vanilla-powder.jpg";
 import PremiumProduct from "../resources/premium-product.jpg";
-import CatalogIcon from "../resources/catalog-icon.png"
+import CatalogIcon from "../resources/catalog-icon.png";
+import FlexibleBanner from "../resources/flexible.png";
 import { EmailSubcribe } from "./subscribe-email";
 import {useLayoutEffect} from 'react';
 import { initScrollTrigger, clearScrollTriggers } from "../header/scroll-anim";
@@ -474,6 +475,13 @@ const Products = () => {
     </ul>
 
     {/* Tambahkan gambar fleksibilitas pesanan di sini */}
+    <Image
+    src={FlexibleBanner.src}
+    alt=""
+    width={1000}
+    height={1000}
+    className="mx-auto w-1/2 h-80"
+    />
     <h3 className="text-2xl font-semibold mb-4 text-center text-[rgb(84,150,136)]">Flexible Ordering Options</h3>
     <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
       <li>
