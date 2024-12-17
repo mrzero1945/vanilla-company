@@ -60,7 +60,7 @@ const Sustainability = () => {
            
             {/* Text */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex items-center">
-              <div> 
+              <div className='order-1 md:order-none'> 
               <Image
               src={susprac.src}
               alt=''

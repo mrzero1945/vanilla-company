@@ -27,7 +27,7 @@ const Contact = () => {
         {/* Title Section */}
         <div className="" >
            <h1 className="text-5xl font-bold mb-6">
-      <span className="text-[rgb(84,150,136)]">Contact</span>{" "}
+      <span className="text-[rgb(84,150,136)] mb-10">Contact</span>{" "}
       <div className="relative inline-block professionals-text">
         <span className="text-[rgb(244,234,197)] ">Professionals</span>
       </div>
@@ -45,7 +45,7 @@ const Contact = () => {
               
               <h2 className="text-4xl text-[rgb(84,150,136)]">Contact Information</h2>
                
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-5 justify-center md:justify-normal">
                     <Image
                     src={EmailIcon.src}
                     width={1000}
@@ -55,7 +55,7 @@ const Contact = () => {
                     /> 
                     <span>NatureExquisiteNusantara@gmail.com</span>
                 </div>
-                <div className="flex gap-2 mt-5">
+                <div className="flex gap-2 mt-5 justify-center md:justify-normal">
                   <Image
                   src={PhoneIcon.src}
                   width={1000}
@@ -66,7 +66,7 @@ const Contact = () => {
                   <span>08116668220</span>
                 </div>
                 <a href="https://wa.me/+628116668220">
-                    <div className="flex gap-2 mt-5">
+                    <div className="flex gap-2 mt-5 justify-center md:justify-normal">
                       
                       <Image
                       src={WaIcon.src}
@@ -80,14 +80,14 @@ const Contact = () => {
                   </a>
             </div>
             <div>
-              <h2 className="text-4xl text-[rgb(84,150,136)]">Product Origin</h2>
+              <h2 className="text-4xl text-[rgb(84,150,136)] mt-10">Product Origin</h2>
             
               <Image 
               src={IndoMap.src}
               alt=""
               width={1000}
               height={1000}
-              className="md:w-80"/>
+              className="md:w-80 w-full h-auto"/>
                 <p className="mt-5 text-gray-700">
               Bali, Papua, Indonesia
               </p>
