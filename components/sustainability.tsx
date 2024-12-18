@@ -92,7 +92,7 @@ const Sustainability = () => {
       <section className="bg-white py-16">
         <div className="container mx-auto text-center">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4 flex items-center'>
-            <div className='order-2'>
+            <div className='order-2 md:order-none'>
               <Image
               src={LocalComIcon.src}
               alt='localcom'
@@ -106,7 +106,7 @@ const Sustainability = () => {
                 Together, we create stronger communities, support livelihoods, and build lasting partnerships that benefit everyone.
               </p>
             </div>
-            <div className='order-1'>
+            <div className='order-1 md:order-none'>
               <Image
               src={VanilaImg.src}
               alt=''
@@ -153,7 +153,7 @@ const Sustainability = () => {
       <section className="bg-white py-16">
         <div className="container mx-auto text-center">
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-            <div className='order-4'>
+            <div className='order-4 order-none'>
             <Image 
                       src={RecycleJourney.src}
                       alt='j'
@@ -172,7 +172,7 @@ const Sustainability = () => {
                         Contact Us
                       </a>
             </div>
-            <div className='order-3'>
+            <div className='order-3 md:order-none'>
               <Image
               src={plant2.src}
               width={1000}
