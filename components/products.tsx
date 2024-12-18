@@ -1,17 +1,18 @@
 "use client"
 import VanillaPasteIcon from "../resources/vanilla-paste-icon.png";
 import Image from "next/image";
-import VanillaExtract from "../resources/vanilla-extract.png";
+import VanillaExtract from "../resources/Vanilla-extract.jpg";
 import PremiumIcon from "../resources/premium-icon.png";
 import VanillaIcon from "../resources/vanilla-icon.png"
 import RawVanilla from "../resources/raw-beans.jpg";
 import VanillaBeans from "../resources/vanilla-beans.jpg";
 import VanillaSeeds from "../resources/vanilla-seeds.jpg";
 import VanillaPowder from "../resources/vanilla-powder.jpg";
-import PremiumProduct from "../resources/product-sample.jpg";
+import PremiumProduct from "../resources/vanilla-pods.jpg";
 import CatalogIcon from "../resources/catalog-icon.png";
 import FlexibleBanner from "../resources/flexible.png";
 import Pros from "../resources/pros.png"
+
 import { EmailSubcribe } from "./subscribe-email";
 import {useLayoutEffect} from 'react';
 import { initScrollTrigger, clearScrollTriggers } from "../header/scroll-anim";
@@ -211,9 +212,9 @@ const Products = () => {
               <Image
               src={VanillaExtract.src}
               alt="vanilla extract"
-              width={40}
-              height={40}
-              className="mx-auto"
+              width={1000}
+              height={1000}
+              className="mx-auto w-full h-80"
               />
               <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Extract</h3>
               <p className="text-sm text-gray-600 mb-4">
@@ -460,13 +461,22 @@ const Products = () => {
     </p>
 
     {/* Bulk Orders & Customization - Tambahkan gambar ilustrasi atau foto produk */}
-    <Image 
+    <div className="md:flex md:gap-4">
+        <Image 
     src={PremiumProduct.src}
     alt=""
     width={1000}
     height={1000}
     className="mx-auto w-full md:w-1/2 h-80"
     />
+    <Image 
+    src={VanillaPowder.src}
+    alt=""
+    width={1000}
+    height={1000}
+    className="mx auto w-full md:w-1/2 h-80"/>
+    </div>
+  
 
     <h3 className="text-2xl font-semibold mb-4 text-[rgb(84,150,136)] text-center">Our Products</h3>
     <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
