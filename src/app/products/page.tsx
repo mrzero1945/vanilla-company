@@ -4,7 +4,7 @@ import { Navbar } from "../../../components/navbar";
 
 import dynamic from 'next/dynamic';
 
-const Products = dynamic(() => import('../../../components/products'), { ssr: false });
+const Products = dynamic(() => import('../../../components/products2'), { ssr: false });
 
 export default function products(){
     return(

@@ -17,83 +17,32 @@ const Contact = () => {
   }, []);
   return (
     <div>
-    <section className="bg-gray-50 py-16" style={{
-      backgroundImage: `url(${VanillaPwder.src})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}>
- 
-      <div className=" lg:px-12 text-center">
-        {/* Title Section */}
-        <div className="" >
-           <h1 className="text-5xl font-bold mb-6">
-      <span className="text-[rgb(84,150,136)] mb-10">Contact</span>{" "}
-      <div className="relative inline-block professionals-text">
-        <span className="text-[rgb(244,234,197)] ">Professionals</span>
-      </div>
-    </h1>
+      <section className="bg-gray-50 py-16" style={{
+        backgroundImage: `url(${VanillaPwder.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}>
+  
+        <div className=" lg:px-12 text-center">
+          {/* Title Section */}
+          <div className="mx-5" >
+            <h1 className="text-5xl font-bold mb-6">
+                <span className="text-[rgb(84,150,136)] mb-10">Contact</span>{" "}
+                <div className="relative inline-block professionals-text">
+                  <span className="text-[rgb(244,234,197)] ">Professionals</span>
+                </div>
+              </h1>
 
-        <p className="text-lg mb-12 leading-relaxed text-[rgb(244,234,197)]">
-          We’d love to hear from you! Reach out for more information, sample requests,<br/> bulk orders, or to learn about our sustainable practices.
-        </p>
+                  <p className="text-lg mb-12 leading-relaxed text-[rgb(244,234,197)]">
+                    We’d love to hear from you! Reach out for more information, sample requests,<br/> bulk orders, or to learn about our sustainable practices.
+                  </p>
+            </div>
         </div>
-        </div>
-        </section>
-        <section className="bg-gray-50 container  md:px-20 py-16 text-left">
+      </section>
+        <section className="bg-gray-50 container  md:px-20 py-16 text-left flex justify-center items-center">
           <div className="grid grid-cols-1  md:grid-cols-2 text-[rgb(84,150,136)] ">
-            <div className="mx-auto">
-              
-              <h2 className="text-4xl text-[rgb(84,150,136)]">Contact Information</h2>
-               
-                <div className="flex gap-2 mt-5 ">
-                    <Image
-                    src={EmailIcon.src}
-                    width={1000}
-                    height={1000}
-                    alt=""
-                    className="w-8"
-                    /> 
-                    <span className="">NatureExquisiteNusantara@gmail.com</span>
-                  
-                </div>
-                <div className="flex gap-2 mt-5">
-                  <Image
-                  src={PhoneIcon.src}
-                  width={1000}
-                  height={1000}
-                  alt=""
-                  className="w-8"
-                  />
-                  <span>08116668220</span>
-                </div>
-                <a href="https://wa.me/+628116668220">
-                    <div className="flex gap-2 mt-5">
-                      
-                      <Image
-                      src={WaIcon.src}
-                      width={1000}
-                      height={1000}
-                      alt=""
-                      className="w-8"
-                      />
-                      <span>08116668220</span>
-                      </div>
-                  </a>
-            </div>
-            <div className="mx-auto">
-              <h2 className="text-4xl text-[rgb(84,150,136)] mt-10">Product Origin</h2>
-            
-              <Image 
-              src={IndoMap.src}
-              alt=""
-              width={1000}
-              height={1000}
-              className="md:w-80 w-80 h-80"/>
-                <p className="mt-5  text-gray-700">
-              Bali, Papua, Indonesia
-              </p>
-            </div>
-            <div className="mx-auto">
+           {/*social media*/}
+           <div className="mx-5">
           
 
              
@@ -242,6 +191,60 @@ const Contact = () => {
              </div>
           </a>
             </div>
+            {/*col company location */}
+            <div className="mx-5">
+              <h2 className="text-4xl text-[rgb(84,150,136)] text-center mt-10">Company Location</h2>
+            
+              <Image 
+              src={IndoMap.src}
+              alt=""
+              width={1000}
+              height={1000}
+              className="md:w-80 w-80 h-80 mt-5 mx-auto"/>
+                <p className="mt-5  text-gray-700 mx-auto text-center">
+                  Jakarta, Indonesia
+              </p>
+            </div>
+            {/*col contact information */}
+            <div className="mx-5 mt-10">
+              
+              <h2 className="text-4xl text-[rgb(84,150,136)]">Contact Information</h2>
+               
+                <div className="flex gap-2 mt-5 ">
+                    <Image
+                    src={EmailIcon.src}
+                    width={1000}
+                    height={1000}
+                    alt=""
+                    className="w-8"
+                    /> 
+                    <span className="">NatureExquisiteNusantara@gmail.com</span>
+                  
+                </div>
+                <div className="flex gap-2 mt-5">
+                  <Image
+                  src={PhoneIcon.src}
+                  width={1000}
+                  height={1000}
+                  alt=""
+                  className="w-8"
+                  />
+                  <span>08116668220</span>
+                </div>
+                <a href="https://wa.me/+628116668220">
+                    <div className="flex gap-2 mt-5">
+                      
+                      <Image
+                      src={WaIcon.src}
+                      width={1000}
+                      height={1000}
+                      alt=""
+                      className="w-8"
+                      />
+                      <span>08116668220</span>
+                      </div>
+                  </a>
+            </div>
             <div>
               <h2 className="text-4xl mt-10 text-center">Customer Service</h2>
               <Image
@@ -249,8 +252,8 @@ const Contact = () => {
               alt=""
               width={1000}
               height={1000}
-              className="w-80 h-auto mx-auto"/>
-              <p className="text-gray-700 text-center md:text-left mx-5">At Vanilla Export Company, we prioritize your satisfaction by providing exceptional customer service tailored to your needs.</p>
+              className="w-80 h-auto mx-auto mt-5"/>
+              <p className="text-gray-700 text-center mx-5 mt-5">At PT Nature Exquisite Nusantara Export company, we prioritize your satisfaction by providing exceptional customer service tailored to your needs.</p>
             </div>
             
           </div>

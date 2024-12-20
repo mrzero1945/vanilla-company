@@ -42,9 +42,9 @@ const Products = () => {
           <Image
           src={PremiumIcon}
           alt="premiun"
-          width={60}
-          height={60}
-          className="mx-auto"
+          width={1000}
+          height={1000}
+          className="w-20 mx-auto"
           />
           </div>
           <h1 className="text-5xl font-bold mb-6">Our Premium Vanilla Products</h1>
@@ -60,9 +60,9 @@ const Products = () => {
           <Image
           src={VanillaIcon.src}
           alt="vanilla"
-          width={60}
-          height={60}
-          className="mx-auto"
+          width={1000}
+          height={1000}
+          className="w-20 mx-auto"
           />
           <h2 className="text-4xl font-bold text-[rgb(84,150,136)] text-center mb-12">Vanilla Beans</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -202,7 +202,7 @@ const Products = () => {
       <section className="bg-white text-gray-800 py-16 scroll-row">
         <div className="container mx-auto text-left">
           <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12 text-center">Vanilla Derivatives</h2>
-          <p className="mb-5 text-left mx-5">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
+          <p className="mb-5 text-left md:text-center mx-5">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             
