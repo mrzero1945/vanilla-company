@@ -451,7 +451,7 @@ const Products = () => {
 
       </section>
 
-      <section className="bg-white text-gray-800 md:py-5 scroll-row">
+      <section className="bg-white text-gray-800 md:py-5 ">
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
       Customizable Bulk Orders for Your Business Needs
@@ -541,7 +541,7 @@ const Products = () => {
       </p>
       
       {/* Tambahkan gambar statistik bisnis */}
-      <div className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md text-[rgb(84,150,136)] scroll-row" suppressHydrationWarning={true}>
+      <div className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md text-[rgb(84,150,136)]">
         <div>
           <p className="font-bold text-3xl">100%</p>
           <p>Pure Quality</p>

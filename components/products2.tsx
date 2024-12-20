@@ -63,17 +63,17 @@ const Products = () => {
           className="w-20 mx-auto"
           />
           <h2 className="text-4xl font-bold text-[rgb(84,150,136)] text-center mb-12">Vanilla Beans</h2>
-        <div className="grid grid-cols-2 flex items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
             <Image
             src={RawVanilla.src}
             width={1000}
             height={1000}
             alt=""
-            className="mx-auto w-full h-full"
+            className="mx-auto w-80 md:w-full h-full"
             />
             <div className="mx-10">
                  {/* Deskripsi */}
-                 <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4">
+                 <h3 className="text-2xl text-center font-semibold text-[rgb(84,150,136)] mb-4">
     Vanilla Planifolia (Grade A)
   </h3>
   <p className="text-lg text-gray-700 mb-4">
@@ -128,9 +128,9 @@ const Products = () => {
       </section>
       {/*another one*/}
       <section className="bg-white text-gray-800 py-5 scroll-row">
-        <div className="grid grid-cols-2 flex items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
           <div className="mx-10 order-2 md:order-none">
-          <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4">
+          <h3 className="text-2xl text-center font-semibold text-[rgb(84,150,136)] mb-4">
             Vanilla Tahitensis (Grade A)
           </h3>
            {/* Deskripsi */}
@@ -150,7 +150,7 @@ const Products = () => {
 
           {/* Tabel Spesifikasi */}
           <div className="overflow-x-auto">
-            <table className="min-w-full border-collapse border border-gray-300 bg-white mt-12">
+            <table className="min-w-full border-collapse border border-gray-300 bg-white ">
               <thead>
                 <tr>
                   <th className="border border-gray-300 px-4 py-2 bg-gray-100 text-left text-sm font-medium">
@@ -186,7 +186,7 @@ const Products = () => {
           alt=""
           width={1000}
           height={1000}
-          className="mx-auto h-full w-full order-1 md:order-none"
+          className="mx-auto h-full w-80 md:w-full order-1 md:order-none"
           />
 
         </div>
@@ -202,7 +202,7 @@ const Products = () => {
             width={1000}
             height={1000}
             alt=""
-            className="w-full h-full"
+            className="w-80 mx-auto md:w-full h-full"
             />
             <div className="mx-10">
             <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Extract</h3>
@@ -273,7 +273,7 @@ const Products = () => {
 {/*another one*/}
 <section className="bg-white text-gray-800 py-5 scroll-row">
   <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
-    <div className="mx-10">
+    <div className="mx-10 order-4 md:order-none">
     <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Paste</h3>
               <p className="text-sm text-gray-600 mb-4">
                 Vanilla paste is a concentrated form of vanilla extract mixed with vanilla seeds. This product adds both flavor and visual appeal, perfect for high-end desserts and beverages. Available in varying intensities to suit different needs.
@@ -335,7 +335,7 @@ const Products = () => {
     alt=""
     width={1000}
     height={1000}
-    className="w-full h-full"/>
+    className="w-80 mx-auto md:w-full h-full order-3 md:order-none"/>
   </div>
 </section>
 {/*another one */}
@@ -346,7 +346,7 @@ const Products = () => {
   width={1000}
   height={1000}
   alt=""
-  className="w-full h-full mx-auto"
+  className="w-80 md:w-full h-full mx-auto"
   />
   <div className="mx-5">
     <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Seeds</h3>
@@ -377,7 +377,7 @@ const Products = () => {
 {/*another one*/}
 <section className="bg-white text-gray-800 md:py-5 scroll-row">
   <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
-    <div className="mx-10">
+    <div className="mx-10 order-6 md:order-none">
       <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Powder</h3>
       <p className="text-sm text-gray-600 mb-4">
     Our premium vanilla powder is made from ground, dried vanilla beans. It provides the purest vanilla flavor with a fine texture, ideal for adding a touch of elegance to a variety of desserts, beverages, and gourmet dishes.
@@ -420,12 +420,12 @@ const Products = () => {
     width={1000}
     height={1000}
     alt=""
-    className="w-full h-full"/>
+    className="w-80 mx-auto md:w-full h-full order-5 md:order-none"/>
   </div>
   <div className="flex justify-center mt-20">
   <a
     href="/contact"
-    className="flex items-center text-[rgb(255,255,255)] bg-[rgb(84,150,136)] text-center px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition"
+    className="flex items-center text-[rgb(255,255,255)] bg-[rgb(84,150,136)] text-center px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition mb-10 md:mb-0"
   >
     {/* Gambar Icon */}
     <img
@@ -440,14 +440,7 @@ const Products = () => {
       {/*bulk order section */}
       <section className="bg-white text-gray-800 md:py-5 scroll-row md:mt-10"> 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 flex items-center">
-          <Image
-          src={PremiumProduct.src}
-          alt=""
-          width={1000}
-          height={1000}
-          className="w-full h-full"
-          />
-          <div className="mx-10">
+          <div className="mx-10 md:order-none">
             <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
               Customizable Bulk Orders for Your Business Needs
             </h2>
@@ -468,7 +461,7 @@ const Products = () => {
       <section className="bg-white text-gray-800 md:py-5 scroll-row">
         <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
           {/*bloody text*/}
-          <div className="mx-10">
+          <div className="mx-10 order-10">
             <h2 className="text-4xl font-bold mb-4 text-center text-[rgb(84,150,136)]">Flexible Ordering Options</h2>
               <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
                 <li>
@@ -487,7 +480,7 @@ const Products = () => {
             alt=""
             width={1000}
             height={1000}
-            className="w-full h-full"
+            className="w-80 mx-auto md:w-full h-full order-9"
             />
         </div>
       </section>

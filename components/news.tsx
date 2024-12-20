@@ -150,7 +150,7 @@ const VanillaNewsPage: React.FC = () => {
           </div>
         ) : (
           <>
-            <h1 className="text-3xl font-bold mb-6 text-[rgb(84,150,136)]">
+            <h1 className="text-3xl font-bold mb-6 text-center text-[rgb(84,150,136)]">
               Latest Vanilla News
             </h1>
             <div className="grid gap-8 md:grid-cols-2">
@@ -173,9 +173,9 @@ const VanillaNewsPage: React.FC = () => {
                       Published on {article.date} by {article.author}
                     </p>
                     <p className="text-gray-700 text-base">{article.excerpt}</p>
-                    <span className="text-blue-500 hover:text-blue-700 mt-4 inline-block">
-                      Read more &rarr;
-                    </span>
+                    <button className="bg-[rgb(84,150,136)] hover:text-blue-700 mt-4 inline-block px-5 text-white rounded-full py-3">
+                      Read more
+                    </button>
                   </div>
                 </div>
               ))}

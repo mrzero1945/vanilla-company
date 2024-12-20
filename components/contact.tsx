@@ -46,7 +46,7 @@ const Contact = () => {
           
 
              
-                <h2 className="text-4xl text-[rgb(84,150,136)] mt-10">Social Media</h2>
+                <h2 className="text-4xl text-[rgb(84,150,136)]">Social Media</h2>
                 <a
                   href="https://www.instagram.com"
                   target="_blank"
@@ -193,22 +193,25 @@ const Contact = () => {
             </div>
             {/*col company location */}
             <div className="mx-5">
-              <h2 className="text-4xl text-[rgb(84,150,136)] text-center mt-10">Company Location</h2>
-            
-              <Image 
-              src={IndoMap.src}
-              alt=""
-              width={1000}
-              height={1000}
-              className="md:w-80 w-80 h-80 mt-5 mx-auto"/>
-                <p className="mt-5  text-gray-700 mx-auto text-center">
-                  Jakarta, Indonesia
-              </p>
+              <h2 className="text-4xl text-[rgb(84,150,136)] mt-10">Company Location</h2>
+              <p className="mt-5 text-gray-700 mx-auto">
+                    Jakarta, Indonesia
+                </p>
+              <div className="h-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317713.08201069506!2d106.6894294!3d-6.2000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699299e5d8d4b3%3A0x401577d14fed4c0!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1675641202141!5m2!1sen!2sid"
+                  width="100%"
+                  height="100%"
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+               
             </div>
             {/*col contact information */}
-            <div className="mx-5 mt-10">
+            <div className="mx-5 mt-32">
               
-              <h2 className="text-4xl text-[rgb(84,150,136)]">Contact Information</h2>
+              <h2 className="text-4xl text-[rgb(84,150,136)] mt-10 md:mt-0">Contact Information</h2>
                
                 <div className="flex gap-2 mt-5 ">
                     <Image
@@ -245,20 +248,112 @@ const Contact = () => {
                       </div>
                   </a>
             </div>
-            <div>
-              <h2 className="text-4xl mt-10 text-center">Customer Service</h2>
+            <div className="mx-5 mt-32">
+              <h2 className="text-4xl ">Customer Service</h2>
               <Image
               src={CusService.src}
               alt=""
               width={1000}
               height={1000}
               className="w-80 h-auto mx-auto mt-5"/>
-              <p className="text-gray-700 text-center mx-5 mt-5">At PT Nature Exquisite Nusantara Export company, we prioritize your satisfaction by providing exceptional customer service tailored to your needs.</p>
+              <p className="text-gray-700 mx-5 mt-5">At PT Nature Exquisite Nusantara Export company, we prioritize your satisfaction by providing exceptional customer service tailored to your needs.</p>
             </div>
             
           </div>
           
      
+        </section>
+        {/* connect with us*/}
+        <section className="bg-gray-50 py-10 flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div className="mx-5">
+              <button className="flex items-center gap-2 bg-[rgb(84,150,136)] text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-[rgb(68,122,111)] transition">
+                {/* SVG Love Icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="rgb(244,234,197)"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  className="flex-shrink-0"
+                >
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                {/* Text */}
+                <span>Get in Touch</span>
+          
+              </button>
+              <h2 className="mt-10 text-5xl text-[rgb(84,150,136)]">Reach Out Today</h2>
+              <p className="mt-5 text-gray-700">Have questions? We have answers! Let's chat about vanilla magic.</p>
+            </div>
+            <div className="mx-5">
+  <div className="mb-4">
+    {/* Name Input */}
+    <label
+      className="block text-gray-700 text-sm font-bold mb-2"
+      htmlFor="username"
+    >
+      Name
+    </label>
+    <input
+      className="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+      id="username"
+      type="text"
+      placeholder=""
+    />
+
+    {/* Email Input */}
+    <label
+      className="block text-gray-700 text-sm font-bold mb-2"
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      className="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+      id="email"
+      type="email"
+      placeholder=""
+    />
+
+    {/* Phone Input */}
+    <label
+      className="block text-gray-700 text-sm font-bold mb-2"
+      htmlFor="phone"
+    >
+      Phone
+    </label>
+    <input
+      className="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+      id="phone"
+      type="tel"
+      placeholder=""
+    />
+
+    {/* Message Input */}
+    <label
+      className="block text-gray-700 text-sm font-bold mb-2"
+      htmlFor="message"
+    >
+      Message
+    </label>
+    <textarea
+      className="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
+      id="message"
+      placeholder=""
+    ></textarea>
+  </div>
+      {/* Send Message Button */}
+      <button
+      type="submit"
+      className="bg-[rgb(84,150,136)] text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline hover:bg-[rgb(68,122,111)] transition"
+    >
+      Send Message
+    </button>
+</div>
+
+
+          </div>
         </section>
         </div>
   );

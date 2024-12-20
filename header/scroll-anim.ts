@@ -18,7 +18,7 @@ export const initScrollTrigger = (): void => {
       {
         opacity: 1,
         y: 0,
-        duration: 0.8,
+        duration: 0.5,
         scrollTrigger: {
           trigger: row, // Elemen yang dipantau adalah masing-masing elemen .scroll-row
           start: 'top 80%', // Animasi dimulai ketika elemen berada di 80% viewport bawah
