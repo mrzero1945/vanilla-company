@@ -17,7 +17,7 @@ const Navbar = () => {
         alt=""
         width={1000}
         height={1000}
-        className="md:w-96 md:h-20 w-60 mx-auto"
+        className="md:w-64 md:h-auto w-48 mx-auto"
         />
      
 

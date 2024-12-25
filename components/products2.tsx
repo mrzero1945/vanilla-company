@@ -8,10 +8,8 @@ import RawVanilla from "../resources/raw-beans.jpg";
 import VanillaBeans from "../resources/vanilla-beans.jpg";
 import VanillaSeeds from "../resources/vanilla-seeds.jpg";
 import VanillaPowder from "../resources/vanilla-powder-1024.jpg";
-import PremiumProduct from "../resources/vanilla-pods-1024.jpg";
 import CatalogIcon from "../resources/catalog-icon.png";
 import FlexibleBanner from "../resources/flexible.png";
-import Pros from "../resources/pros.png"
 import { EmailSubcribe } from "./subscribe-email";
 import {useLayoutEffect} from 'react';
 import { initScrollTrigger, clearScrollTriggers } from "../header/scroll-anim";

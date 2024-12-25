@@ -43,7 +43,7 @@ const Footer = () => {
           </a>
           {/* Facebook */}
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/share/1DfZ58J2Ku/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -62,7 +62,7 @@ const Footer = () => {
           </a>
           {/* TikTok */}
           <a
-            href="https://www.tiktok.com"
+            href=" https://www.tiktok.com/@exquisite.nusanta?_t=8sP1W6spsyP&_r=1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
