@@ -6,13 +6,14 @@ import PremiumIcon from "../resources/premium-icon.png";
 import VanillaIcon from "../resources/vanilla-icon.png"
 import RawVanilla from "../resources/raw-beans.jpg";
 import VanillaBeans from "../resources/vanilla-beans.jpg";
-import VanillaSeeds from "../resources/vanilla-seeds.jpg";
+import VanillaSeeds from "../resources/vanilla-seeds.webp";
 import VanillaPowder from "../resources/vanilla-powder-1024.jpg";
 import CatalogIcon from "../resources/catalog-icon.png";
 import FlexibleBanner from "../resources/flexible.png";
 import { EmailSubcribe } from "./subscribe-email";
 import {useLayoutEffect} from 'react';
 import { initScrollTrigger, clearScrollTriggers } from "../header/scroll-anim";
+import VanilaBg from "../resources/vanilla-3.jpg";
 
 
 
@@ -33,23 +34,37 @@ const Products = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-[rgb(84,150,136)] text-white pt-16 pb-12 scroll-row">
-        <div className="container mx-auto text-center">
-          <div className="mb-2">
-          <Image
-          src={PremiumIcon}
-          alt="premiun"
-          width={1000}
-          height={1000}
-          className="w-20 mx-auto"
-          />
-          </div>
-          <h1 className="text-5xl font-bold mb-6">Our Premium Vanilla Products</h1>
-          <p className="text-lg sm:text-xl mb-8 max-w-3xl md:mx-auto leading-relaxed mx-5">
-            Discover the finest Indonesian vanilla beans, extracts, pastes, and more. Perfect for gourmet culinary creations and premium applications.
-          </p>
-        </div>
-      </section>
+      <section className="relative bg-[rgb(84,150,136)] text-white pt-16 pb-12 scroll-row">
+  {/* Background Image */}
+  <Image
+    src={VanilaBg.src} // Ganti dengan gambar latar belakang Anda
+    alt="Background"
+    layout="fill"
+    objectFit="cover"
+    className="absolute inset-0 z-0"
+  />
+  
+ {/* Overlay semi-transparan */}
+ <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+
+  {/* Konten */}
+  <div className="container mx-auto text-center relative z-20">
+    <div className="mb-2">
+      <Image
+        src={PremiumIcon}
+        alt="premium"
+        width={1000}
+        height={1000}
+        className="w-20 mx-auto"
+      />
+    </div>
+    <h1 className="text-5xl font-bold mb-6">Our Premium Vanilla Products</h1>
+    <p className="text-lg sm:text-xl mb-8 max-w-3xl md:mx-auto leading-relaxed mx-5">
+      Discover the finest Indonesian vanilla beans, extracts, pastes, and more. Perfect for gourmet culinary creations and premium applications.
+    </p>
+  </div>
+</section>
+
 
       {/* Vanilla Beans Section */}
       <section className="bg-white text-gray-800 py-5 scroll-row">
@@ -193,7 +208,7 @@ const Products = () => {
       {/* Vanilla Derivatives Section */}
       <section className="bg-white text-gray-800 py-5 scroll-row">
           <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12 text-center">Vanilla Derivatives</h2>
-          <p className="mb-5 text-left md:text-center mx-5">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
+          <p className="mb-5 text-left md:text-center text-lg mx-5">Our vanilla derivatives are crafted to provide enhanced flavor and versatility for a wide range of applications. From concentrated pastes to pure extracts and seeds, each product is designed to offer superior quality and consistency, perfect for gourmet food, beverages, and fragrance industries.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
             <Image
             src={VanillaExtract.src}
@@ -204,10 +219,10 @@ const Products = () => {
             />
             <div className="mx-10">
             <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Extract</h3>
-              <p className="text-sm text-gray-600 mb-4">
+              <p className="text-lg text-gray-600 mb-4">
                 Our vanilla extract is a pure and concentrated form of vanilla, ideal for enhancing the flavor of your favorite baked goods, beverages, and gourmet dishes. Available in different grades to match the needs of professionals.
               </p>
-              <ul className="text-sm   text-gray-600 my-4">
+              <ul className="text-md   text-gray-600 my-4">
                 <li>
                   Classic (1 pod): A basic vanilla extract for everyday use.
                 </li>
@@ -273,10 +288,10 @@ const Products = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
     <div className="mx-10 order-4 md:order-none">
     <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Paste</h3>
-              <p className="text-sm text-gray-600 mb-4">
+              <p className="text-lg text-gray-600 mb-4">
                 Vanilla paste is a concentrated form of vanilla extract mixed with vanilla seeds. This product adds both flavor and visual appeal, perfect for high-end desserts and beverages. Available in varying intensities to suit different needs.
               </p>
-              <ul className="text-sm   text-gray-600 my-4">
+              <ul className="text-md   text-gray-600 my-4">
                 <li>
                   Single Pod Intensity: For subtle vanilla flavor 
                 </li>
@@ -348,11 +363,11 @@ const Products = () => {
   />
   <div className="mx-5">
     <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Seeds</h3>
-    <p className="text-sm text-gray-600 mb-4">
+    <p className="text-lg text-gray-600 mb-4">
     Extracted directly from our finest vanilla pods, our premium vanilla seeds provide an intense, aromatic flavor that enhances the quality of gourmet products. These tiny black specks are packed with rich vanilla essence, making them perfect for adding both flavor and visual appeal to your culinary creations. The seeds' delicate yet potent flavor works beautifully in everything from high-end desserts and pastries to premium beverages, infusions, and gourmet chocolate. Vanilla seeds are the ideal choice for chefs looking to elevate their dishes with an authentic, high-quality vanilla flavor. Perfect for those seeking both flavor and aesthetic appeal, they add a luxurious touch to any recipe.
   </p>
   <h4 className="mt-5">Specifications:</h4>
-  <ul className="text-sm  text-gray-600 my-4">
+  <ul className="text-md  text-gray-600 my-4">
     <li>
       Product Type: Vanilla Seeds
     </li>
@@ -377,10 +392,10 @@ const Products = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
     <div className="mx-10 order-6 md:order-none">
       <h3 className="text-2xl font-semibold text-[rgb(84,150,136)] mb-4 text-center">Vanilla Powder</h3>
-      <p className="text-sm text-gray-600 mb-4">
+      <p className="text-lg text-gray-600 mb-4">
     Our premium vanilla powder is made from ground, dried vanilla beans. It provides the purest vanilla flavor with a fine texture, ideal for adding a touch of elegance to a variety of desserts, beverages, and gourmet dishes.
   </p>
-  <ul className="text-sm text-gray-600 my-4">
+  <ul className="text-md text-gray-600 my-4">
     <li>
       Flavor Profile: Smooth, sweet, with subtle floral notes.
     </li>
@@ -438,20 +453,21 @@ const Products = () => {
       {/*bulk order section */}
       <section className="bg-white text-gray-800 md:py-5 scroll-row md:mt-10"> 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 flex items-center">
-          <div className="mx-10 md:order-none">
+          <div className="mx-10">
             <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
               Customizable Bulk Orders for Your Business Needs
             </h2>
             <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto text-left">
               At PT. Nature’s Exquisite Nusantara, we specialize in providing flexible bulk ordering solutions for manufacturers, wholesalers, and private label clients. Whether you require large quantities of premium vanilla products or custom packaging tailored to your brand, we’re here to meet your needs.
             </p>
-            <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">Our Products</h2>
+          </div>
+          <div className="mx-10">
+          <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">Our Products</h2>
             <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
               <li><strong className="text-[rgb(84,150,136)]">Premium Vanilla Pods:</strong> Gourmet-grade and extract-grade options.</li>
               <li><strong className="text-[rgb(84,150,136)]">Vanilla Extract & Powder:</strong> Versatile for various applications.</li>
               <li><strong className="text-[rgb(84,150,136)]">Custom Packaging:</strong> Personalized labels and designs to reflect your brand identity.</li>
             </ul>
-
           </div>
         </div>
       </section>

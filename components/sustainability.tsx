@@ -35,7 +35,8 @@ const Sustainability = () => {
     backgroundPosition: "center",
   }}>
     {/* Background Overlay */}
-  <div className="absolute inset-0 bg-gray-900 bg-opacity-50 backdrop-blur-sm"></div>
+   {/* Overlay semi-transparan */}
+ <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
         <div className="relative container mx-auto px-4 flex flex-col items-center text-center z-10">
           <Image
           src={SustainabilityIcon.src}
