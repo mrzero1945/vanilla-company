@@ -23,6 +23,9 @@ import Vanilla3 from "../resources/vanilla-3.jpg";
 import { initScrollTrigger, clearScrollTriggers } from '../header/scroll-anim';
 import { useLayoutEffect } from "react";
 import { Colors } from "../header/colors";
+{/*news page */}
+import { VanillaNewsPage } from "./news";
+import { EmailSubcribe } from "./subscribe-email";
 
 type FirstImages = {
     id:number,
@@ -155,7 +158,7 @@ const home = ()=>{
                     </p>
                     {/* Teks Judul dengan Garis */}
                     <h2 className={`text-2xl md:text-4xl font-medium ${Colors.primary_text} relative inline-block`}>
-                    <span className={`absolute -bottom-1 left-0 w-full h-2 ${Colors.secondary_bg} opacity-60 rounded-full -z-10`}></span>
+                    <span className={`absolute -bottom-1 left-0 w-full h-2 ${Colors.secondary_bg} opacity-60 rounded-full z-50`}></span>
                         Top Quality Vanilla Product
                     </h2>
                 </div>
@@ -226,11 +229,11 @@ const home = ()=>{
                     {/* Overlay semi-transparan */}
                     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
                     {/* Teks di atas overlay */}
-                    <div className="absolute inset-0 flex flex-col justify-center items-center p-4">
+                    <div className="absolute inset-0 flex flex-col justify-start items-start md:justify-center md:items-center p-4">
                       <h2 className={`${Colors.secondary_text} text-2xl font-semibold`}>
                         {bloody_p.title}
                       </h2>
-                      <p className={`text-lg mt-2 text-center ${Colors.secondary_text}`}>
+                      <p className={`text-lg mt-2 md:text-center ${Colors.secondary_text}`}>
                         {bloody_p.content}
                       </p>
                     </div>
@@ -255,11 +258,11 @@ const home = ()=>{
                     {/* Overlay semi-transparan */}
                     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
                     {/* Teks di atas overlay */}
-                    <div className="absolute inset-0 flex flex-col justify-end items-end p-4">
+                    <div className="absolute inset-0 flex flex-col justify-start items-start md:justify-end md:items-end p-4">
                       <h2 className={`${Colors.secondary_text} text-2xl font-semibold`}>
                         {bloody_p.title}
                       </h2>
-                      <p className={`text-lg mt-2 text-right ${Colors.secondary_text}`}>
+                      <p className={`text-lg mt-2 md:text-right ${Colors.secondary_text}`}>
                         {bloody_p.content}
                       </p>
                     </div>
@@ -320,17 +323,10 @@ const home = ()=>{
         </div>
       </section>
       <section>
-        <div className="text-center py-8">
-                      {/* Teks Kecil */}
-                      <p className="text-sm text-gray-500 tracking-wide uppercase">
-                          Recent News
-                      </p>
-                      {/* Teks Judul dengan Garis */}
-                      <h2 className={`text-2xl md:text-4xl font-medium ${Colors.primary_text} relative inline-block`}>
-                      <span className={`absolute -bottom-1 left-0 w-full h-2 ${Colors.secondary_bg} opacity-60 rounded-full -z-10`}></span>
-                          Our Latest News
-                      </h2>
-         </div>
+        <VanillaNewsPage/>
+      </section>
+      <section>
+        <EmailSubcribe/>
       </section>
         </div>  
     );

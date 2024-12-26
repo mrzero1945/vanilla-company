@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Article, ContentBlock, articles } from "../header/articles";
-
+import { Colors } from "../header/colors";
 
 const VanillaNewsPage: React.FC = () => {
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
@@ -85,10 +85,17 @@ const VanillaNewsPage: React.FC = () => {
           </div>
         ) : (
           <>
-            <h1 className="text-3xl font-bold mb-6 text-center text-[rgb(84,150,136)]">
-              Latest Vanilla News
-            </h1>
-            <div className="grid gap-8 md:grid-cols-3">
+          <div className="text-center py-8">
+            {/* Teks Kecil */}
+            <p className="text-sm text-gray-500 tracking-wide uppercase">Recent News</p>
+            {/* Teks Judul dengan Garis */}
+            <h2 className={`text-2xl md:text-4xl font-medium ${Colors.primary_text} relative inline-block`}>
+              <span className={`absolute -bottom-1 left-0 w-full h-2 ${Colors.secondary_bg} opacity-60 rounded-full z-50`}></span>
+              Our Latest News
+            </h2>
+          </div>
+
+            <div className="grid gap-8 md:grid-cols-3 grid-cols-1">
               {articles.map((article) => (
                 <div
                   key={article.id}
