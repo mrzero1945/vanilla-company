@@ -10,7 +10,7 @@ import CoffeBeanIcon from '../resources/coffe-beans-icon.png';
 import CocoaBeanIcon from '../resources/cocoa-bean-icon.png';
 import VanillaExtract from "../resources/vanilla-extract.webp";
 import VanillaPaste from "../resources/vanilla-paste.webp";
-import VanillaSeeds from "../resources/vanilla-seeds.jpg";
+import VanillaSeeds from "../resources/vanilla-seeds.webp";
 import VanillaPowder from "../resources/vanilla-powder-1024.jpg";
 import ParnershipIcon from '../resources/partnership-icon.png';
 {/*bloody p*/}
@@ -84,16 +84,16 @@ const home = ()=>{
                 </div>
             </section>
             <section className="scroll-row">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
                     {firstRow.map((firstRow) => 
-                    <div key={firstRow.id} className="relative group overflow-hidden rounded-lg">
+                    <div key={firstRow.id} className="relative group overflow-hidden">
                         {/* gambar */}
                         <Image
                             src={firstRow.image}
                             alt={firstRow.text}
                             width={1000}
                             height={1000}
-                            className="w-full h-96 object-cover rounded-lg transform transition-transform duration-300 group-hover:scale-125"
+                            className="w-full md:h-96 h-64 object-cover transform transition-transform duration-300 group-hover:scale-125"
                         />
                         {/* label */}
                         <div className="absolute inset-0 flex items-center justify-center">
@@ -185,14 +185,14 @@ const home = ()=>{
               {bloody_p
                 .filter((item, index) => index < 2) // Hanya mengambil dua elemen pertama
                 .map((bloody_p) => (
-                  <div key={bloody_p.id} className="relative group mb-4 overflow-hidden">
+                  <div key={bloody_p.id} className="relative group overflow-hidden md:mt-0 md:mb-4 mt-4">
                     {/* Gambar */}
                     <Image
                       src={bloody_p.image}
                       alt={bloody_p.title}
                       width={1000}
                       height={1000}
-                      className="w-full h-36 object-cover rounded-lg transform transition-transform duration-300 group-hover:scale-125"
+                      className="w-full h-36 object-cover  transform transition-transform duration-300 group-hover:scale-125"
                     />
                     {/* Overlay semi-transparan */}
                     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -214,14 +214,14 @@ const home = ()=>{
               {bloody_p
                 .filter((item, index) => index === 2) // Hanya mengambil elemen ke-3
                 .map((bloody_p) => (
-                  <div key={bloody_p.id} className="relative group overflow-hidden">
+                  <div key={bloody_p.id} className="relative group overflow-hidden ">
                     {/* Gambar */}
                     <Image
                       src={bloody_p.image}
                       alt={bloody_p.title}
                       width={1000}
                       height={1000}
-                      className="w-full h-72 object-cover rounded-lg transform transition-transform duration-300 group-hover:scale-125"
+                      className="w-full h-36 md:h-72 object-cover transform transition-transform duration-300 group-hover:scale-125"
                     />
                     {/* Overlay semi-transparan */}
                     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -243,14 +243,14 @@ const home = ()=>{
               {bloody_p
                 .filter((item, index) => index >= 3 && index <= 4) // Mengambil elemen ke-4 dan ke-5
                 .map((bloody_p) => (
-                  <div key={bloody_p.id} className="relative group md:mb-4 overflow-hidden">
+                  <div key={bloody_p.id} className={`relative group overflow-hidden md:mb-4 ${bloody_p.id === 5 && "mt-4 md:mt-0"}`}>
                     {/* Gambar */}
                     <Image
                       src={bloody_p.image}
                       alt={bloody_p.title}
                       width={1000}
                       height={1000}
-                      className="w-full h-36 object-cover rounded-lg transform transition-transform duration-300 group-hover:scale-125"
+                      className="w-full h-36 object-cover transform transition-transform duration-300 group-hover:scale-125"
                     />
                     {/* Overlay semi-transparan */}
                     <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
@@ -268,7 +268,7 @@ const home = ()=>{
             </div>
           </div>
         </section>
-        <section className="relative h-[400px] w-full">
+        <section className="relative h-[400px] w-full mt-5">
             {/* Background Image */}
             <div className="absolute inset-0">
                 <img
