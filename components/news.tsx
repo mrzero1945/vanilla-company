@@ -1,72 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
-import VanillaImage from "../resources/vanilla-product.webp";
-import MarketImage from "../resources/vanila.jpg";
+import { Article, ContentBlock, articles } from "../header/articles";
 
-interface ContentBlock {
-  type: "title" | "subtitle" | "paragraph";
-  text: string;
-}
-
-interface Article {
-  id: number;
-  title: string;
-  date: string;
-  author: string;
-  excerpt: string;
-  content: ContentBlock[];
-  imageUrl: string;
-}
-
-const articles: Article[] = [
-  {
-    id: 1,
-    title: "Vanilla Production Increases in 2024",
-    date: "05 December 2024",
-    author: "Gregory Smith",
-    excerpt:
-      "Vanilla, one of the most valuable and sought-after commodities in the global culinary industry, is poised for a significant production increase in 2024.",
-    content: [
-      { type: "subtitle", text: "Introduction" },
-      {
-        type: "paragraph",
-        text: "Vanilla, one of the most valuable and sought-after commodities in the global culinary industry, is poised for a significant production increase in 2024. This surge is attributed to improved agricultural techniques and favorable climate conditions that are boosting yields and enhancing the quality of vanilla beans worldwide.",
-      },
-      { type: "subtitle", text: "Sustainable Practices" },
-      {
-        type: "paragraph",
-        text: "In recent years, farmers have been adopting more sustainable and efficient farming practices. These include organic cultivation methods, agroforestry, and advanced pollination techniques that not only improve yield but also maintain the ecological balance.",
-      },
-      { type: "subtitle", text: "Government Support" },
-      {
-        type: "paragraph",
-        text: "Governments and international organizations have also stepped in to support vanilla farmers. Initiatives such as funding for modern farming equipment, training programs, and access to high-quality seedlings have empowered farmers to enhance productivity.",
-      },
-    ],
-    imageUrl: VanillaImage.src,
-  },
-  {
-    id: 2,
-    title: "Vanilla Market Demand Soars",
-    date: "05 December 2024",
-    author: "Gregory Smith",
-    excerpt:
-      "The demand for vanilla is increasing rapidly along with the global trend toward organic and natural foods.",
-    content: [
-      { type: "subtitle", text: "Introduction" },
-      {
-        type: "paragraph",
-        text: "The demand for vanilla is increasing rapidly along with the global trend toward organic and natural foods. Consumers are prioritizing natural flavors over artificial additives, making vanilla a highly sought-after ingredient in various industries.",
-      },
-      { type: "subtitle", text: "Consumer Preferences" },
-      {
-        type: "paragraph",
-        text: "Consumers today are more informed and health-conscious than ever before. There is a noticeable shift towards products that are natural, organic, and free from synthetic additives.",
-      },
-    ],
-    imageUrl: MarketImage.src,
-  },
-];
 
 const VanillaNewsPage: React.FC = () => {
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
@@ -153,7 +88,7 @@ const VanillaNewsPage: React.FC = () => {
             <h1 className="text-3xl font-bold mb-6 text-center text-[rgb(84,150,136)]">
               Latest Vanilla News
             </h1>
-            <div className="grid gap-8 md:grid-cols-2">
+            <div className="grid gap-8 md:grid-cols-3">
               {articles.map((article) => (
                 <div
                   key={article.id}
