@@ -9,12 +9,12 @@ import VanillaBeans from "../resources/vanilla-beans.jpg";
 import VanillaSeeds from "../resources/vanilla-seeds.webp";
 import VanillaPowder from "../resources/vanilla-powder-1024.jpg";
 import CatalogIcon from "../resources/catalog-icon.png";
-import FlexibleBanner from "../resources/flexible.png";
+import Plant from "../resources/vanila.jpg";
 import { EmailSubcribe } from "./subscribe-email";
 import {useLayoutEffect} from 'react';
 import { initScrollTrigger, clearScrollTriggers } from "../header/scroll-anim";
 import VanilaBg from "../resources/vanilla-3.jpg";
-
+import { Colors } from "../header/colors";
 
 
 const Products = () => {
@@ -450,34 +450,79 @@ const Products = () => {
   </a>
 </div>
 </section>
-      {/*bulk order section */}
-      <section className="bg-white text-gray-800 md:py-5 scroll-row md:mt-10"> 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 flex items-center">
-          <div className="mx-10">
-            <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">
-              Customizable Bulk Orders for Your Business Needs
-            </h2>
-            <p className="text-lg sm:text-xl mb-8 max-w-2xl md:mx-auto text-left">
-              At PT. Nature’s Exquisite Nusantara, we specialize in providing flexible bulk ordering solutions for manufacturers, wholesalers, and private label clients. Whether you require large quantities of premium vanilla products or custom packaging tailored to your brand, we’re here to meet your needs.
-            </p>
-          </div>
-          <div className="mx-10">
-          <h2 className="text-4xl font-bold mb-6 text-[rgb(84,150,136)] text-center">Our Products</h2>
-            <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
-              <li><strong className="text-[rgb(84,150,136)]">Premium Vanilla Pods:</strong> Gourmet-grade and extract-grade options.</li>
-              <li><strong className="text-[rgb(84,150,136)]">Vanilla Extract & Powder:</strong> Versatile for various applications.</li>
-              <li><strong className="text-[rgb(84,150,136)]">Custom Packaging:</strong> Personalized labels and designs to reflect your brand identity.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      {/*flexible section*/}
-      <section className="bg-white text-gray-800 md:py-5 scroll-row">
-        <div className="grid grid-cols-1 md:grid-cols-2 flex items-center">
-          {/*bloody text*/}
-          <div className="mx-10 order-10">
-            <h2 className="text-4xl font-bold mb-4 text-center text-[rgb(84,150,136)]">Flexible Ordering Options</h2>
-              <ul className="list-disc mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
+{/* Bulk order section */}
+<section className="bg-white text-gray-800 md:py-5 scroll-row md:mt-10">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+    {/* Kolom 1 */}
+    <div className="relative mx-10">
+      {/* Background Image */}
+      <Image
+        src={VanillaBeans.src} // Ganti dengan path gambar latar belakang
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 z-0 rounded-lg"
+      />
+      {/* Overlay Transparan (Opsional) */}
+  {/* Overlay semi-transparan */}
+  <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+      {/* Konten */}
+      <div className="relative z-20">
+        <h2 className="text-3xl font-bold mb-6 text-[rgb(84,150,136)] text-center mt-3">
+          Customizable Bulk Orders for Your Business Needs
+        </h2>
+        <p className={`text-lg sm:text-xl mb-8 max-w-2xl mx-5 text-left ${Colors.secondary_text}`}>
+          At PT. Nature’s Exquisite Nusantara, we specialize in providing flexible bulk ordering solutions for manufacturers, wholesalers, and private label clients. Whether you require large quantities of premium vanilla products or custom packaging tailored to your brand, we’re here to meet your needs.
+        </p>
+      </div>
+    </div>
+
+    {/* Kolom 2 */}
+    <div className="relative mx-10">
+      {/* Background Image */}
+      <Image
+        src={RawVanilla.src} // Ganti dengan path gambar latar belakang
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 z-0 rounded-lg"
+      />
+    {/* Overlay semi-transparan */}
+ <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+      {/* Konten */}
+      <div className="relative z-20">
+        <h2 className="text-3xl font-bold mb-6 text-[rgb(84,150,136)] text-center mt-3">
+          Our Products
+        </h2>
+        <ul className={`mb-8 text-lg sm:text-xl max-w-2xl mx-5 ${Colors.secondary_text}`}>
+          <li>
+            <strong className="text-[rgb(84,150,136)]">Premium Vanilla Pods:</strong> Gourmet-grade and extract-grade options.
+          </li>
+          <li>
+            <strong className="text-[rgb(84,150,136)]">Vanilla Extract & Powder:</strong> Versatile for various applications.
+          </li>
+          <li>
+            <strong className="text-[rgb(84,150,136)]">Custom Packaging:</strong> Personalized labels and designs to reflect your brand identity.
+          </li>
+        </ul>
+      </div>
+    </div>
+        {/*bloody text*/}
+        <div className="relative mx-10">
+        <Image
+        src={Plant.src} // Ganti dengan path gambar latar belakang
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 z-0 rounded-lg"
+      />
+ {/* Overlay semi-transparan */}
+ <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+      <div className="relative z-20">
+
+     
+            <h2 className="text-3xl font-bold mb-6 mt-3 text-center text-[rgb(84,150,136)]">Flexible Ordering Options</h2>
+              <ul className={`mb-8 text-lg sm:text-xl max-w-2xl mx-5 ${Colors.secondary_text}`}>
                 <li>
                   <strong className="text-[rgb(84,150,136)]">Minimum Order Quantity (MOQ):</strong> Starting at just 25kg, making it accessible for small and large-scale buyers alike.
                 </li>
@@ -488,16 +533,12 @@ const Products = () => {
                   <strong className="text-[rgb(84,150,136)]">Private Labeling:</strong> Elevate your brand with tailored packaging and labeling solutions.
                 </li>
               </ul>
+               </div>
             </div>
-            <Image
-            src={FlexibleBanner.src}
-            alt=""
-            width={1000}
-            height={1000}
-            className="w-80 mx-auto md:w-full h-full order-9"
-            />
-        </div>
-      </section>
+  </div>
+</section>
+
+ 
 
       {/*w sect */}
       <section className="bg-white text-gray-800 md:py-5 scroll-row">

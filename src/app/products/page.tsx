@@ -1,4 +1,5 @@
 'use client';
+import { FloatingWA } from "../../../components/floating-wa";
 import { Footer } from "../../../components/footer";
 import { Navbar } from "../../../components/navbar";
 
@@ -12,6 +13,7 @@ export default function products(){
             <Navbar/>
             <Products/>
             <Footer/>
+            <FloatingWA/>
         </div>
     );
 }
