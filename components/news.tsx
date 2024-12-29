@@ -90,7 +90,7 @@ const VanillaNewsPage: React.FC = () => {
             <p className="text-sm text-gray-500 tracking-wide uppercase">Recent News</p>
             {/* Teks Judul dengan Garis */}
             <h2 className={`text-2xl md:text-4xl font-medium ${Colors.primary_text} relative inline-block`}>
-              <span className={`absolute -bottom-1 left-0 w-full h-2 ${Colors.secondary_bg} opacity-60 rounded-full z-50`}></span>
+              <span className={`absolute -bottom-1 left-0 w-full h-2 ${Colors.secondary_bg} opacity-60 rounded-full z-20`}></span>
               Our Latest News
             </h2>
           </div>

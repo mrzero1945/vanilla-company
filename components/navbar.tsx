@@ -23,7 +23,7 @@ const Navbar = () => {
 
         {/* Hamburger Button */}
         <button
-          className="md:hidden text-[rgb(245,245,220)] flex-none  focus:outline-none"
+          className="md:hidden text-[rgb(245,245,220)] flex-none  focus:outline-none z-50"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? (
