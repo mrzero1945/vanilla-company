@@ -7,7 +7,6 @@ import PhoneIcon from "../resources/telephone-icon.png"
 import VanillaPwder from "../resources/vanilla-powder.jpg";
 import EmailIcon from "../resources/email-icon.png";
 import WaIcon from "../resources/wa-icon.png";
-import IndoMap from "../resources/indo-map.png";
 import CusService from "../resources/cus-service-icon.png";
 import Image from "next/image";
 

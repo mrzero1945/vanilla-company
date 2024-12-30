@@ -1,7 +1,7 @@
 "use client";
 {/*bg */}
 import VanilaBg from "../resources/vanilla-beans.webp"
-
+import { initScrollTrigger, clearScrollTriggers } from "../header/scroll-anim";
 import React, { Component } from "react";
 import Image from "next/image";
 import VanilaImg from "../resources/vanila.jpg"; // Gantilah dengan path gambar Anda
@@ -15,11 +15,17 @@ import FieldTeamIcon from "../resources/field-team-icon.png";
 import { Colors } from "../header/colors";
 
 class AboutUs extends Component {
+  componentDidMount(): void {
+      initScrollTrigger();
+  }
+  componentWillUnmount(): void {
+      clearScrollTriggers();
+  }
   render() {
     return (
       <div>
         {/* Hero Section */}
-        <section className="relative text-white pt-16 pb-16">
+        <section className="relative text-white pt-16 pb-16 scroll-row">
   {/* Gambar Latar Belakang */}
   <Image
     src={VanilaBg.src}
@@ -50,7 +56,7 @@ class AboutUs extends Component {
 
 
         {/* Vision and Mission Section */}
-        <section className="bg-white text-gray-800 py-16">
+        <section className="bg-white text-gray-800 py-16 scroll-row">
           <div className="container mx-auto text-center">
             <h2 className="text-4xl font-bold text-[rgb(84,150,136)] mb-12">
               Our Vision & Mission
@@ -94,7 +100,7 @@ class AboutUs extends Component {
         </section>
 
         {/* Sustainability Section */}
-        <section className="relative py-16 bg-gray-50">
+        <section className="relative py-16 bg-gray-50 scroll-row">
   {/* Background Image */}
   <Image
     src={VanilaImg.src} // Ganti dengan gambar yang sesuai
@@ -134,7 +140,7 @@ class AboutUs extends Component {
 
 
         {/* Team Section */}
-        <section className="bg-white text-gray-800 py-16">
+        <section className="bg-white text-gray-800 py-16 scroll-row">
           <div className="container mx-auto text-center">
             <Image
             src={TeamIcon.src}
@@ -193,4 +199,4 @@ class AboutUs extends Component {
   }
 }
 
-export { AboutUs };
+export default AboutUs ;

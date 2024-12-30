@@ -541,7 +541,7 @@ const Products = () => {
  
 
       {/*w sect */}
-      <section className="bg-white text-gray-800 md:py-5 scroll-row">
+      <section className="bg-white text-gray-800 md:py-5 mt-10 scroll-row">
       <h2 className="text-4xl font-bold mb-4 text-[rgb(84,150,136)] text-center">Why Choose Us?</h2>
           <ul className="text-center mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
             <li>Exceptional quality sourced directly from Indonesia.</li>
@@ -567,11 +567,11 @@ const Products = () => {
         </a>
       </div>
 
-      <p className="text-sm md:mt-5 my-3 text-gray-600">
+      <p className="text-sm mx-5 md:mx-0 mt-5 my-3 text-gray-600">
         Request a personalized quote or a free sample to experience our premium quality!
       </p>
       {/* Tambahkan gambar statistik bisnis */}
-    <div className="flex justify-center gap-10 my-3 mx-4 md:text-xl text-md text-[rgb(84,150,136)] scroll-row" suppressHydrationWarning={true}>
+    <div className="flex justify-center items-center gap-10 my-3 mx-5 md:text-xl text-md text-[rgb(84,150,136)] md:scroll-row" suppressHydrationWarning={true}>
         <div>
           <p className="font-bold text-3xl">100%</p>
           <p>Pure Quality</p>
