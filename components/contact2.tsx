@@ -202,58 +202,88 @@ const Contact = () => {
             <span>Get in Touch</span>
           </button>
           <h2 className="text-4xl text-[rgb(84,150,136)] mb-6">Reach Out Today</h2>
-          <p className="text-gray-700 text-center">
+          <p className="text-gray-700">
             Have questions? We have answers! Let's chat about vanilla magic.
           </p>
         </div>
   
         {/* Col 6: Feedback Form */}
-        <div>
-          <h2 className="text-4xl text-[rgb(84,150,136)] mb-6">Send Us a Message</h2>
-          <form>
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-              Name
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
-              id="name"
-              type="text"
-              placeholder=""
-            />
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-              Email
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
-              id="email"
-              type="email"
-              placeholder=""
-            />
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
-              Phone
-            </label>
-            <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
-              id="phone"
-              type="tel"
-              placeholder=""
-            />
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-              Message
-            </label>
-            <textarea
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mb-4"
-              id="message"
-              placeholder=""
-            ></textarea>
-            <button
-              type="submit"
-              className="bg-[rgb(84,150,136)] text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline hover:bg-[rgb(68,122,111)] transition"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
+        <div className="flex flex-col items-center">
+  <h2 className="text-4xl text-[rgb(84,150,136)] mb-6 text-center">Send Us a Message</h2>
+  <form className="flex flex-col items-center">
+    {/* Name Input */}
+    <div className="mb-4">
+      <label
+        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+        htmlFor="name"
+      >
+        Name
+      </label>
+      <input
+        className="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="name"
+        type="text"
+        placeholder=""
+      />
+    </div>
+
+    {/* Email Input */}
+    <div className="mb-4">
+      <label
+        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+        htmlFor="email"
+      >
+        Email
+      </label>
+      <input
+        className="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="email"
+        type="email"
+        placeholder=""
+      />
+    </div>
+
+    {/* Phone Input */}
+    <div className="mb-4">
+      <label
+        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+        htmlFor="phone"
+      >
+        Phone
+      </label>
+      <input
+        className="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="phone"
+        type="tel"
+        placeholder=""
+      />
+    </div>
+
+    {/* Message Input */}
+    <div className="mb-4">
+      <label
+        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+        htmlFor="message"
+      >
+        Message
+      </label>
+      <textarea
+        className="shadow appearance-none border rounded w-80 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="message"
+        placeholder=""
+      ></textarea>
+    </div>
+  </form>
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="bg-[rgb(84,150,136)] text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline hover:bg-[rgb(68,122,111)] transition mt-6"
+  >
+    Send Message
+  </button>
+</div>
+
       </div>
     </section>
   </div>
