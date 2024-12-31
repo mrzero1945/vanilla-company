@@ -465,13 +465,13 @@ const Products = () => {
       />
       {/* Overlay Transparan (Opsional) */}
   {/* Overlay semi-transparan */}
-  <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
+  <div className={`absolute inset-0 bg-black bg-opacity-50 rounded-lg`}></div>
       {/* Konten */}
-      <div className="relative z-20">
-        <h2 className="text-3xl font-bold mb-6 text-[rgb(84,150,136)] text-center mt-3">
+      <div className={`relative z-20  ${Colors.secondary_text}`}>
+        <h2 className="text-3xl font-bold mb-6 ${Colors.secondary_text} text-center mt-3">
           Customizable Bulk Orders for Your Business Needs
         </h2>
-        <p className={`text-lg sm:text-xl mb-8 max-w-2xl mx-5 text-left ${Colors.secondary_text}`}>
+        <p className={`text-lg sm:text-xl mb-8 max-w-2xl mx-5 text-left`}>
           At PT. Nature’s Exquisite Nusantara, we specialize in providing flexible bulk ordering solutions for manufacturers, wholesalers, and private label clients. Whether you require large quantities of premium vanilla products or custom packaging tailored to your brand, we’re here to meet your needs.
         </p>
       </div>
@@ -490,19 +490,19 @@ const Products = () => {
     {/* Overlay semi-transparan */}
  <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
       {/* Konten */}
-      <div className="relative z-20">
-        <h2 className="text-3xl font-bold mb-6 text-[rgb(84,150,136)] text-center mt-3">
+      <div className={`relative z-20  ${Colors.secondary_text}`}>
+        <h2 className="text-3xl font-bold mb-6 text-center mt-3">
           Our Products
         </h2>
         <ul className={`mb-8 text-lg sm:text-xl max-w-2xl mx-5 ${Colors.secondary_text}`}>
           <li>
-            <strong className="text-[rgb(84,150,136)]">Premium Vanilla Pods:</strong> Gourmet-grade and extract-grade options.
+            <strong>Premium Vanilla Pods:</strong> Gourmet-grade and extract-grade options.
           </li>
           <li>
-            <strong className="text-[rgb(84,150,136)]">Vanilla Extract & Powder:</strong> Versatile for various applications.
+            <strong>Vanilla Extract & Powder:</strong> Versatile for various applications.
           </li>
           <li>
-            <strong className="text-[rgb(84,150,136)]">Custom Packaging:</strong> Personalized labels and designs to reflect your brand identity.
+            <strong>Custom Packaging:</strong> Personalized labels and designs to reflect your brand identity.
           </li>
         </ul>
       </div>
@@ -518,19 +518,19 @@ const Products = () => {
       />
  {/* Overlay semi-transparan */}
  <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg"></div>
-      <div className="relative z-20">
+      <div className={`relative z-20 ${Colors.secondary_text}`}>
 
      
-            <h2 className="text-3xl font-bold mb-6 mt-3 text-center text-[rgb(84,150,136)]">Flexible Ordering Options</h2>
+            <h2 className="text-3xl font-bold mb-6 mt-3 text-center">Flexible Ordering Options</h2>
               <ul className={`mb-8 text-lg sm:text-xl max-w-2xl mx-5 ${Colors.secondary_text}`}>
                 <li>
-                  <strong className="text-[rgb(84,150,136)]">Minimum Order Quantity (MOQ):</strong> Starting at just 25kg, making it accessible for small and large-scale buyers alike.
+                  <strong>Minimum Order Quantity (MOQ):</strong> Starting at just 25kg, making it accessible for small and large-scale buyers alike.
                 </li>
                 <li>
-                  <strong className="text-[rgb(84,150,136)]">Fast Lead Time:</strong> Orders are processed within 7–14 business days, depending on size and customization.
+                  <strong>Fast Lead Time:</strong> Orders are processed within 7–14 business days, depending on size and customization.
                 </li>
                 <li>
-                  <strong className="text-[rgb(84,150,136)]">Private Labeling:</strong> Elevate your brand with tailored packaging and labeling solutions.
+                  <strong>Private Labeling:</strong> Elevate your brand with tailored packaging and labeling solutions.
                 </li>
               </ul>
                </div>
@@ -540,15 +540,7 @@ const Products = () => {
 
  
 
-      {/*w sect */}
-      <section className="bg-white text-gray-800 md:py-5 mt-10 scroll-row">
-      <h2 className="text-4xl font-bold mb-4 text-[rgb(84,150,136)] text-center">Why Choose Us?</h2>
-          <ul className="text-center mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
-            <li>Exceptional quality sourced directly from Indonesia.</li>
-            <li>Reliable and timely order fulfillment.</li>
-            <li>Comprehensive customization to suit your business goals.</li>
-          </ul>
-      </section>
+    
 {/*contact section*/}
 <section className="bg-white text-gray-800 md:py-5 scroll-row">
    
@@ -570,21 +562,6 @@ const Products = () => {
       <p className="text-sm mx-5 md:mx-0 mt-5 my-3 text-gray-600">
         Request a personalized quote or a free sample to experience our premium quality!
       </p>
-      {/* Tambahkan gambar statistik bisnis */}
-    <div className="flex justify-center items-center gap-10 my-3 mx-5 md:text-xl text-md text-[rgb(84,150,136)] md:scroll-row" suppressHydrationWarning={true}>
-        <div>
-          <p className="font-bold text-3xl">100%</p>
-          <p>Pure Quality</p>
-        </div>
-        <div>
-          <p className="font-bold text-3xl">50+</p>
-          <p>Global Partners</p>
-        </div>
-        <div>
-          <p className="font-bold text-3xl">10,000+</p>
-          <p>Happy Customers</p>
-        </div>
-      </div>
       </div>
 </section>
 {/*statistic bus */}

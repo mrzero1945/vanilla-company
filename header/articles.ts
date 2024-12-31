@@ -99,22 +99,15 @@ const articles: Article[] = [
   },
   {
     id: 2,
-    title: "Vanilla Market Demand Soars",
-    date: "05 December 2024",
+    title: "Why Indonesian Vanilla is Superior: A Comparison with Madagascar Vanilla",
+    date: "1 January 2025",
     author: "Gregory Smith",
     excerpt:
-      "The demand for vanilla is increasing rapidly along with the global trend toward organic and natural foods.",
+      "Vanilla is one of the world's most beloved flavors, revered for its versatility and distinct aroma.",
     content: [
-      { type: "subtitle", text: "Introduction" },
-      {
-        type: "paragraph",
-        text: "The demand for vanilla is increasing rapidly along with the global trend toward organic and natural foods. Consumers are prioritizing natural flavors over artificial additives, making vanilla a highly sought-after ingredient in various industries.",
-      },
-      { type: "subtitle", text: "Consumer Preferences" },
-      {
-        type: "paragraph",
-        text: "Consumers today are more informed and health-conscious than ever before. There is a noticeable shift towards products that are natural, organic, and free from synthetic additives.",
-      },
+      {type: "paragraph", text: "Vanilla is one of the world’s most beloved flavors, revered for its versatility and distinct aroma. Two of the most renowned sources of vanilla are Madagascar and Indonesia, with each region contributing unique qualities to the market. While Madagascar vanilla is traditionally considered the gold standard, Indonesian vanilla is rapidly gaining recognition for its premium quality, distinctive flavor profile, and sustainability. In this article, we’ll compare the two varieties and highlight why Indonesian vanilla is the superior choice for discerning chefs, product manufacturers, and consumers alike."},
+      {type: "subtitle", text: "1. Flavor Profile: A Richer, More Complex Taste"}
+      
     ],
     imageUrl: MarketImage.src,
   },

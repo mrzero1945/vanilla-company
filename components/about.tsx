@@ -53,6 +53,30 @@ class AboutUs extends Component {
     </p>
   </div>
 </section>
+    {/*w sect */}
+    <section className="bg-white text-gray-800 md:py-5 mt-10 scroll-row">
+      <h2 className="text-4xl font-bold mb-4 text-[rgb(84,150,136)] text-center">Why Choose Us?</h2>
+          <ul className="text-center mb-8 text-lg sm:text-xl max-w-2xl md:mx-auto mx-5">
+            <li>Exceptional quality sourced directly from Indonesia.</li>
+            <li>Reliable and timely order fulfillment.</li>
+            <li>Comprehensive customization to suit your business goals.</li>
+          </ul>
+           {/* Tambahkan gambar statistik bisnis */}
+    <div className="flex justify-center items-center gap-10 my-3 mx-5 md:text-xl text-md text-[rgb(84,150,136)] md:scroll-row" suppressHydrationWarning={true}>
+        <div className="text-center">
+          <p className="font-bold text-3xl">100%</p>
+          <p>Pure Quality</p>
+        </div>
+        <div className="text-center">
+          <p className="font-bold text-3xl">50+</p>
+          <p>Global Partners</p>
+        </div>
+        <div className="text-center">
+          <p className="font-bold text-3xl">10,000+</p>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+      </section>
 
 
         {/* Vision and Mission Section */}
@@ -194,6 +218,7 @@ class AboutUs extends Component {
             </div>
           </div>
         </section>
+      
       </div>
     );
   }

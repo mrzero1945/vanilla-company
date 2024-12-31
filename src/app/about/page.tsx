@@ -1,8 +1,9 @@
+"use client"
 import { Navbar } from "../../../components/navbar";
 import { Footer } from "../../../components/footer";
 import dynamic from "next/dynamic";
 import { FloatingWA } from "../../../components/floating-wa";
-const AboutUs = dynamic(()=> import('../../../components/about'))
+const AboutUs = dynamic(()=> import('../../../components/about'), {ssr:false})
 export default function About() {
     return(
         <div>
