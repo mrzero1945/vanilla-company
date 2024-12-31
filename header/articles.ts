@@ -3,8 +3,9 @@ import MarketImage from "../resources/vanila.jpg";
 import VanillaImage2 from "../resources/plant-2.jpg";
 
 interface ContentBlock {
-  type: "title" | "subtitle" | "paragraph";
-  text: string;
+  type: "title" | "subtitle" | "paragraph" | "list";
+  text?: string;
+  items?: string[];
 }
 
 interface Article {
@@ -20,27 +21,79 @@ interface Article {
 const articles: Article[] = [
   {
     id: 1,
-    title: "Vanilla Production Increases in 2024",
-    date: "05 December 2024",
+    title: "Indonesia’s Vanilla Industry in 2024: A Rising Star on the Global Stage",
+    date: "31 December 2024",
     author: "Gregory Smith",
     excerpt:
-      "Vanilla, one of the most valuable and sought-after commodities in the global culinary industry, is poised for a significant production increase in 2024.",
+      "As the world’s appetite for premium vanilla grows, 2024 has been a pivotal year for Indonesia’s vanilla industry.",
     content: [
-      { type: "subtitle", text: "Introduction" },
       {
         type: "paragraph",
-        text: "Vanilla, one of the most valuable and sought-after commodities in the global culinary industry, is poised for a significant production increase in 2024. This surge is attributed to improved agricultural techniques and favorable climate conditions that are boosting yields and enhancing the quality of vanilla beans worldwide.",
+        text: "As the world’s appetite for premium vanilla grows, 2024 has been a pivotal year for Indonesia’s vanilla industry. With Madagascar facing production challenges, Indonesia has stepped up as a reliable supplier, delivering high-quality vanilla beans that meet global demand. At PT Nature Exquisite Nusantara, we’re proud to be at the forefront of this movement, connecting Indonesia’s vanilla producers with markets worldwide.",
       },
-      { type: "subtitle", text: "Sustainable Practices" },
+      { type: "subtitle", text: "Indonesia: A Vanilla Powerhouse in the Making" },
       {
         type: "paragraph",
-        text: "In recent years, farmers have been adopting more sustainable and efficient farming practices. These include organic cultivation methods, agroforestry, and advanced pollination techniques that not only improve yield but also maintain the ecological balance.",
+        text: "Known for its unique flavor profile and exceptional quality, Indonesian vanilla has steadily gained recognition in the global market. The tropical climate, rich volcanic soil, and dedication of our local farmers create vanilla that rivals the best in the world.",
       },
-      { type: "subtitle", text: "Government Support" },
       {
         type: "paragraph",
-        text: "Governments and international organizations have also stepped in to support vanilla farmers. Initiatives such as funding for modern farming equipment, training programs, and access to high-quality seedlings have empowered farmers to enhance productivity.",
+        text: "In 2024, while other regions faced significant setbacks, Indonesia maintained stable production, solidifying its reputation as a dependable supplier. This has positioned the country as a vital player in the global vanilla industry, attracting interest from buyers looking for both quality and sustainability."
       },
+      { type: "subtitle", text: "Overcoming Challenges, Seizing Opportunities" },
+      {
+        type: "paragraph",
+        text: "Indonesia’s vanilla industry has not been without challenges:",
+      },
+      {
+        type: "list",
+        items: ["Weather Uncertainty: Shifting climate patterns require innovative farming techniques", "Market Volatility: Competing with global suppliers requires consistent quality and fair pricing.", "Sustainability Needs: Preserving the environment while ensuring premium crop yields."]
+      },
+      {
+        type: "paragraph",
+        text: "At PT Nature Exquisite Nusantara, we tackle these challenges head-on by supporting farmers with training, promoting organic farming practices, and ensuring fair trade partnerships."
+      },
+      {
+        type: "subtitle",
+        text: "The Future of Vanilla: Why Indonesia Stands Out"
+      }, 
+      {
+        type: "paragraph",
+        text: "As the global vanilla market continues to grow—projected to reach USD 5,253.25 million by 2032—Indonesia is poised to lead the way. Here’s why Indonesian vanilla is becoming the preferred choice for businesses worldwide:"
+      },
+      {
+        type: "list",
+        items: ["Exceptional Quality: Bold, smoky, and versatile, perfect for food, beverages, and cosmetics.", "Sustainable Practices: More farms adopting eco-friendly and organic methods.", "Strategic Location: Proximity to key global markets ensures faster delivery times."]
+      },
+  
+      {
+        type: "subtitle",
+        text: "PT Nature Exquisite Nusantara: Your Trusted Vanilla Partner"
+      },
+      {
+        type: "paragraph",
+        text: "At PT Nature Exquisite Nusantara, we are committed to showcasing the best of Indonesia’s vanilla. By working closely with local farmers, we ensure:"
+      }, 
+      {
+        type: "list",
+        items: ["Premium Quality: From farm to table, every bean meets the highest standards.", "Sustainable Sourcing: Supporting eco-friendly practices to protect our environment.", "Fair Trade: Empowering farmers with fair prices and consistent support."]
+      },
+      {
+        type: "paragraph",
+        text: "Whether you’re looking for bulk vanilla supplies or premium-grade products for your business, PT Nature Exquisite Nusantara is here to deliver."
+      },
+      {
+        type: "subtitle",
+        text: "Let’s Elevate Your Vanilla Experience"
+      },
+      {
+        type: "paragraph",
+        text: "Partner with us and discover the exquisite flavor of Indonesian vanilla. Together, we can make Indonesia the world’s top choice for premium vanilla."
+      },
+      {
+        type: "paragraph",
+        text: "📩 Contact us today to explore our products and services. Let’s build a brighter, sustainable future for the vanilla industry—one bean at a time."
+      }
     ],
     imageUrl: VanillaImage.src,
   },

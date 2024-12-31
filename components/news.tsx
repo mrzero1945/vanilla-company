@@ -27,7 +27,6 @@ const VanillaNewsPage: React.FC = () => {
   const handleBackToList = () => {
     setSelectedArticle(null);
   };
-
   const renderContent = (content: ContentBlock[]) => {
     return content.map((block, index) => {
       if (block.type === "title") {
@@ -53,6 +52,16 @@ const VanillaNewsPage: React.FC = () => {
           <p key={index} className="text-gray-700 text-justify mb-4">
             {block.text}
           </p>
+        );
+      } else if (block.type === "list" && block.items) {
+        return (
+          <ul key={index} className="list-disc list-inside mb-4 text-gray-700">
+            {block.items.map((item, itemIndex) => (
+              <li key={itemIndex} className="mb-1">
+                {item}
+              </li>
+            ))}
+          </ul>
         );
       }
       return null;

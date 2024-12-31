@@ -63,7 +63,7 @@ const Contact = () => {
   return (
     <div>
     <section
-      className="bg-gray-50 py-16"
+      className=" py-16"
       style={{
         backgroundImage: `url(${VanillaPwder.src})`,
         backgroundSize: "cover",

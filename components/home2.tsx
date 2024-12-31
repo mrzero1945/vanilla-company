@@ -322,6 +322,58 @@ const home = ()=>{
           </a>
         </div>
       </section>
+      <section className="bg-gray-100 py-10">
+    <div className="container mx-auto px-4 text-center">
+        <h2 className="text-3xl font-bold mb-6 text-[rgb(84,150,136)]">
+            Why Choose Our Vanilla Products?
+        </h2>
+        <p className="text-lg text-gray-700 mb-8">
+            Our premium selection of Indonesian vanilla, sustainable practices, and reliable services make us the ideal partner for global industries. From "Indonesian vanilla" to "vanilla supplier" excellence, we prioritize quality and sustainability.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 bg-white rounded shadow-md">
+                <Image
+                    src={Vanilla1.src}
+                    alt="Indonesian Vanilla"
+                    width={300}
+                    height={200}
+                    className="w-full h-48 object-cover rounded"
+                />
+                <h3 className="text-xl font-bold mt-4">Indonesian Vanilla</h3>
+                <p className="text-gray-700 mt-2">
+                    Experience the rich aroma and superior flavor of vanillas sourced from Indonesia's finest plantations.
+                </p>
+            </div>
+            <div className="p-6 bg-white rounded shadow-md">
+                <Image
+                    src={PlantImg.src}
+                    alt="Sustainable Practices"
+                    width={300}
+                    height={200}
+                    className="w-full h-48 object-cover rounded"
+                />
+                <h3 className="text-xl font-bold mt-4">Sustainable Practices</h3>
+                <p className="text-gray-700 mt-2">
+                    We are committed to ethical sourcing and sustainable farming practices to protect our planet.
+                </p>
+            </div>
+            <div className="p-6 bg-white rounded shadow-md">
+                <Image
+                    src={Vanilla3.src}
+                    alt="Vanilla Supplier"
+                    width={300}
+                    height={200}
+                    className="w-full h-48 object-cover rounded"
+                />
+                <h3 className="text-xl font-bold mt-4">Trusted Vanilla Supplier</h3>
+                <p className="text-gray-700 mt-2">
+                    Supplying high-quality vanilla products globally, tailored to meet diverse industry needs.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
       <section>
         <VanillaNewsPage/>
       </section>
