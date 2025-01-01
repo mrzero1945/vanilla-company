@@ -79,8 +79,8 @@ const Sustainability = () => {
             </section>
 
             {/* Content Section */}
-            <section className="mt-10 px-6">
-                <h2 className="text-center text-3xl font-bold mb-6 text-gray-800">
+            <section className="my-10 px-6">
+                <h2 className={`text-center text-3xl font-bold mb-6 ${Colors.primary_text}`}>
                     Sustainable Future Practices and Innovation
                 </h2>
                 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
@@ -103,7 +103,7 @@ const Sustainability = () => {
                                 <div className="absolute inset-0 bg-black bg-opacity-40 transition-opacity group-hover:bg-opacity-20"></div>
                             </div>
                             <div className="p-6">
-                                <h3 className="text-2xl font-semibold mb-3 text-gray-800">
+                                <h3 className={`text-2xl font-semibold mb-3 ${Colors.primary_text}`}>
                                     {item.title}
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed">
