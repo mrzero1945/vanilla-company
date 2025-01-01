@@ -47,6 +47,15 @@ const VanillaNewsPage: React.FC = () => {
             {block.text}
           </h2>
         );
+      } else if(block.type === "subtitle2"){
+        return (
+          <h3
+          key={index}
+          className={`text-xl fon-semibold mb-2 mt-4 text-left ${Colors.primary_text}`}
+          >
+            {block.text}
+          </h3>
+        )
       } else if (block.type === "paragraph") {
         return (
           <p key={index} className="text-gray-700 text-justify mb-4">

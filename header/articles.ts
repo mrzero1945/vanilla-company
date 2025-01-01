@@ -3,7 +3,7 @@ import MarketImage from "../resources/vanila.jpg";
 import VanillaImage2 from "../resources/plant-2.jpg";
 
 interface ContentBlock {
-  type: "title" | "subtitle" | "paragraph" | "list";
+  type: "title" | "subtitle" | "paragraph" | "list" | "subtitle2";
   text?: string;
   items?: string[];
 }
@@ -106,8 +106,8 @@ const articles: Article[] = [
       "Vanilla is one of the world's most beloved flavors, revered for its versatility and distinct aroma.",
     content: [
       {type: "paragraph", text: "Vanilla is one of the world’s most beloved flavors, revered for its versatility and distinct aroma. Two of the most renowned sources of vanilla are Madagascar and Indonesia, with each region contributing unique qualities to the market. While Madagascar vanilla is traditionally considered the gold standard, Indonesian vanilla is rapidly gaining recognition for its premium quality, distinctive flavor profile, and sustainability. In this article, we’ll compare the two varieties and highlight why Indonesian vanilla is the superior choice for discerning chefs, product manufacturers, and consumers alike."},
-      {type: "subtitle", text: "1. Flavor Profile: A Richer, More Complex Taste"}
-      
+      {type: "subtitle", text: "1. Flavor Profile: A Richer, More Complex Taste"},
+      {type: "subtitle2", text: "Madagascar Vanilla:"}
     ],
     imageUrl: MarketImage.src,
   },

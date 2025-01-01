@@ -116,7 +116,7 @@ const Footer = () => {
           </a>
           {/* Telegram */}
           <a
-            href="https://t.me/Gregory2005_n"
+            href="https://telegram.org/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Telegram"
