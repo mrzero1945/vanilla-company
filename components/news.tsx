@@ -64,13 +64,19 @@ const VanillaNewsPage: React.FC = () => {
         );
       } else if (block.type === "list" && block.items) {
         return (
-          <ul key={index} className="list-disc list-inside mb-4 text-gray-700">
-            {block.items.map((item, itemIndex) => (
-              <li key={itemIndex} className="mb-1">
-                {item}
+          <ul key={index} className="list-disc list-outside pl-5 mb-4 text-gray-700">
+          {block.items.map((item, itemIndex) => {
+            // Misalkan teks sebelum simbol bullet dipisahkan dengan titik dua (:)
+            const [boldText, normalText] = item.split(": ");
+            return (
+              <li key={itemIndex} className="mb-1 leading-relaxed">
+                <span className="font-semibold">{boldText}:</span> {normalText}
               </li>
-            ))}
-          </ul>
+            );
+          })}
+        </ul>
+        
+        
         );
       }
       return null;
@@ -113,11 +119,11 @@ const VanillaNewsPage: React.FC = () => {
             </h2>
           </div>
 
-            <div className="grid gap-8 md:grid-cols-3 grid-cols-1">
+            <div className="grid gap-8 md:grid-cols-3 grid-cols-1 relative">
               {articles.map((article) => (
                 <div
                   key={article.id}
-                  className="rounded overflow-hidden shadow-lg cursor-pointer"
+                  className="rounded overflow-hidden shadow-lg cursor-pointer pb-10"
                   onClick={() => setSelectedArticle(article)}
                 >
                   <img
@@ -125,17 +131,19 @@ const VanillaNewsPage: React.FC = () => {
                     src={article.imageUrl}
                     alt={article.title}
                   />
-                  <div className="px-6 py-4">
+                  <div className="px-5 py-10">
                     <h2 className="font-bold text-xl mb-2 text-[rgb(84,150,136)]">
                       {article.title}
                     </h2>
                     <p className="text-gray-600 text-sm mb-2">
                       Published on {article.date} by {article.author}
                     </p>
-                    <p className="text-gray-700 text-base">{article.excerpt}</p>
+                    <p className="text-gray-700 ">{article.excerpt}</p>
+                    <div className="absolute bottom-3">
                     <button className="bg-[rgb(84,150,136)] hover:text-blue-700 mt-4 inline-block px-5 text-white rounded-full py-3">
                       Read more
                     </button>
+                    </div>
                   </div>
                 </div>
               ))}

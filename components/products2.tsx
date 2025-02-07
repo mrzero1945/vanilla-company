@@ -437,7 +437,7 @@ const Products = () => {
   </div>
   <div className="flex justify-center mt-20">
   <a
-    href="/contact"
+    href="https://drive.usercontent.google.com/download?id=1ddAYKp8IlaoJxWDzM_uu-2XURIFDam5e&export=download&authuser=0&confirm=t&uuid=384fec9a-62c1-4bea-8f1d-9c34d607400c&at=AIrpjvPB_6OZn1K7ZXZDEUwjbYJg:1738912331554"
     className="flex items-center text-[rgb(255,255,255)] bg-[rgb(84,150,136)] text-center px-8 py-3 rounded-full text-lg font-semibold shadow-md hover:bg-gray-200 transition mb-10 md:mb-0"
   >
     {/* Gambar Icon */}

@@ -1,6 +1,7 @@
 import VanillaImage from "../resources/vanilla-product.webp";
 import MarketImage from "../resources/vanila.jpg";
 import VanillaImage2 from "../resources/plant-2.jpg";
+import { list } from "postcss";
 
 interface ContentBlock {
   type: "title" | "subtitle" | "paragraph" | "list" | "subtitle2";
@@ -107,7 +108,42 @@ const articles: Article[] = [
     content: [
       {type: "paragraph", text: "Vanilla is one of the world’s most beloved flavors, revered for its versatility and distinct aroma. Two of the most renowned sources of vanilla are Madagascar and Indonesia, with each region contributing unique qualities to the market. While Madagascar vanilla is traditionally considered the gold standard, Indonesian vanilla is rapidly gaining recognition for its premium quality, distinctive flavor profile, and sustainability. In this article, we’ll compare the two varieties and highlight why Indonesian vanilla is the superior choice for discerning chefs, product manufacturers, and consumers alike."},
       {type: "subtitle", text: "1. Flavor Profile: A Richer, More Complex Taste"},
-      {type: "subtitle2", text: "Madagascar Vanilla:"}
+      {type: "subtitle2", text: "Madagascar Vanilla:"},
+      {type: "list", items:["Madagascar vanilla is known for its rich, sweet, and creamy flavor, which has made it the most widely used type of vanilla in the world.","It has a soft, buttery profile, with subtle floral undertones and a deep sweetness that many associate with classic vanilla flavors."]},
+      {type: "subtitle2", text:"Indonesian Vanilla:"},
+      {type: "list", items:["Indonesian vanilla is celebrated for its more complex and nuanced flavor profile. It combines rich, creamy sweetness with a smoky, spicy note that adds depth and intrigue to the flavor", "The Indonesian beans tend to have a stronger, bolder flavor with a woody or earthy undertone, offering a unique twist on traditional vanilla flavoring."]},
+      {type: "subtitle2", text: "Why Indonesian Vanilla Wins:"},
+      {type: "paragraph", text: "While Madagascar vanilla offers a familiar sweetness, Indonesian vanilla brings a new layer of complexity, making it ideal for high-end culinary applications. Its smoky, rich profile is perfect for gourmet chefs and manufacturers looking to stand out with unique flavors that go beyond the standard."},
+      {type: "subtitle", text: "2. Sourcing and Sustainability: A Commitment to the Future"},
+      {type: "subtitle2", text: "Madagascar Vanilla:"},
+      {type: "list", items:["Madagascar is the largest vanilla-producing country, but its production faces challenges such as climate variability and limited labor resources.", "The vanilla industry in Madagascar is often plagued by issues like price volatility, scarcity of skilled labor, and challenges with maintaining sustainable farming practices."]},
+      {type: "subtitle2", text: "Indonesian Vanilla:"},
+      {type: "list", items:["Indonesian vanilla stands out for its commitment to sustainability. Farmers in Indonesia focus on environmentally friendly farming methods that avoid the use of harmful chemicals and pesticides, ensuring a safer, more eco-conscious product.", "Additionally, Indonesia’s diverse climate, from its volcanic soils to its tropical highlands, offers ideal conditions for growing vanilla beans with less reliance on intensive industrial farming practices"]},
+      {type: "subtitle2", text: "Why Indonesian Vanilla Wins:"},
+      {type: "paragraph", text: "Sustainability is increasingly important to consumers, and Indonesia is making great strides in eco-friendly farming practices. By supporting Indonesian vanilla, you’re choosing a product that is not only high-quality but also environmentally and socially responsible."},
+      {type: "subtitle", text: "3. Price and Availability: A Cost-Effective Alternative"},
+      {type: "subtitle2", text: "Madagascar Vanilla:"},
+      {type: "list", items:["Due to its large-scale production and dominant market position, Madagascar vanilla is often more expensive, particularly when demand is high. Price fluctuations are frequent, especially when weather conditions affect crop yields.", "●	As the world’s most popular vanilla, Madagascar vanilla is often the default choice for mass production, which sometimes leads to supply shortages and price hikes."]},
+      {type: "subtitle2", text: "Indonesian Vanilla:"},
+      {type: "list", items:["Indonesia, with its growing vanilla industry, offers a cost-effective alternative. While still premium in quality, Indonesian vanilla tends to be more affordable due to more stable supply chains and less reliance on volatile global markets.", "Additionally, Indonesia is investing in modern farming and processing techniques, improving yields and reducing overall production costs, which helps keep prices competitive without sacrificing quality."]},
+      {type: "subtitle2", text: "Why Indonesian Vanilla Wins:"},
+      {type: "paragraph", text: "Indonesian vanilla offers an affordable, high-quality alternative to Madagascar vanilla. Its cost-effectiveness makes it an attractive choice for both small businesses and large-scale manufacturers looking to balance quality with budget considerations."},
+      {type: "subtitle", text: "4. Processing: The Key to Flavor Development"},
+      {type: "subtitle2", text:"Madagascar Vanilla:"},
+      {type: "list", items:["The processing of Madagascar vanilla is often done in bulk, with an emphasis on maintaining the consistency and high quality that has made the region famous. While the curing process is highly regulated, it is primarily focused on maintaining a predictable flavor profile.", "Some vanilla beans from Madagascar can be overly processed, leading to a loss of certain volatile compounds, which results in a flatter flavor."]},
+      {type: "subtitle2", text:"Indonesian Vanilla:"},
+      {type: "list", items:["Indonesian vanilla is known for its meticulous, artisanal processing. Farmers in Indonesia use traditional, multi-step curing techniques that include blanching, sweating, and sun-drying the beans. This process helps preserve the essential oils and volatile compounds that give Indonesian vanilla its distinctive aroma and taste.", "The extra care in processing Indonesian vanilla ensures a flavor that is both rich and complex, with the aromatic compounds intact, giving it a unique smoky, spicy profile that stands out from the crowd."]},
+      {type: "subtitle2", text: "Why Indonesian Vanilla Wins:"},
+      {type: "paragraph", text: "The artisanal approach to processing Indonesian vanilla helps preserve its unique flavor characteristics and aromatic complexity. This attention to detail in every step of the curing process makes Indonesian vanilla a superior product, delivering a deeper and more robust flavor that can't be found in standard Madagascar vanilla."},
+      {type: "subtitle", text: "5. Versatility: Ideal for Gourmet and Specialty Applications"},
+      {type: "subtitle2", text: "Madagascar Vanilla:"},
+      {type: "list", items: ["Madagascar vanilla is often the go-to choice for mainstream vanilla products such as vanilla ice cream, custards, and baked goods. Its classic, universally-loved flavor suits a broad range of applications.", "However, its sweetness and lack of complexity may not lend itself to applications that require more sophisticated flavor profiles"]},
+      {type: "subtitle2", text: "Indonesian Vanilla:"},
+      {type: "list", items: ["Indonesian vanilla’s complex flavor profile makes it the perfect choice for premium applications. It’s widely used in gourmet desserts, high-end beverages, fine chocolates, and even savory dishes. Its versatility makes it ideal for chefs and manufacturers looking to create unique and bold products that stand out in the market.", "Indonesian vanilla is also a favored ingredient in the cosmetics industry, where its aromatic richness and calming properties enhance perfumes, lotions, and other beauty products."]},
+      {type: "subtitle2", text: "Why Indonesian Vanilla Wins:"},
+      {type: "paragraph", text: "For creators and manufacturers seeking something beyond the typical, Indonesian vanilla provides a versatile and high-quality alternative that can be used across a wide variety of industries, from food and beverages to beauty and wellness."},
+      {type: "subtitle2", text: "Why Indonesian Vanilla Should Be Your First Choice"},
+      {type: "paragraph", text: "While Madagascar vanilla has long held a dominant position in the vanilla market, Indonesian vanilla is quickly establishing itself as the superior choice for quality-conscious consumers and manufacturers alike. From its distinctive, complex flavor profile to its sustainable farming practices, Indonesian vanilla offers a more sophisticated, eco-friendly, and cost-effective alternative to traditional vanilla. Whether you're a chef looking to elevate your dishes, a product manufacturer aiming for a unique flavor, or a consumer seeking the best vanilla available, Indonesian vanilla is the clear winner. At PT Nature Exquisite Nusantara, we source only the finest Indonesian vanilla, ensuring premium quality and flavor with every batch. Choose Indonesian vanilla for your next project and experience the difference in every product."}
     ],
     imageUrl: MarketImage.src,
   },
